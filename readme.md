@@ -1,14 +1,9 @@
----
-
 # README - Frontend D²Répétition
-
----
 
 ## C'est quoi ce projet ?
 
 C'est la partie visible de D²Répétition, ce que les utilisateurs voient et utilisent au quotidien. C'est ici que les parents suivent les cours de leurs enfants, que les professeurs rédigent leurs comptes rendus, que les élèves consultent leur planning et que l'administration pilote l'ensemble des activités du centre.
 
----
 
 ## Ce que les utilisateurs peuvent faire
 
@@ -24,7 +19,6 @@ Consulter leur planning, confirmer leurs séances réalisées, rédiger les comp
 **Les administrateurs**
 Gérer tous les comptes utilisateurs, créer et organiser les cours, affecter les professeurs aux élèves, suivre les validations, traiter les signalements et consulter les statistiques d'activité du centre.
 
----
 
 ## Les pages principales
 
@@ -38,31 +32,21 @@ Gérer tous les comptes utilisateurs, créer et organiser les cours, affecter le
 
 **Espace administrateur** - Tableau de bord global, gestion des utilisateurs, des matières, des cours, des affectations, du suivi administratif et des rapports.
 
----
-
 ## Comment démarrer
 
 Clonez le projet, installez les dépendances, renseignez l'adresse de l'API dans le fichier de configuration et lancez l'application. Elle s'ouvre automatiquement dans votre navigateur.
-
----
 
 ## Structure du projet
 
 Le projet est organisé par espace utilisateur. Chaque rôle (parent, élève, professeur, administrateur) a ses propres pages et composants regroupés ensemble. Les éléments réutilisables sur plusieurs pages sont centralisés dans un dossier commun.
 
----
-
 ## Compatibilité
 
 L'interface fonctionne sur tous les navigateurs modernes et s'adapte aux écrans de téléphone, tablette et ordinateur. Elle a été pensée en priorité pour une utilisation mobile, car c'est l'appareil le plus utilisé par les parents et les professeurs au quotidien.
 
----
-
 ## Contribution
 
 Si vous travaillez sur ce projet, créez une branche pour chaque nouvelle page ou fonctionnalité, respectez la charte graphique existante et vérifiez que l'affichage est correct sur mobile avant de proposer vos modifications.
-
----
 
 ## Statut du projet
 
