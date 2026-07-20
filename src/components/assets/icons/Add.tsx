@@ -1,0 +1,11 @@
+import { SVGProps } from 'react'
+
+const Add = (props: SVGProps<SVGSVGElement>) => {
+    return (
+        <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.25 12.75H5.5V11.25H11.25V5.5H12.75V11.25H18.5V12.75H12.75V18.5H11.25V12.75Z" fill={props.color ?? "#0A0700"} fillOpacity={props.opacity ?? "0.8"} />
+        </svg>
+    )
+}
+
+export default Add

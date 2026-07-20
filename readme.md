@@ -1,53 +1,36 @@
-# README - Frontend D²Répétition
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## C'est quoi ce projet ?
+## Getting Started
 
-C'est la partie visible de D²Répétition, ce que les utilisateurs voient et utilisent au quotidien. C'est ici que les parents suivent les cours de leurs enfants, que les professeurs rédigent leurs comptes rendus, que les élèves consultent leur planning et que l'administration pilote l'ensemble des activités du centre.
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Ce que les utilisateurs peuvent faire
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Les parents**
-Consulter le planning et l'historique des cours de leurs enfants, valider les séances réalisées, signaler les absences ou les problèmes, lire les comptes rendus du professeur, consulter les notes et les objectifs pédagogiques, et envoyer des messages au professeur ou à l'administration.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Les élèves**
-Accéder à leur planning, consulter leurs matières, lire les comptes rendus de leurs séances, suivre leurs notes et leur progression, et télécharger les ressources partagées par leurs professeurs.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-**Les professeurs**
-Consulter leur planning, confirmer leurs séances réalisées, rédiger les comptes rendus pédagogiques, définir des objectifs par matière, saisir des notes et des évaluations, partager des ressources avec leurs élèves et envoyer des messages aux parents et à l'administration.
+## Learn More
 
-**Les administrateurs**
-Gérer tous les comptes utilisateurs, créer et organiser les cours, affecter les professeurs aux élèves, suivre les validations, traiter les signalements et consulter les statistiques d'activité du centre.
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Les pages principales
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-**Site public** - Accueil, présentation du centre, matières proposées, professeurs, témoignages et formulaires d'inscription.
+## Deploy on Vercel
 
-**Espace parent** - Tableau de bord, suivi des enfants, planning, validation des cours, messagerie et profil.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-**Espace élève** - Tableau de bord, planning, suivi pédagogique, bibliothèque de ressources et profil.
-
-**Espace professeur** - Tableau de bord, planning, gestion des séances, suivi pédagogique, bibliothèque, messagerie et profil.
-
-**Espace administrateur** - Tableau de bord global, gestion des utilisateurs, des matières, des cours, des affectations, du suivi administratif et des rapports.
-
-## Comment démarrer
-
-Clonez le projet, installez les dépendances, renseignez l'adresse de l'API dans le fichier de configuration et lancez l'application. Elle s'ouvre automatiquement dans votre navigateur.
-
-## Structure du projet
-
-Le projet est organisé par espace utilisateur. Chaque rôle (parent, élève, professeur, administrateur) a ses propres pages et composants regroupés ensemble. Les éléments réutilisables sur plusieurs pages sont centralisés dans un dossier commun.
-
-## Compatibilité
-
-L'interface fonctionne sur tous les navigateurs modernes et s'adapte aux écrans de téléphone, tablette et ordinateur. Elle a été pensée en priorité pour une utilisation mobile, car c'est l'appareil le plus utilisé par les parents et les professeurs au quotidien.
-
-## Contribution
-
-Si vous travaillez sur ce projet, créez une branche pour chaque nouvelle page ou fonctionnalité, respectez la charte graphique existante et vérifiez que l'affichage est correct sur mobile avant de proposer vos modifications.
-
-## Statut du projet
-
-En cours de développement - Version 1.0
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
