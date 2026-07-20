@@ -1,8 +1,10 @@
+import Hero from "@/components/ui/organisms/home/Hero"
+
 const page = () => {
   return (
-    <div>
-      Hello
-    </div>
+    <>
+      <Hero />
+    </>
   )
 }
 

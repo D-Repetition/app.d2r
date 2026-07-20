@@ -8,8 +8,8 @@ import Resources from "./molecules/Resources"
 const Topbar = () => {
 
     return (
-        <div className="w-full maxw mx-auto flex items-center justify-between">
-            <div className="flex items-end justify-start gap-10">
+        <div className="w-full maxw left-1/2 -translate-x-1/2 flex items-center justify-between fixed mt-15 pl-6 py-2 pr-2 rounded-4xl bg-white border border-board-black/10">
+            <div className="flex items-center justify-start gap-10">
                 <Link href="/" className="">
                     <div className="flex items-center text-blue-navy">
                         <Logo className="fill-board-black" />

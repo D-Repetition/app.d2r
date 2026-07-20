@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 const PublicLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <html>
-      <body className={`${inter.variable} ${dmSerifDisplay.variable} min-h-screen w-full font-sans pt-15`}>
+      <body className={`${inter.variable} ${dmSerifDisplay.variable} min-h-screen w-full font-sans`}>
         <Topbar />
         <main className="min-h-screen w-full">
           {children}
