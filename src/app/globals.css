@@ -4,6 +4,7 @@
   --background: #FFFFFF;
   --white: #FFFFFF;
   --blue-navy: #0136A0;
+  --shade-cyan: #0136A0;
   --board-black: #0A0700;
   --foreground: #0A0700;
 }
@@ -13,6 +14,8 @@
   --color-board-black: #0A0700;
   --color-poppy-red: #FE463F;
   --color-marigold-amber: #D98723;
+  --color-shade-cyan: #4F8A9A;
+  --color-olive-green: #918F17;
 }
 
 @theme inline {
@@ -42,16 +45,127 @@ body {
   font-family: var(--font-dm-serif);
   font-weight: 500;
   font-size: 3.2vw;
-  /**font-size: clamp(1.5rem, 4vw, 2.8rem);**/
-  line-height: 4vw;
+  line-height: 3.8vw;
+  letter-spacing: -0.02em;
+}
+
+.title2 {
+  font-family: var(--font-dm-serif);
+  font-weight: 500;
+  font-size: 2vw;
+  line-height: 2.4vw;
   letter-spacing: -2%;
 }
 
 .subtitle {
   font-family: var(--font-inter);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.2vw;
-  /**font-size: clamp(1.5rem, 4vw, 2.8rem);**/
   line-height: 1.6vw;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
+}
+
+.secondaryTitle {
+    font-weight: 500;
+  font-size: 1.3vw;
+  line-height: 1.6vw;
+}
+
+.simpleText {
+  font-size: 1vw;
+  line-height: 1.4vw;
+}
+
+.simpleText2 {
+  font-size: .9vw;
+  line-height: 1.2vw;
+}
+
+/* Laptop */
+@media (max-width: 1279px) {
+  .title {
+    font-size: 2.75rem;
+    /* 44px */
+    line-height: 1.15;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5;
+  }
+
+    .secondaryTitle {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+  .simpleText {
+    font-size: .8rem;
+    /* 16px */
+    line-height: 1.25;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.25rem;
+    /* 36px */
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    /* 15px */
+    line-height: 1.5;
+  }
+
+  .simpleText {
+    font-size: .75rem;
+    /* 16px */
+    line-height: 1.25;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    /* 32px */
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 0.9375rem;
+    /* 15px */
+    line-height: 1.6;
+  }
+
+  .simpleText {
+    font-size: .7rem;
+    /* 16px */
+    line-height: 1.25;
+  }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+    /* 28px */
+    line-height: 1.25;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+    /* 14px */
+    line-height: 1.6;
+  }
+
+  .simpleText {
+    font-size: .65rem;
+    /* 16px */
+    line-height: 1.25;
+  }
 }
