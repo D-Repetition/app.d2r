@@ -2,12 +2,14 @@ import Link from 'next/link'
 import React from 'react'
 import Button from '../../atomes/Button'
 import { UserFace } from '@/components/assets/icons'
+import { subjectSectionData } from '@/constants/homeSectionsData'
+import { HomeSubject } from '../../molecules/Subject'
 
 const AccompaniementAllKeySubject = () => {
     return (
-        <section className='w-full max-w-[90%] min-h-svh mx-auto flex flex-col items-start pt-20 lg:pt-24 pb-12 lg:pb-10'>
-            <div className="w-full min-h-svh flex flex-col items-center">
-                <div className="w-full flex items-start justify-between">
+        <section className='min-h-svh mx-auto flex flex-col items-start pt-20 lg:pt-24 pb-12 lg:pb-10'>
+            <div className="w-full min-h-svh flex flex-col items-center gap-[12vh]">
+                <div className="w-full max-w-[90%] flex items-start justify-between">
                     <div className='title lg:max-w-[35vw]'>Un accompagnement dans toutes les matières <span className='text-board-black/60'>clés pour réussir</span></div>
                     <div className='flex flex-col lg:gap-[3vw] lg:max-w-[37vw]'>
                         <div className="simpleText flex flex-col items-start justify-start lg:gap-[2vw]">
@@ -27,8 +29,33 @@ const AccompaniementAllKeySubject = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
-                    
+                <div className="flex flex-col gap-11 overflow-hidden w-full">
+                    <div className="flex items-stretch gap-11 -translate-x-5">
+                        {
+                            subjectSectionData[0].map((ssd) => {
+                                return (
+                                    <>
+                                        <HomeSubject key={ssd.title} {...ssd} />
+                                    </>
+                                );
+                            })
+                        }
+                    </div>
+                    <div className="flex items-center justify-start gap-11 translate-x-[-12vw]">
+                        {
+                            subjectSectionData[1].map((ssd) => {
+                                return (
+                                    <>
+                                        <HomeSubject key={ssd.title} {...ssd} />
+                                    </>
+                                );
+                            })
+                        }
+                    </div>
+                </div>
+                <div className="flex items-center justify-center w-full gap-2">
+                    <img src="/images/info.png" className='h-[2vh]' alt="Infos" />
+                    Vous ne trouvez pas la matière recherchée ?&nbsp;<Link href="" className='underline underline-offset-4'>Contactez-nous</Link>, nous étudions chaque demande.
                 </div>
             </div>
         </section>
