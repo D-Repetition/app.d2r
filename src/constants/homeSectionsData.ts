@@ -1,4 +1,4 @@
-import { SubjectHome, TeacherI, TestimonyI } from "@/types";
+import { HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -245,9 +245,37 @@ const testimonies: TestimonyI[] = [
     },
 ];
 
+const howItWorksData: HowItWorksStep[] = [
+    {
+        step: 1,
+        title: "Inscription",
+        description:
+            "Remplissez le formulaire d'inscription avec les informations de votre enfant et les matières souhaitées. Notre équipe prend contact avec vous sous 48 heures.",
+    },
+    {
+        step: 2,
+        title: "Affectation",
+        description:
+            "Nous sélectionnons le professeur le plus adapté au profil et aux besoins de votre enfant. Vous êtes informé de l'affectation et pouvez consulter son profil.",
+    },
+    {
+        step: 3,
+        title: "Cours à domicile",
+        description:
+            "Le professeur se rend au domicile de l'élève aux créneaux définis. Après chaque séance, il rédige un compte rendu détaillé visible depuis votre espace.",
+    },
+    {
+        step: 4,
+        title: "Suivi et validation",
+        description:
+            "Vous recevez une notification après chaque cours pour confirmer que la séance a bien eu lieu. Vous accédez à tout moment aux notes, objectifs et comptes rendus de votre enfant.",
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
     teachers,
-    testimonies
+    testimonies,
+    howItWorksData
 }

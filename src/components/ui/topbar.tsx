@@ -14,7 +14,7 @@ const Topbar = () => {
 
     return (
         <>
-            <div className="hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-10 pl-6 py-2 pr-2 rounded-4xl bg-white border border-board-black/10 lg:flex">
+            <div className="hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-10 pl-6 py-2 pr-2 rounded-full bg-white border border-board-black/10 lg:flex">
                 <div className="flex items-center justify-start gap-10">
                     <Link href="/" className="">
                         <div className="flex items-center text-blue-navy">

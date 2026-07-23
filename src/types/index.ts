@@ -40,3 +40,9 @@ export interface TestimonyI {
     avatar: string;
     bg_color: string;
 }
+
+export type HowItWorksStep = {
+    step: number;
+    title: string;
+    description: string;
+};
