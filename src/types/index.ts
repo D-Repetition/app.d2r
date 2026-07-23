@@ -66,3 +66,13 @@ export interface CTASection {
     background_image: string;
     buttons: CTAButton[];
 }
+
+export interface FooterItem {
+    label: string;
+    href?: string;
+}
+
+export interface FooterSection {
+    title: string;
+    items: FooterItem[];
+}

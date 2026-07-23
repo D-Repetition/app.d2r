@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import ChevronDown from "../assets/icons/ChevronDown"
 import ClosePanel from "../assets/icons/ClosePanel"
@@ -11,14 +11,41 @@ import Resources from "./molecules/Resources"
 
 const Topbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [hidden, setHidden] = useState(false)
+    const lastScrollY = useRef(0)
+
+    useEffect(() => {
+        lastScrollY.current = window.scrollY
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY
+
+            if (Math.abs(currentScrollY - lastScrollY.current) < 5) return
+
+            if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
+                setHidden(true)
+                setMobileMenuOpen(false)
+            } else {
+                setHidden(false)
+            }
+
+            lastScrollY.current = currentScrollY
+        }
+
+        window.addEventListener("scroll", handleScroll, { passive: true })
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
 
     return (
         <>
-            <div className="hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-10 pl-6 py-2 pr-2 rounded-full bg-white border border-board-black/10 lg:flex">
+            <div
+                className={`hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-10 pl-6 py-2 pr-2 rounded-full bg-white border border-board-black/10 lg:flex transition-transform duration-300 ${hidden ? "-translate-y-32" : "translate-y-0"
+                    }`}
+            >
                 <div className="flex items-center justify-start gap-10">
                     <Link href="/" className="">
                         <div className="flex items-center text-blue-navy">
-                            <Logo className="fill-board-black" />
+                            <Logo className="fill-board-black h-11!" />
                         </div>
                     </Link>
                     <div className="flex items-center text-blue-navy gap-4">
@@ -57,7 +84,10 @@ const Topbar = () => {
                 </div>
             </div>
 
-            <div className="fixed left-1/2 top-8 z-50 w-[min(92vw,1200px)] -translate-x-1/2 lg:hidden">
+            <div
+                className={`fixed left-1/2 top-8 z-50 w-[min(92vw,1200px)] -translate-x-1/2 lg:hidden transition-transform duration-300 ${hidden ? "-translate-y-32" : "translate-y-0"
+                    }`}
+            >
                 <div className="rounded-4xl border border-board-black/10 bg-white pl-6 pr-2 py-2 shadow-[0px_10px_30px_rgba(0,0,0,0.08)]">
                     <div className="flex items-center justify-between gap-3">
                         <Link href="/" className="shrink-0">

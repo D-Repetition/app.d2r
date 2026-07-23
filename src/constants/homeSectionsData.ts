@@ -1,4 +1,4 @@
-import { CTASection, FaqItem, HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
+import { CTASection, FaqItem, FooterSection, HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -352,6 +352,118 @@ const homeCtaSection: CTASection = {
     ],
 };
 
+const footerSectionsData: FooterSection[] = [
+    {
+        title: "Coordonnées",
+        items: [
+            {
+                label: "Lomé, Togo",
+            },
+            {
+                label: "+228 XX XX XX XX",
+            },
+            {
+                label: "contact@d2repetition.com",
+            },
+            {
+                label: "Lundi - Samedi : 08h00 - 18h00",
+            },
+        ],
+    },
+    {
+        title: "Navigation rapide",
+        items: [
+            {
+                label: "Accueil",
+                href: "/",
+            },
+            {
+                label: "Qui sommes-nous",
+                href: "/qui-sommes-nous",
+            },
+            {
+                label: "Nos matières",
+                href: "/matieres",
+            },
+            {
+                label: "Nos professeurs",
+                href: "/professeurs",
+            },
+            {
+                label: "Comment ça marche",
+                href: "/comment-ca-marche",
+            },
+            {
+                label: "Témoignages",
+                href: "/#temoignages",
+            },
+            {
+                label: "Contact",
+                href: "/contact",
+            },
+        ],
+    },
+    {
+        title: "Liens utilisateurs",
+        items: [
+            {
+                label: "Inscription élève",
+                href: "/inscription",
+            },
+            {
+                label: "Candidature professeur",
+                href: "/candidature",
+            },
+            {
+                label: "Connexion à mon espace",
+                href: "/connexion",
+            },
+        ],
+    },
+    {
+        title: "Réseaux sociaux",
+        items: [
+            {
+                label: "Facebook",
+                href: "https://facebook.com",
+            },
+            {
+                label: "Instagram",
+                href: "https://instagram.com",
+            },
+            {
+                label: "WhatsApp",
+                href: "https://wa.me/",
+            },
+            {
+                label: "LinkedIn",
+                href: "https://linkedin.com",
+            },
+        ],
+    },
+    {
+        title: "Liens légaux",
+        items: [
+            {
+                label: "Mentions légales",
+                href: "/mentions-legales",
+            },
+            {
+                label: "Politique de confidentialité",
+                href: "/politique-confidentialite",
+            },
+            {
+                label: "Conditions générales d'utilisation",
+                href: "/conditions-generales-utilisation",
+            },
+            {
+                label: "Politique de cookies",
+                href: "/politique-cookies",
+            },
+        ],
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
@@ -359,5 +471,6 @@ export {
     testimonies,
     howItWorksData,
     faqsData,
-    homeCtaSection
+    homeCtaSection,
+    footerSectionsData
 }

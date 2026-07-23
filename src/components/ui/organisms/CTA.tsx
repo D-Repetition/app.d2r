@@ -12,7 +12,7 @@ const CTA = (props: CTAI) => {
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <img src={props.background_image} className='object-cover oject-center w-full h-full' alt={props.title} />
             </div>
-            <div className="h-[10%] w-full absolute z-1 bottom-0 left-0 right-0 bg-board-black rounded-[54px_54px_0px_0px]"></div>
+            <div className="h-[8%] w-full absolute z-1 bottom-0 left-0 right-0 bg-board-black rounded-[54px_54px_0px_0px]"></div>
             <div className="relative z-2 flex items-center justify-center flex-col gap-4.5 w-full h-full">
                 <div className="title text-center max-w-[40%]">{props.title}</div>
                 <div className="subtitle text-center max-w-[40%] font-normal!">{props.description}</div>

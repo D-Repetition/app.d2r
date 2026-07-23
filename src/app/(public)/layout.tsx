@@ -2,6 +2,7 @@ import Topbar from "@/components/ui/topbar"
 import type { Metadata } from "next";
 import { Inter, DM_Serif_Display } from "next/font/google";
 import "../globals.css";
+import Footer from "@/components/ui/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -62,6 +63,7 @@ const PublicLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => 
         <main className="min-h-screen w-full">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )

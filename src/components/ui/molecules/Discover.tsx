@@ -5,7 +5,7 @@ const Discover = () => {
     return (
         <div className='px-16 py-8 bg-white rounded-xl border-[0.5px] border-board-black/10 shadow-[0px_4px_12px_rgba(0,0,0,0.1)] flex items-center gap-17.25'>
             <div className="flex items-start justify-between flex-col h-39.75">
-                <Link href="/nous" className="">
+                <Link href="/comment-ca-marche" className="">
                     <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
                         Qui sommes-nous
                     </div>
