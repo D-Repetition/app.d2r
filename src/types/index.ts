@@ -20,3 +20,13 @@ type SubjectTags =
 export interface SubjectItself extends Subject {
     tags: SubjectTags;
 }
+
+/* TEACHERS SECTION */
+export interface TeacherI {
+    full_name: string;
+    photo: string;
+    rating: number;
+    levels: string[];
+    subjects: string[];
+    bio: string;
+}

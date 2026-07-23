@@ -1,4 +1,4 @@
-import { SubjectHome } from "@/types";
+import { SubjectHome, TeacherI } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -124,7 +124,78 @@ const subjectSectionData: SubjectHome[][] = [
     ],
 ];
 
+
+/* TEACHERS */
+const teachers: TeacherI[] = [
+    {
+        full_name: "Amina K.",
+        photo: "/images/teachers/teacher-1.png",
+        rating: 4.8,
+        levels: ["Collège", "Lycée"],
+        subjects: ["Mathématiques", "Physique-Chimie"],
+        bio: "Pédagogue patiente, spécialisée dans la remise à niveau et la préparation aux examens.",
+    },
+    {
+        full_name: "Kevin A.",
+        photo: "/images/teachers/teacher-2.png",
+        rating: 4.9,
+        levels: ["Primaire", "Collège"],
+        subjects: ["Français", "Anglais"],
+        bio: "Expert en expression écrite et orale, avec une approche adaptée au rythme de chaque élève.",
+    },
+    {
+        full_name: "Nadia M.",
+        photo: "/images/teachers/teacher-3.png",
+        rating: 4.8,
+        levels: ["Collège", "Lycée"],
+        subjects: ["SVT", "Physique-Chimie"],
+        bio: "Rend les sciences accessibles grâce à des expériences concrètes et des explications claires.",
+    },
+    {
+        full_name: "Jordan T.",
+        photo: "/images/teachers/teacher-4.png",
+        rating: 4.7,
+        levels: ["Lycée"],
+        subjects: ["Mathématiques", "Informatique"],
+        bio: "Accompagne les élèves vers l'excellence avec une méthode rigoureuse et personnalisée.",
+    },
+    {
+        full_name: "Sarah D.",
+        photo: "/images/teachers/teacher-5.png",
+        rating: 4.9,
+        levels: ["Collège", "Lycée"],
+        subjects: ["Histoire-Géographie", "Philosophie"],
+        bio: "Développe l'esprit critique et aide les élèves à structurer leurs idées efficacement.",
+    },
+    {
+        full_name: "David E.",
+        photo: "/images/teachers/teacher-6.png",
+        rating: 4.8,
+        levels: ["Collège", "Lycée"],
+        subjects: ["Espagnol", "Anglais"],
+        bio: "Passionné de langues vivantes, il privilégie la pratique et la communication.",
+    },
+    {
+        full_name: "Grâce B.",
+        photo: "/images/teachers/teacher-7.png",
+        rating: 5.0,
+        levels: ["Primaire", "Collège"],
+        subjects: ["Français", "Mathématiques"],
+        bio: "Accompagne les plus jeunes avec bienveillance pour bâtir des bases solides et durables.",
+    },
+    {
+        full_name: "Junior G.",
+        photo: "/images/teachers/teacher-8.png",
+        rating: 5.0,
+        levels: ["Primaire", "Collège"],
+        subjects: ["Français", "Mathématiques"],
+        bio: "Accompagne les plus jeunes avec bienveillance pour bâtir des bases solides et durables.",
+    },
+];
+
+
 export {
     whyFamilyChooseUsSectionData,
-    subjectSectionData
+    subjectSectionData,
+    teachers
 }

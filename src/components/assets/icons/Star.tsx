@@ -3,7 +3,7 @@ import { SVGProps } from 'react'
 const Star = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.575 19.9615L8.00775 13.7922L3.22125 9.64425L9.5365 9.09625L12 3.279L14.4635 9.09625L20.7788 9.64425L15.9923 13.7922L17.425 19.9615L12 16.6885L6.575 19.9615Z" fill={props.color ?? "#0A0700"} fillOpacity={props.opacity ?? "0.8"}/>
+<path d="M6.575 19.9615L8.00775 13.7922L3.22125 9.64425L9.5365 9.09625L12 3.279L14.4635 9.09625L20.7788 9.64425L15.9923 13.7922L17.425 19.9615L12 16.6885L6.575 19.9615Z" fill={props.color} fillOpacity={props.opacity}/>
 </svg>
   )
 }
