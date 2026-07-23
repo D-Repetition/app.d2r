@@ -30,3 +30,13 @@ export interface TeacherI {
     subjects: string[];
     bio: string;
 }
+
+/* Testimonies */
+
+export interface TestimonyI {
+    full_name: string;
+    role: string;
+    testimony: string;
+    avatar: string;
+    bg_color: string;
+}

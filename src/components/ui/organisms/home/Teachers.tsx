@@ -19,7 +19,7 @@ const Teachers = () => {
                     <div className="flex w-max items-stretch gap-6 animate-marquee">
                         {[...teachers, ...teachers].map((teacher, index) => (
                             <TeacherCard
-                                key={`${teacher.full_name}-${index}`}
+                                key={`${index}`}
                                 {...teacher}
                             />
                         ))}

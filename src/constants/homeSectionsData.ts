@@ -1,4 +1,4 @@
-import { SubjectHome, TeacherI } from "@/types";
+import { SubjectHome, TeacherI, TestimonyI } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -194,8 +194,60 @@ const teachers: TeacherI[] = [
 ];
 
 
+const testimonies: TestimonyI[] = [
+    {
+        full_name: "Kofi A.",
+        role: "Père d'une élève en 3e",
+        testimony:
+            "J'ai enfin une visibilité sur les cours de ma fille. Avant, je payais sans savoir si le professeur venait vraiment. Maintenant, tout est validé et transparent.",
+        avatar: "/images/testimonies/avatar-1.svg",
+        bg_color: "bg-poppy-orange",
+    },
+    {
+        full_name: "Fatou D.",
+        role: "Mère d'un élève en Terminale, Lomé",
+        testimony:
+            "Depuis que mon fils est suivi par D²Répétition, je vois vraiment la différence. Je reçois un compte rendu après chaque cours et je sais exactement ce qui a été travaillé. C'est rassurant.",
+        avatar: "/images/testimonies/avatar-2.svg",
+        bg_color: "bg-poppy-gold",
+    },
+    {
+        full_name: "Edem",
+        role: "Lycéen",
+        testimony:
+            "Le professeur que j'ai est vraiment patient. Il rédige un résumé après chaque cours que je peux relire ce qu'on a fait. Mes notes en maths ont nettement progressé.",
+        avatar: "/images/testimonies/avatar-3.svg",
+        bg_color: "bg-shade-cyan",
+    },
+    {
+        full_name: "Afi M.",
+        role: "Mère d'un élève en CM2",
+        testimony:
+            "Ma fille a repris confiance en elle. Les professeurs sont ponctuels, attentifs et les comptes rendus me permettent de suivre sa progression semaine après semaine.",
+        avatar: "/images/testimonies/avatar-4.svg",
+        bg_color: "bg-olive-green",
+    },
+    {
+        full_name: "Komlan K.",
+        role: "Parent d'un élève en 5e",
+        testimony:
+            "La plateforme est simple à utiliser. J'apprécie particulièrement les rapports détaillés après chaque séance et la réactivité de l'équipe.",
+        avatar: "/images/testimonies/avatar-5.svg",
+        bg_color: "bg-poppy-purple/90",
+    },
+    {
+        full_name: "Sandra E.",
+        role: "Élève en Première",
+        testimony:
+            "Les explications sont claires et adaptées à mon niveau. Je suis beaucoup plus à l'aise en physique et en mathématiques depuis le début des répétitions.",
+        avatar: "/images/testimonies/avatar-6.svg",
+        bg_color: "bg-poppy-pink",
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
-    teachers
+    teachers,
+    testimonies
 }
