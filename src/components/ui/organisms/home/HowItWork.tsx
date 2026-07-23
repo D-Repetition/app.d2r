@@ -16,7 +16,7 @@ const HowItWork = () => {
                           <Arrow className="fill-white opacity-100" />
                       </Button>
                   </div>
-                  <img src="/images/howItWork.png" className='h-[16vh]' alt="" />
+                  <img src="/images/howItWork.png" className='h-[18vh]' alt="" />
               </div>
               <div className="flex flex-col justify-between gap-[4vh]">
                   {

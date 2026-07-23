@@ -1,4 +1,4 @@
-import { HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
+import { FaqItem, HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -272,10 +272,68 @@ const howItWorksData: HowItWorksStep[] = [
     },
 ];
 
+const faqsData: FaqItem[] = [
+    {
+        question: "Validation de la séance",
+        answer:
+            "Retrouvez les réponses aux questions les plus fréquemment posées par les familles concernant l'inscription, le déroulement des cours et le suivi pédagogique proposé par D²Répétition.",
+        isOpen: true,
+    },
+    {
+        question: "Combien de temps faut-il pour obtenir un professeur ?",
+        answer:
+            "Après réception de votre demande d'inscription, notre équipe analyse les besoins de votre enfant et sélectionne le profil le plus adapté. Dans la plupart des cas, une proposition d'affectation est réalisée sous quelques jours ouvrés.",
+        isOpen: false,
+    },
+    {
+        question: "Comment choisissez-vous les enseignants ?",
+        answer:
+            "Tous nos enseignants sont sélectionnés selon plusieurs critères : leurs diplômes, leur expérience, leurs compétences pédagogiques, leur professionnalisme et leur engagement envers la réussite des élèves. Chaque candidature fait l'objet d'une évaluation avant toute intégration à notre équipe.",
+        isOpen: false,
+    },
+    {
+        question: "Les cours sont-ils uniquement à domicile ?",
+        answer:
+            "Notre accompagnement est principalement conçu pour les cours de répétition à domicile afin d'offrir un cadre de travail confortable et adapté à l'élève. D'autres modalités peuvent être étudiées selon les besoins et l'organisation mise en place par D²Répétition.",
+        isOpen: false,
+    },
+    {
+        question: "Comment suivre les progrès de mon enfant ?",
+        answer:
+            "Après chaque séance, le professeur rédige un compte rendu pédagogique détaillant les notions abordées, les difficultés rencontrées, les progrès observés et les recommandations pour la suite. Les parents disposent ainsi d'une vision claire et régulière de l'évolution de leur enfant.",
+        isOpen: false,
+    },
+    {
+        question: "Que contient le compte rendu pédagogique ?",
+        answer:
+            "Le compte rendu présente les objectifs de la séance, les notions travaillées, les exercices réalisés, les acquis observés, les points à renforcer ainsi que les recommandations du professeur pour les prochaines séances.",
+        isOpen: false,
+    },
+    {
+        question: "Les cours sont-ils adaptés au niveau de chaque élève ?",
+        answer:
+            "Nous intervenons dans les principales matières des programmes togolais, français et internationaux, notamment en Mathématiques, Physique-Chimie, SVT, Français, Anglais, Allemand, Espagnol et dans plusieurs autres disciplines selon les besoins.",
+        isOpen: false,
+    },
+    {
+        question: "Comment les parents sont-ils informés après les cours ?",
+        answer:
+            "La transparence fait partie de nos engagements. Les familles reçoivent les informations essentielles concernant les séances réalisées, les comptes rendus pédagogiques et l'évolution des apprentissages de leur enfant.",
+        isOpen: false,
+    },
+    {
+        question: "Comment puis-je inscrire mon enfant ?",
+        answer:
+            "Il suffit de remplir le formulaire d'inscription disponible sur la plateforme. Une fois votre demande reçue, notre équipe vous contacte afin d'analyser vos besoins et de mettre en place l'accompagnement le plus adapté.",
+        isOpen: false,
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
     teachers,
     testimonies,
-    howItWorksData
+    howItWorksData,
+    faqsData
 }

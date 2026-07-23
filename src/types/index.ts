@@ -46,3 +46,9 @@ export type HowItWorksStep = {
     title: string;
     description: string;
 };
+
+export type FaqItem = {
+    question: string;
+    answer: string;
+    isOpen: boolean;
+};

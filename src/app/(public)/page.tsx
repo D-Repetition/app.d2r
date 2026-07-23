@@ -1,4 +1,5 @@
 import AccompaniementAllKeySubject from "@/components/ui/organisms/home/AccompaniementAllKeySubject"
+import FAQ from "@/components/ui/organisms/home/FAQ"
 import Hero from "@/components/ui/organisms/home/Hero"
 import HowItWork from "@/components/ui/organisms/home/HowItWork"
 import Teachers from "@/components/ui/organisms/home/Teachers"
@@ -14,6 +15,7 @@ const page = () => {
       <Teachers />
       <WhatFamilySay />
       <HowItWork />
+      <FAQ />
     </>
   )
 }
