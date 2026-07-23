@@ -1,4 +1,4 @@
-import { FaqItem, HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
+import { CTASection, FaqItem, HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -329,11 +329,35 @@ const faqsData: FaqItem[] = [
     },
 ];
 
+const homeCtaSection: CTASection = {
+    title: "Prêt à offrir à votre enfant le suivi qu'il mérite ?",
+    description:
+        "Rejoignez les familles qui font confiance à D²Répétition pour accompagner la réussite scolaire de leurs enfants.",
+
+    background_image: "/images/cta/cta-1.png",
+
+    buttons: [
+        {
+            label: "Inscrire mon enfant",
+            href: "/inscription",
+            variant: "primary",
+            icon: "UserFace",
+        },
+        {
+            label: "Nous contacter",
+            href: "/contact",
+            variant: "secondary",
+            icon: "Call",
+        },
+    ],
+};
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
     teachers,
     testimonies,
     howItWorksData,
-    faqsData
+    faqsData,
+    homeCtaSection
 }

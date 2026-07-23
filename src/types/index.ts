@@ -52,3 +52,17 @@ export type FaqItem = {
     answer: string;
     isOpen: boolean;
 };
+
+export type CTAButton = {
+    label: string;
+    href: string;
+    variant: "primary" | "secondary";
+    icon: 'Arrow' | 'Folder' | 'Call' | 'UserFace';
+};
+
+export interface CTASection {
+    title: string;
+    description: string;
+    background_image: string;
+    buttons: CTAButton[];
+}
