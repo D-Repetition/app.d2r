@@ -1,4 +1,4 @@
-import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, TeacherI, TestimonyI, ValueSlide } from "@/types";
+import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, SupportCategory, TeacherI, TestimonyI, ValueSlide } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -9,7 +9,7 @@ const whyFamilyChooseUsSectionData = [
         buttonLabel: "Créer votre compte",
         buttonLabelColor: "text-white",
         buttonBackground: "bg-blue-navy",
-        cardBackgroundColor: "bg-blue-navy/5"
+        cardBackgroundColor: "bg-blue-navy/10"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const whyFamilyChooseUsSectionData = [
         buttonLabel: "Enregister vous",
         buttonLabelColor: "text-board-black",
         buttonBackground: "bg-shade-cyan",
-        cardBackgroundColor: "bg-shade-cyan/5"
+        cardBackgroundColor: "bg-shade-cyan/10"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const whyFamilyChooseUsSectionData = [
         buttonLabel: "Commencer un suivi",
         buttonLabelColor: "text-board-black",
         buttonBackground: "bg-olive-green",
-        cardBackgroundColor: "bg-olive-green/5"
+        cardBackgroundColor: "bg-olive-green/10"
     }
 ];
 
@@ -39,42 +39,42 @@ const subjectSectionData: SubjectHome[][] = [
             title: "Mathématiques",
             description: "Développez des bases solides et progressez avec une méthode adaptée à votre rythme.",
             teacher_number: 14,
-            bg_color: "bg-shade-cyan/5",
+            bg_color: "bg-shade-cyan/10",
             icon: "math.svg",
         },
         {
             title: "Physique-Chimie",
             description: "Comprenez les notions essentielles grâce à des explications simples et des exercices ciblés.",
             teacher_number: 12,
-            bg_color: "bg-blue-navy/5",
+            bg_color: "bg-blue-navy/10",
             icon: "ph.svg",
         },
         {
             title: "SVT",
             description: "Assimilez les concepts clés pour réussir les évaluations et les examens en toute confiance.",
             teacher_number: 10,
-            bg_color: "bg-board-black/5",
+            bg_color: "bg-board-black/10",
             icon: "svt.svg",
         },
         {
             title: "Anglais",
             description: "Progressez à l'oral et à l'écrit avec un accompagnement personnalisé.",
             teacher_number: 16,
-            bg_color: "bg-poppy-red/5",
+            bg_color: "bg-poppy-red/10",
             icon: "english.svg",
         },
         {
             title: "Français",
             description: "Renforcez votre expression écrite, votre grammaire et votre compréhension des textes.",
             teacher_number: 15,
-            bg_color: "bg-marigold-amber/5",
+            bg_color: "bg-marigold-amber/10",
             icon: "english.svg",
         },
         {
             title: "Espagnol",
             description: "Développez vos compétences linguistiques avec un apprentissage progressif et pratique.",
             teacher_number: 8,
-            bg_color: "bg-emerald-green/5",
+            bg_color: "bg-emerald-green/10",
             icon: "spanish.svg",
         },
     ],
@@ -83,14 +83,14 @@ const subjectSectionData: SubjectHome[][] = [
             title: "Histoire-Géographie",
             description: "Structurez vos connaissances et développez votre capacité d'analyse et de réflexion.",
             teacher_number: 11,
-            bg_color: "bg-board-black/5",
+            bg_color: "bg-board-black/10",
             icon: "history.svg",
         },
         {
             title: "Philosophie",
             description: "Apprenez à argumenter avec méthode et à construire des dissertations de qualité.",
             teacher_number: 9,
-            bg_color: "bg-board-black/5",
+            bg_color: "bg-board-black/10",
             icon: "philosophy.svg",
         },
         {
@@ -568,6 +568,57 @@ const slidesData: ValueSlide[] = [
     },
 ];
 
+const supportCategoriesData: SupportCategory[] = [
+    {
+        id: 1,
+        title: "Difficultés d'apprentissage",
+        description:
+            "Lecture, écriture, calcul, compréhension et raisonnement.",
+        backgroundColor: "bg-shade-cyan/10",
+        icon: "/images/challenges/Learning.png",
+    },
+    {
+        id: 2,
+        title: "Difficultés cognitives",
+        description:
+            "Concentration, mémorisation, organisation et autonomie.",
+        backgroundColor: "bg-olive-green/10",
+        icon: "/images/challenges/Brain.png",
+    },
+    {
+        id: 3,
+        title: "Difficultés scolaires",
+        description:
+            "Retard, baisse des résultats et préparation aux examens.",
+        backgroundColor: "bg-poppy-red/10",
+        icon: "/images/challenges/Bag.png",
+    },
+    {
+        id: 4,
+        title: "Confiance et motivation",
+        description:
+            "Stress, motivation, confiance en soi et implication.",
+        backgroundColor: "bg-blue-navy/10",
+        icon: "/images/challenges/Cup.png",
+    },
+    {
+        id: 5,
+        title: "Accompagnement des familles",
+        description:
+            "Suivi des progrès et communication avec les parents.",
+        backgroundColor: "bg-marigold-amber/10",
+        icon: "/images/challenges/Hug.png",
+    },
+    {
+        id: 6,
+        title: "Orientation scolaire",
+        description:
+            "Choix des séries, méthodes de travail et préparation de l'avenir.",
+        backgroundColor: "bg-emerald-green/10",
+        icon: "/images/challenges/Direction.png",
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
@@ -579,5 +630,6 @@ export {
     aboutCtaSection,
     footerSectionsData,
     navigationItemsData,
-    slidesData
+    slidesData,
+    supportCategoriesData
 }

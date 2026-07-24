@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurHistory = () => {
   return (
-    <div className='min-h-svh w-full bg-board-black relative'>
+    <section className='min-h-svh w-full bg-board-black relative'>
           <div className="w-full max-w-[90%] mx-auto min-h-svh flex flex-col items-start justify-between py-[6vh]">
               <div className="flex flex-col items-start justify-start gap-10.5">
                   <div className="flex flex-col items-start justify-start gap-2 text-white">
@@ -19,7 +19,7 @@ const OurHistory = () => {
               <img src="/images/curve-u.png" className='h-[16vh]' alt="Curve" />
           </div>
           <img src="/images/curve.png" className='absolute top-0 bottom-0 right-0 h-svh' alt="Curve" />
-    </div>
+      </section>
   )
 }
 

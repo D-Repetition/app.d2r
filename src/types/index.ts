@@ -110,3 +110,11 @@ export interface ValueSlide {
 
     statistics: Statistic[];
 }
+
+export interface SupportCategory {
+    id: number;
+    title: string;
+    description: string;
+    backgroundColor: string;
+    icon: string;
+}
