@@ -29,7 +29,7 @@ const WhoWeAreCarousel: React.FC = () => {
 
   return (
     <div
-      className='w-[60vw] h-[50vh] grid grid-rows-[3fr_1fr] gap-[3vh]'
+      className='w-[60vw] min-h-[50vh] flex flex-col gap-[3vh]'
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -93,13 +93,13 @@ const WhoWeAreCarousel: React.FC = () => {
             type="button"
             onClick={() => goToIndex(index)}
             className={[
-              "border-t border-t-2 pt-4 px-6 text-left cursor-pointer transition-colors duration-300",
+              "border-t border-t-2 pt-4 px-4 text-left cursor-pointer transition-colors duration-300",
               index === activeIndex ? "border-t-board-black" : "border-t-board-black/5",
             ].join(" ")}
           >
             <div className="flex flex-col items-start justify-start gap-2">
               <div className="text-[12px]">{nid.title}</div>
-              <div>{nid.description}</div>
+              <div className='text-[14px]'>{nid.description}</div>
             </div>
           </button>
         ))}

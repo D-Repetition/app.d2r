@@ -118,3 +118,11 @@ export interface SupportCategory {
     backgroundColor: string;
     icon: string;
 }
+
+export interface ValueItem {
+    id: number;
+    title: string;
+    description: string;
+    backgroundColor: string;
+    icon: string;
+}

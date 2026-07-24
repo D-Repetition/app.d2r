@@ -6,7 +6,7 @@ const OurMissionAndVision = () => {
             <img src="/images/curve-cyan.png" className='absolute left-0 bottom-0 h-[30vh]' alt="Curve cyan" />
             <div className="w-full max-w-[75%] mx-auto min-h-svh flex flex-col items-center justify-between py-[6vh] gap-20">
                 <div className="text-[1.4vw] text-center">Mission & Vision</div>
-                <div className="w-full h-[85vh] grid grid-cols-2 gap-[10vw]">
+                <div className="w-full h-[85vh] grid grid-cols-2 gap-[8vw]">
                     <div className="flex flex-col items-start">
                         <div className="flex flex-col items-start justify-start gap-8 lg:gap-[3vh]">
                             <div className="flex flex-col items-start justify-start gap-1">

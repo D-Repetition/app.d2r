@@ -1,4 +1,4 @@
-import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, SupportCategory, TeacherI, TestimonyI, ValueSlide } from "@/types";
+import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, SupportCategory, TeacherI, TestimonyI, ValueItem, ValueSlide } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -619,6 +619,57 @@ const supportCategoriesData: SupportCategory[] = [
     },
 ];
 
+const valuesData: ValueItem[] = [
+    {
+        id: 1,
+        title: "Excellence",
+        description:
+            "Nous recherchons en permanence la qualité dans chacune de nos prestations.",
+        backgroundColor: "bg-[#ECECEA]",
+        icon: "/images/values/Excellence.png",
+    },
+    {
+        id: 2,
+        title: "Professionnalisme",
+        description:
+            "Nous intervenons avec rigueur, ponctualité et responsabilité.",
+        backgroundColor: "bg-[#ECEBE6]",
+        icon: "/images/values/Professionnalisme.png",
+    },
+    {
+        id: 3,
+        title: "Innovation",
+        description:
+            "Nous intégrons les neurosciences éducatives et les technologies numériques.",
+        backgroundColor: "bg-[#F4E8EB]",
+        icon: "/images/values/Innovation.png",
+    },
+    {
+        id: 4,
+        title: "Intégrité",
+        description:
+            "Nous agissons avec honnêteté, transparence et éthique.",
+        backgroundColor: "bg-[#E8E8EC]",
+        icon: "/images/values/Integrity.png",
+    },
+    {
+        id: 5,
+        title: "Engagement",
+        description:
+            "Nous nous impliquons pleinement dans la réussite de chaque élève.",
+        backgroundColor: "bg-[#F2E8E6]",
+        icon: "/images/values/Engagement.png",
+    },
+    {
+        id: 6,
+        title: "Respect",
+        description:
+            "Nous plaçons l'écoute et le respect au cœur de nos relations.",
+        backgroundColor: "bg-[#ECE8E2]",
+        icon: "/images/values/Respect.png",
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
@@ -631,5 +682,6 @@ export {
     footerSectionsData,
     navigationItemsData,
     slidesData,
-    supportCategoriesData
+    supportCategoriesData,
+    valuesData
 }
