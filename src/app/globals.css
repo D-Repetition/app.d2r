@@ -208,3 +208,8 @@ body {
 .black-gradient {
   background: linear-gradient(180deg, rgba(10, 7, 0, 0.00) 0%, rgba(10, 7, 0, 0.36) 29.33%, rgba(10, 7, 0, 0.48) 58.65%);
 }
+
+.text-bold-white {
+  font-weight: 600;
+  color: #FFFFFF;
+}

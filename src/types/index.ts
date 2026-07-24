@@ -76,3 +76,37 @@ export interface FooterSection {
     title: string;
     items: FooterItem[];
 }
+
+export interface Statistic {
+    id: number;
+    value: string;
+    label: string;
+}
+
+export interface Statistic {
+    id: number;
+    value: string;
+    label: string;
+}
+
+export interface NavigationItem {
+    id: number;
+    title: string;
+    description: string;
+    active: boolean;
+}
+
+export interface ValueSlide {
+    id: number;
+    image: string;
+    title: string;
+    active: boolean;
+
+    theme: "primary" | "dark" | "olive";
+
+    backgroundColor: string;
+    textColor: string;
+    dividerColor: string;
+
+    statistics: Statistic[];
+}

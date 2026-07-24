@@ -1,4 +1,4 @@
-import { CTASection, FaqItem, FooterSection, HowItWorksStep, SubjectHome, TeacherI, TestimonyI } from "@/types";
+import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, TeacherI, TestimonyI, ValueSlide } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -487,6 +487,87 @@ const footerSectionsData: FooterSection[] = [
     },
 ];
 
+
+const navigationItemsData: NavigationItem[] = [
+    {
+        id: 1,
+        title: "Une nouvelle vision des cours de répétition",
+        description:
+            "Nous accompagnons les familles avec un suivi scolaire transparent, organisé et de qualité.",
+        active: true,
+    },
+    {
+        id: 2,
+        title: "Accompagner la réussite de chaque élève",
+        description:
+            "Un accompagnement personnalisé, assuré par des professeurs qualifiés et un suivi pédagogique rigoureux.",
+        active: false,
+    },
+    {
+        id: 3,
+        title: "Transparence et confiance au quotidien",
+        description:
+            "Chaque séance est tracée, validée et accessible aux parents depuis leur espace personnel.",
+        active: false,
+    },
+];
+
+const slidesData: ValueSlide[] = [
+    {
+        id: 1,
+        image: "/images/value-1.png",
+        title: "Une nouvelle vision des cours de répétition à domicile",
+        active: true,
+
+        theme: "primary",
+        backgroundColor: "bg-poppy-pink",
+        textColor: "text-board-black",
+        dividerColor: "border-b border-b-board-black border-b-[0.25px]",
+
+        statistics: [
+            { id: 1, value: "458+", label: "Élèves suivis" },
+            { id: 2, value: "35+", label: "Professeurs actifs" },
+            { id: 3, value: "10+", label: "Matières proposées" },
+        ],
+    },
+
+    {
+        id: 2,
+        image: "/images/value-2.png",
+        title: "Accompagner chaque élève vers sa réussite",
+        active: false,
+
+        theme: "dark",
+        backgroundColor: "bg-board-black",
+        textColor: "text-white",
+        dividerColor: "border-b border-b-white border-b-[0.25px]",
+
+        statistics: [
+            { id: 1, value: "100%", label: "Professeurs validés" },
+            { id: 2, value: "100%", label: "Cours suivis" },
+            { id: 3, value: "24h", label: "Temps de réponse" },
+        ],
+    },
+
+    {
+        id: 3,
+        image: "/images/value-3.png",
+        title: "Transparence, qualité et confiance au quotidien",
+        active: false,
+
+        theme: "olive",
+        backgroundColor: "bg-olive-green",
+        textColor: "text-board-black",
+        dividerColor: "border-b border-b-board-black border-b-[0.25px]",
+
+        statistics: [
+            { id: 1, value: "100%", label: "Comptes rendus" },
+            { id: 2, value: "100%", label: "Séances validées" },
+            { id: 3, value: "98%", label: "Satisfaction moyenne" },
+        ],
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
@@ -496,5 +577,7 @@ export {
     faqsData,
     homeCtaSection,
     aboutCtaSection,
-    footerSectionsData
+    footerSectionsData,
+    navigationItemsData,
+    slidesData
 }
