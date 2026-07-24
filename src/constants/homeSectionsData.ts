@@ -625,7 +625,7 @@ const valuesData: ValueItem[] = [
         title: "Excellence",
         description:
             "Nous recherchons en permanence la qualité dans chacune de nos prestations.",
-        backgroundColor: "bg-[#ECECEA]",
+        backgroundColor: "bg-shade-cyan/10",
         icon: "/images/values/Excellence.png",
     },
     {
@@ -633,7 +633,7 @@ const valuesData: ValueItem[] = [
         title: "Professionnalisme",
         description:
             "Nous intervenons avec rigueur, ponctualité et responsabilité.",
-        backgroundColor: "bg-[#ECEBE6]",
+        backgroundColor: "bg-olive-green/10",
         icon: "/images/values/Professionnalisme.png",
     },
     {
@@ -641,7 +641,7 @@ const valuesData: ValueItem[] = [
         title: "Innovation",
         description:
             "Nous intégrons les neurosciences éducatives et les technologies numériques.",
-        backgroundColor: "bg-[#F4E8EB]",
+        backgroundColor: "bg-poppy-pink/10",
         icon: "/images/values/Innovation.png",
     },
     {
@@ -649,7 +649,7 @@ const valuesData: ValueItem[] = [
         title: "Intégrité",
         description:
             "Nous agissons avec honnêteté, transparence et éthique.",
-        backgroundColor: "bg-[#E8E8EC]",
+        backgroundColor: "bg-board-black/10",
         icon: "/images/values/Integrity.png",
     },
     {
@@ -657,7 +657,7 @@ const valuesData: ValueItem[] = [
         title: "Engagement",
         description:
             "Nous nous impliquons pleinement dans la réussite de chaque élève.",
-        backgroundColor: "bg-[#F2E8E6]",
+        backgroundColor: "bg-poppy-red/10",
         icon: "/images/values/Engagement.png",
     },
     {
@@ -665,7 +665,7 @@ const valuesData: ValueItem[] = [
         title: "Respect",
         description:
             "Nous plaçons l'écoute et le respect au cœur de nos relations.",
-        backgroundColor: "bg-[#ECE8E2]",
+        backgroundColor: "bg-poppy-gold/10",
         icon: "/images/values/Respect.png",
     },
 ];
