@@ -352,6 +352,29 @@ const homeCtaSection: CTASection = {
     ],
 };
 
+const aboutCtaSection: CTASection = {
+    title: "Prêt à offrir un accompagnement d'excellence à votre enfant ?",
+    description:
+        "Rejoignez les familles qui font confiance à D²Répétition pour accompagner la réussite scolaire de leurs enfants.",
+
+    background_image: "/images/cta/cta-2.png",
+
+    buttons: [
+        {
+            label: "Inscrire mon enfant",
+            href: "/inscription",
+            variant: "primary",
+            icon: "UserFace",
+        },
+        {
+            label: "Nous contacter",
+            href: "/contact",
+            variant: "secondary",
+            icon: "Call",
+        },
+    ],
+};
+
 const footerSectionsData: FooterSection[] = [
     {
         title: "Coordonnées",
@@ -472,5 +495,6 @@ export {
     howItWorksData,
     faqsData,
     homeCtaSection,
+    aboutCtaSection,
     footerSectionsData
 }
