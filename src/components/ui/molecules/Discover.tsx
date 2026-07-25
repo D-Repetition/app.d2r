@@ -15,7 +15,7 @@ const Discover = () => {
                         Nos matières
                     </div>
                 </Link>
-                <Link href="/professeurs" className="">
+                <Link href="/enseignants" className="">
                     <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
                         Nos professeurs
                     </div>

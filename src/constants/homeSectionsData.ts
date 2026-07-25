@@ -398,6 +398,23 @@ const subjectCtaSection: CTASection = {
     ],
 };
 
+const teacherCtaSection: CTASection = {
+    title: "Vous souhaitez transmettre votre savoir ?",
+    description:
+        "Nous recherchons des enseignants passionnés, compétents et engagés dans la réussite des élèves.",
+
+    background_image: "/images/cta/cta-4.png",
+
+    buttons: [
+        {
+            label: "Déposer ma candidature",
+            href: "/devenir-un-enseignant",
+            variant: "primary",
+            icon: "Folder",
+        }
+    ],
+};
+
 
 const footerSectionsData: FooterSection[] = [
     {
@@ -434,13 +451,13 @@ const footerSectionsData: FooterSection[] = [
             },
             {
                 label: "Nos professeurs",
-                href: "/professeurs",
+                href: "/enseignants",
             },
             {
                 label: "Comment ça marche",
                 href: "/comment-ca-marche",
             },
-            {
+             {
                 label: "Témoignages",
                 href: "/#temoignages",
             },
@@ -803,6 +820,7 @@ export {
     homeCtaSection,
     aboutCtaSection,
     subjectCtaSection,
+    teacherCtaSection,
     footerSectionsData,
     navigationItemsData,
     slidesData,
