@@ -66,9 +66,13 @@ const TeacherCard = (props: TeacherCardI) => {
                             }
                         </div>
                     </div>
-                    <div className="flex items-center justify-between relative z-1">
+                    <div className="flex items-center justify-between relative z-1 gap-4">
                         <div className="flex flex-col gap-1/2">
-                            <div className="simpleText2 text-white">{props.full_name}</div>
+                            <div className="flex items-center justify-start gap-2"><div className="simpleText2 text-white">{props.full_name}</div>
+                                {
+                                    props.isTrueCard && <img src="/images/verify.png" className='' alt="verify png" />
+                                }
+                            </div>
                             <div className="small text-white/80">{ props.bio }</div>
                         </div>
                         <div className="w-12 h-7 shrink-0 border border-2 border-white flex items-center justify-center rounded-full">

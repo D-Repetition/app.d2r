@@ -4,7 +4,7 @@ import React from 'react'
 import SearchField from '../../molecules/SearchField';
 import Round from '../../atomes/Round';
 import Button from '../../atomes/Button';
-import { teachers } from '@/constants/homeSectionsData'
+import { teacherCtaSection, teachers } from '@/constants/homeSectionsData'
 import { ChevronDown } from '@/components/assets/icons';
 import TeacherCard from '../../molecules/TeacherCard';
 
@@ -28,6 +28,7 @@ const TeacherListSection = () => {
                           className='w-full!'
                           key={`${index}`}
                           {...teacher}
+                          isTrueCard={true}
                       />
                   ))}
               </div>
