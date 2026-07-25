@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Button from '../../atomes/Button'
 
 const OurTeam = () => {
     return (
@@ -17,8 +18,20 @@ const OurTeam = () => {
                             <img src="/images/cta/cta-3.png" className='w-full h-full object-cover object-center' alt="" />
                         </div>
                         <img src="/images/home-fly.png" className="z-100 h-[14vh] rotate-z-10 rotate-y-180 absolute top-6 right-12" alt="Home fly" />
-                        <div className="flex items-center justify-start gap-20.5 relative z-100">
-
+                        <div className="flex items-center justify-start gap-20.5 relative z-100 w-[60%]">
+                            <div className="h-[18vw] w-[16vw] shrink-0 rounded-lg overflow-hidden">
+                                <img src="/images/team/d2.png" className='w-full h-full object-cover object-center' alt="D2" />
+                            </div>
+                            <div className="flex flex-col items-start justify-center gap-16">
+                                <div className="flex flex-col items-start justify-center">
+                                    <Button className="cursor-default! bg-poppy-red/30 text-poppy-red border-2 border-poppy-red max-lg:w-full">
+                                        <div className="">Direction Générale</div>
+                                    </Button>
+                                    <h3 className="lg:text-[2vw] font-dm-serif">Damparou DANFAI</h3>
+                                    <div className="text-[1.4vw] text-start">Fondateur & Directeur Général</div>
+                                </div>
+                                <div className="w-full lg:text-[1vw]">Certifié en Neurosciences Appliquées et Santé Cérébrale, il pilote la stratégie de D²Répétition, supervise les orientations pédagogiques et développe des solutions éducatives innovantes.</div>
+                            </div>
                         </div>
                     </div>
                     <div className="flex items-center justify-center w-full gap-2">
