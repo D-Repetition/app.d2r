@@ -415,6 +415,29 @@ const teacherCtaSection: CTASection = {
     ],
 };
 
+const howItWorkCtaSection: CTASection = {
+    title: "Prêt à commencer l'accompagnement de votre enfant ?",
+    description:
+        "Notre équipe vous accompagne dès votre demande d'inscription et reste à vos côtés tout au long du parcours scolaire.",
+
+    background_image: "/images/cta/cta-4.png",
+
+    buttons: [
+        {
+            label: "Inscrire mon enfant",
+            href: "/devenir-un-enseignant",
+            variant: "primary",
+            icon: "UserFace",
+        },
+        {
+            label: "Nous contactez",
+            href: "/nous-contactez",
+            variant: "secondary",
+            icon: "Call",
+        }
+    ],
+};
+
 
 const footerSectionsData: FooterSection[] = [
     {
@@ -817,10 +840,13 @@ export {
     testimonies,
     howItWorksData,
     faqsData,
+
     homeCtaSection,
     aboutCtaSection,
     subjectCtaSection,
     teacherCtaSection,
+    howItWorkCtaSection,
+
     footerSectionsData,
     navigationItemsData,
     slidesData,

@@ -20,7 +20,7 @@ const Discover = () => {
                         Nos professeurs
                     </div>
                 </Link>
-                <Link href="/comment" className="">
+                <Link href="/comment-ca-marche" className="">
                     <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
                         Comment ça marche
                     </div>
