@@ -375,6 +375,30 @@ const aboutCtaSection: CTASection = {
     ],
 };
 
+const subjectCtaSection: CTASection = {
+    title: "Vous ne trouvez pas la matière recherchée ?",
+    description:
+        "Notre équipe étudie chaque demande et peut vous proposer un accompagnement adapté selon les besoins de votre enfant.",
+
+    background_image: "/images/cta/cta-3.png",
+
+    buttons: [
+        {
+            label: "Nous contacter",
+            href: "/nous-contacter",
+            variant: "primary",
+            icon: "Call",
+        },
+        {
+            label: "Inscrire mon enfant",
+            href: "/inscrire",
+            variant: "secondary",
+            icon: "UserFace",
+        },
+    ],
+};
+
+
 const footerSectionsData: FooterSection[] = [
     {
         title: "Coordonnées",
@@ -679,6 +703,7 @@ export {
     faqsData,
     homeCtaSection,
     aboutCtaSection,
+    subjectCtaSection,
     footerSectionsData,
     navigationItemsData,
     slidesData,
