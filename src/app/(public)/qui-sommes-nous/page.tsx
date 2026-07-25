@@ -1,6 +1,7 @@
 import Hero from "@/components/ui/organisms/about/Hero"
 import KPI from "@/components/ui/organisms/about/KPI"
 import OurChallenges from "@/components/ui/organisms/about/OurChallenges"
+import OurCommitment from "@/components/ui/organisms/about/OurCommitment"
 import OurHistory from "@/components/ui/organisms/about/OurHistory"
 import OurMissionAndVision from "@/components/ui/organisms/about/OurMissionAndVision"
 import OurTeam from "@/components/ui/organisms/about/OurTeam"
@@ -19,6 +20,7 @@ const page = () => {
             <OurValues />
             <OurTeam />
             <KPI />
+            <OurCommitment />
             <CTA {...aboutCtaSection} />
         </>
     )
