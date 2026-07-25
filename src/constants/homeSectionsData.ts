@@ -1,4 +1,4 @@
-import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, SupportCategory, TeacherI, TestimonyI, ValueItem, ValueSlide } from "@/types";
+import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, SubjectItself, SupportCategory, TeacherI, TestimonyI, ValueItem, ValueSlide } from "@/types";
 
 const whyFamilyChooseUsSectionData = [
     {
@@ -694,6 +694,105 @@ const valuesData: ValueItem[] = [
     },
 ];
 
+const subjectsData: SubjectItself[] = [
+    {
+        title: "Mathématiques",
+        description:
+            "Développez des bases solides et progressez avec une méthode adaptée au rythme de chaque élève.",
+        teacher_number: 14,
+        bg_color: "bg-[#F7F7F2]",
+        tags: ["Primary", "College", "HighSchool"],
+    },
+    {
+        title: "Physique-Chimie",
+        description:
+            "Assimilez les notions scientifiques grâce à des explications claires, des exercices pratiques et un suivi personnalisé.",
+        teacher_number: 10,
+        bg_color: "bg-[#EFFAF7]",
+        tags: ["College", "HighSchool"],
+    },
+    {
+        title: "Sciences de la Vie et de la Terre (SVT)",
+        description:
+            "Approfondissez vos connaissances en biologie et en géologie avec une méthode adaptée à votre programme.",
+        teacher_number: 9,
+        bg_color: "bg-[#F5F7FC]",
+        tags: ["College", "HighSchool"],
+    },
+    {
+        title: "Anglais",
+        description:
+            "Développez votre compréhension, votre expression orale et votre maîtrise de la langue grâce à un accompagnement progressif.",
+        teacher_number: 8,
+        bg_color: "bg-[#FDF4F6]",
+        tags: ["Primary", "College", "HighSchool"],
+    },
+    {
+        title: "Français",
+        description:
+            "Renforcez la compréhension, l'expression écrite et orale ainsi que la maîtrise de la langue.",
+        teacher_number: 9,
+        bg_color: "bg-[#F2F8FF]",
+        tags: ["Primary", "College", "HighSchool"],
+    },
+    {
+        title: "Histoire-Géographie",
+        description:
+            "Renforcez vos connaissances, développez votre esprit d'analyse et préparez efficacement vos évaluations.",
+        teacher_number: 7,
+        bg_color: "bg-[#FDF4F2]",
+        tags: ["College", "HighSchool"],
+    },
+    {
+        title: "Philosophie",
+        description:
+            "Maîtrisez la dissertation, l'explication de texte et les grands courants de pensée.",
+        teacher_number: 5,
+        bg_color: "bg-[#F6F2FA]",
+        tags: ["HighSchool"],
+    },
+    {
+        title: "Espagnol",
+        description:
+            "Progressez en compréhension, expression orale et écrite grâce à une pédagogie interactive.",
+        teacher_number: 4,
+        bg_color: "bg-[#FFF7EF]",
+        tags: ["College", "HighSchool"],
+    },
+    {
+        title: "Allemand",
+        description:
+            "Développez vos compétences linguistiques avec des cours adaptés à votre niveau.",
+        teacher_number: 3,
+        bg_color: "bg-[#F5F5F5]",
+        tags: ["HighSchool"],
+    },
+    {
+        title: "Informatique",
+        description:
+            "Initiez-vous à l'algorithmique, à la programmation et aux outils numériques essentiels.",
+        teacher_number: 6,
+        bg_color: "bg-[#EEF6FF]",
+        tags: ["College", "HighSchool"],
+    },
+    {
+        title: "Économie",
+        description:
+            "Comprenez les mécanismes économiques et développez votre capacité d'analyse.",
+        teacher_number: 5,
+        bg_color: "bg-[#F5F8EC]",
+        tags: ["HighSchool"],
+    },
+    {
+        title: "Comptabilité",
+        description:
+            "Apprenez les fondamentaux de la comptabilité et de la gestion financière.",
+        teacher_number: 4,
+        bg_color: "bg-[#F3F1FD]",
+        tags: ["HighSchool"],
+    },
+];
+
 export {
     whyFamilyChooseUsSectionData,
     subjectSectionData,
@@ -708,5 +807,6 @@ export {
     navigationItemsData,
     slidesData,
     supportCategoriesData,
-    valuesData
+    valuesData,
+    subjectsData
 }

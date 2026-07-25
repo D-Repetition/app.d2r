@@ -20,7 +20,7 @@ const HomeSubject = (props: HomeSubjectI) => {
 
 const Subject = (props: SubjectItselfI) => {
     return (
-        <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-start gap-2', props.className, props.bg_color].join(" ")}>
+        <div {...props} className={['px-8 py-12 rounded-lg flex flex-col items-start justify-start gap-2', props.className, props.bg_color].join(" ")}>
             {
                 props.tags.length > 0 && <div className="flex gap-1 items-start justify-start">
                     {
@@ -28,13 +28,13 @@ const Subject = (props: SubjectItselfI) => {
                             return (
                                 <>
                                     {
-                                        t === 'Primary' && <div className={["p-2.5 border bg-poppy-red/5 border-poppy-red text-poppy-red rounded-full"].join(" ")}>Primaire</div>
+                                        t === 'Primary' && <div className={["py-1 px-2.5 text-[.8rem] border bg-poppy-red/5 border-poppy-red text-poppy-red rounded-full"].join(" ")}>Primaire</div>
                                     }
                                     {
-                                        t === 'College' && <div className={["p-2.5 border bg-olive-green/5 border-olive-green text-olive-green rounded-full"].join(" ")}>Collège</div>
+                                        t === 'College' && <div className={["py-1 px-2.5 text-[.8rem] border bg-olive-green/5 border-olive-green text-olive-green rounded-full"].join(" ")}>Collège</div>
                                     }
                                     {
-                                        t === 'HighSchool' && <div className={["p-2.5 border bg-shade-cyan/5 border-shade-cyan text-shade-cyan rounded-full"].join(" ")}>Lycée</div>
+                                        t === 'HighSchool' && <div className={["py-1 px-2.5 text-[.8rem] border bg-shade-cyan/5 border-shade-cyan text-shade-cyan rounded-full"].join(" ")}>Lycée</div>
                                     }
                                 </>
                             );
@@ -43,10 +43,10 @@ const Subject = (props: SubjectItselfI) => {
                 </div>
             }
             <div className="flex flex-col gap-3">
-                <div className="">{props.title}</div>
-                <div className="">{props.description}</div>
+                <div className="titleInter">{props.title}</div>
+                <div className="text-board-black/40">{props.description}</div>
             </div>
-            <div className="flex items-center justify-start gap-1"><Students className='fill-board-black h-7' />{props.teacher_number} Enseignants</div>
+            <div className="flex items-center justify-start gap-1 mt-3"><Students className='fill-board-black h-7' />{props.teacher_number} Enseignants</div>
         </div>
     )
 }
