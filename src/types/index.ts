@@ -29,6 +29,7 @@ export interface TeacherI {
     levels: string[];
     subjects: string[];
     bio: string;
+    isTrueCard?: boolean;
 }
 
 /* Testimonies */
