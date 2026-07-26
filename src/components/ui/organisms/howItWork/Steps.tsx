@@ -61,7 +61,7 @@ const Steps = () => {
                         </div>
                     </div>
                     <div className=" flex items-end justify-end">
-                        <img src="/images/how-it-work/illustration-1.png" className="h-[80vh]" alt="How it work illustration" />
+                        <img src="/images/how-it-work/illustration.png" className="h-[80vh]" alt="How it work illustration" />
                     </div>
                 </div>
             </div>
