@@ -1,4 +1,5 @@
 import CTA from '@/components/ui/organisms/CTA'
+import FAQ from '@/components/ui/organisms/howItWork/FAQ'
 import Hero from '@/components/ui/organisms/howItWork/Hero'
 import Method from '@/components/ui/organisms/howItWork/Method'
 import Steps from '@/components/ui/organisms/howItWork/Steps'
@@ -13,6 +14,7 @@ const page = () => {
             <Steps />
             <Tracking />
             <Method />
+            <FAQ />
             <CTA {...howItWorkCtaSection} />
         </>
     )

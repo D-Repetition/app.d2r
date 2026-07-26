@@ -329,6 +329,63 @@ const faqsData: FaqItem[] = [
     },
 ];
 
+const howItWorksFaqsData: FaqItem[] = [
+    {
+        question: "Comment effectuer une demande de cours ?",
+        answer:
+            "Commencez par remplir le formulaire de demande en indiquant le niveau scolaire de l'élève, les matières concernées, vos disponibilités ainsi que toute information utile. Ces éléments nous permettent de préparer un accompagnement adapté.",
+        isOpen: true,
+    },
+    {
+        question: "Comment analysons-nous votre demande ?",
+        answer:
+            "Notre équipe étudie chaque demande afin de comprendre les besoins de l'élève, ses objectifs, ses difficultés éventuelles et les contraintes d'organisation. Cette analyse permet de sélectionner le profil d'enseignant le plus pertinent.",
+        isOpen: false,
+    },
+    {
+        question: "Comment le professeur est-il sélectionné ?",
+        answer:
+            "Nous choisissons un enseignant qualifié selon la matière, le niveau scolaire, la localisation, les disponibilités et les objectifs pédagogiques. Chaque professeur est recruté selon des critères stricts de compétence et de professionnalisme.",
+        isOpen: false,
+    },
+    {
+        question: "Comment la première séance est-elle organisée ?",
+        answer:
+            "Une fois le professeur validé, nous planifions la première séance en accord avec la famille. Cette rencontre permet d'établir un premier contact, d'évaluer les besoins de l'élève et de définir les objectifs de l'accompagnement.",
+        isOpen: false,
+    },
+    {
+        question: "Comment se déroulent les séances de répétition ?",
+        answer:
+            "Chaque séance est préparée selon les besoins de l'élève. Le professeur adapte sa pédagogie, travaille les notions du programme, propose des exercices ciblés et accompagne progressivement l'élève vers ses objectifs.",
+        isOpen: false,
+    },
+    {
+        question: "Comment les parents suivent-ils l'évolution de leur enfant ?",
+        answer:
+            "Après chaque séance, un compte rendu pédagogique est rédigé. Les parents peuvent consulter les notions étudiées, les progrès réalisés, les difficultés rencontrées ainsi que les recommandations pour les prochaines séances.",
+        isOpen: false,
+    },
+    {
+        question: "Comment les progrès sont-ils évalués ?",
+        answer:
+            "Tout au long de l'accompagnement, le professeur évalue régulièrement les acquis de l'élève grâce à des exercices, des observations et des bilans pédagogiques afin d'ajuster la méthode de travail lorsque cela est nécessaire.",
+        isOpen: false,
+    },
+    {
+        question: "Peut-on modifier le planning ou changer de professeur ?",
+        answer:
+            "Oui. En cas de besoin, notre équipe peut réorganiser les horaires des séances ou proposer un nouvel enseignant afin de garantir un accompagnement toujours adapté à la situation de l'élève.",
+        isOpen: false,
+    },
+    {
+        question: "Quand l'accompagnement prend-il fin ?",
+        answer:
+            "L'accompagnement se poursuit aussi longtemps que nécessaire. Les objectifs sont réévalués régulièrement avec la famille afin de déterminer le moment le plus approprié pour mettre fin au suivi ou poursuivre les séances.",
+        isOpen: false,
+    },
+];
+
 const homeCtaSection: CTASection = {
     title: "Prêt à offrir à votre enfant le suivi qu'il mérite ?",
     description:
@@ -840,6 +897,7 @@ export {
     testimonies,
     howItWorksData,
     faqsData,
+    howItWorksFaqsData,
 
     homeCtaSection,
     aboutCtaSection,
