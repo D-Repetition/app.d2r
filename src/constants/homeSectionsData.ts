@@ -420,7 +420,7 @@ const howItWorkCtaSection: CTASection = {
     description:
         "Notre équipe vous accompagne dès votre demande d'inscription et reste à vos côtés tout au long du parcours scolaire.",
 
-    background_image: "/images/cta/cta-4.png",
+    background_image: "/images/cta/cta-1.png",
 
     buttons: [
         {
