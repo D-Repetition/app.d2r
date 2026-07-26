@@ -386,6 +386,115 @@ const howItWorksFaqsData: FaqItem[] = [
     },
 ];
 
+const faqFaqsData: FaqItem[] = [
+    {
+        question: "Qu'est-ce que D²Répétition ?",
+        answer:
+            "<p>D²Répétition est une structure spécialisée dans l'accompagnement scolaire personnalisé à domicile. Nous proposons des cours particuliers, un suivi pédagogique rigoureux et des méthodes d'apprentissage innovantes basées sur les neurosciences éducatives afin d'améliorer durablement les performances scolaires.</p>",
+        isOpen: true,
+    },
+    {
+        question: "À quels niveaux intervenez-vous ?",
+        answer:
+            "<p>Nous accompagnons les élèves :</p><ul><li>Préscolaire</li><li>Primaire</li><li>Collège</li><li>Lycée</li><li>Étudiants (selon les disciplines)</li><li>Adultes pour l'apprentissage des langues</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Quelles matières enseignez-vous ?",
+        answer:
+            "<p>Nos matières principales sont :</p><ul><li>Mathématiques</li><li>Physique-Chimie (PCT)</li><li>Sciences de la Vie et de la Terre (SVT)</li><li>Anglais</li></ul><p>Nous proposons également toutes les autres matières des programmes :</p><ul><li>Togolais</li><li>Français</li><li>International</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Quelles langues proposez-vous ?",
+        answer:
+            "<p>Nous proposons des cours en :</p><ul><li>Français</li><li>Anglais</li><li>Allemand</li><li>Espagnol</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Les cours se déroulent où ?",
+        answer:
+            "<p>Les cours peuvent être organisés :</p><ul><li>À domicile.</li><li>En ligne.</li><li>Dans tout autre lieu convenu entre les parties.</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Comment choisissez-vous les enseignants ?",
+        answer:
+            "<ul><li>Étude du dossier.</li><li>Vérification des diplômes.</li><li>Entretien.</li><li>Évaluation pédagogique.</li><li>Validation par la direction.</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Comment se déroule l'inscription ?",
+        answer:
+            "<p>L'inscription comprend :</p><ol><li>La prise de contact.</li><li>L'analyse des besoins de l'élève.</li><li>Le choix des matières.</li><li>L'affectation d'un enseignant.</li><li>Le démarrage des cours.</li></ol>",
+        isOpen: false,
+    },
+    {
+        question: "Comment suivez-vous les progrès de l'élève ?",
+        answer:
+            "<p>Chaque élève bénéficie :</p><ul><li>d'un suivi pédagogique personnalisé ;</li><li>d'un compte rendu après chaque séance ;</li><li>d'évaluations régulières ;</li><li>de rapports périodiques transmis aux parents.</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Les parents peuvent-ils suivre les cours ?",
+        answer:
+            "<p>Oui. Grâce à la plateforme D²Répétition, les parents peuvent consulter :</p><ul><li>le planning des cours ;</li><li>les comptes rendus ;</li><li>les progrès de leur enfant ;</li><li>les statistiques ;</li><li>les paiements ;</li><li>les notifications.</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Que se passe-t-il si un professeur est absent ?",
+        answer:
+            "<p>En cas d'absence, D²Répétition informe rapidement la famille et organise le report du cours ou le remplacement de l'enseignant dans les meilleurs délais.</p>",
+        isOpen: false,
+    },
+    {
+        question: "Comment les cours sont-ils validés ?",
+        answer:
+            "<p>À la fin de chaque séance :</p><ul><li>le professeur confirme la réalisation du cours ;</li><li>le parent valide également que le cours a bien eu lieu.</li></ul><p>Cette double validation garantit la transparence.</p>",
+        isOpen: false,
+    },
+    {
+        question: "Qu'est-ce qui différencie D²Répétition des autres structures ?",
+        answer:
+            "<p>Notre différence repose sur :</p><ul><li>un accompagnement personnalisé ;</li><li>des enseignants qualifiés ;</li><li>un suivi pédagogique permanent ;</li><li>des rapports détaillés après chaque séance ;</li><li>l'utilisation des neurosciences éducatives ;</li><li>une plateforme numérique de suivi.</li></ul>",
+        isOpen: false,
+    },
+    {
+        question: "Utilisez-vous les neurosciences éducatives ?",
+        answer:
+            "<p>Oui. Nos méthodes s'appuient sur les neurosciences éducatives afin de mieux comprendre les mécanismes d'apprentissage, de mémorisation, d'attention et de motivation de chaque élève.</p>",
+        isOpen: false,
+    },
+    {
+        question: "Comment les paiements sont-ils effectués ?",
+        answer:
+            "<p>Les paiements peuvent être réalisés selon les modalités proposées par D²Répétition (Mobile Money, virement bancaire, espèces ou autres moyens disponibles).</p>",
+        isOpen: false,
+    },
+    {
+        question: "Puis-je arrêter les cours à tout moment ?",
+        answer:
+            "<p>Oui. En respectant les engagements et les modalités d'arrêt de cours convenu avec la société.</p>",
+        isOpen: false,
+    },
+    {
+        question: "D²Répétition intervient-elle uniquement à Lomé ?",
+        answer:
+            "<p>Nos services sont principalement disponibles à Lomé. Selon les besoins et les possibilités, nous pouvons également intervenir dans d'autres localités ou proposer des cours en ligne.</p>",
+        isOpen: false,
+    },
+    {
+        question: "Comment puis-je contacter D²Répétition ?",
+        answer:
+            "<p>Vous pouvez nous joindre par :</p><ul><li>Téléphone</li><li>WhatsApp</li><li>E-mail</li><li>Formulaire de contact sur notre site internet</li><li>Réseaux sociaux officiels</li></ul><p>Notre équipe se fera un plaisir de vous accompagner.</p>",
+        isOpen: false,
+        btn: {
+            label: "Inscrire mon enfant",
+            href: "/devenir-un-enseignant",
+        },
+    },
+];
+
 const homeCtaSection: CTASection = {
     title: "Prêt à offrir à votre enfant le suivi qu'il mérite ?",
     description:
@@ -495,6 +604,28 @@ const howItWorkCtaSection: CTASection = {
     ],
 };
 
+const faqCtaSection: CTASection = {
+    title: "Prêt à commencer l'accompagnement de votre enfant ?",
+    description:
+        "Notre équipe vous accompagne dès votre demande d'inscription et reste à vos côtés tout au long du parcours scolaire.",
+
+    background_image: "/images/cta/cta-2.png",
+
+    buttons: [
+        {
+            label: "Inscrire mon enfant",
+            href: "/devenir-un-enseignant",
+            variant: "primary",
+            icon: "UserFace",
+        },
+        {
+            label: "Nous contactez",
+            href: "/nous-contactez",
+            variant: "secondary",
+            icon: "Call",
+        }
+    ],
+};
 
 const footerSectionsData: FooterSection[] = [
     {
@@ -536,6 +667,10 @@ const footerSectionsData: FooterSection[] = [
             {
                 label: "Comment ça marche",
                 href: "/comment-ca-marche",
+            },
+            {
+                label: "Foires aux questions",
+                href: "/foire-aux-questions",
             },
              {
                 label: "Témoignages",
@@ -898,12 +1033,14 @@ export {
     howItWorksData,
     faqsData,
     howItWorksFaqsData,
+    faqFaqsData,
 
     homeCtaSection,
     aboutCtaSection,
     subjectCtaSection,
     teacherCtaSection,
     howItWorkCtaSection,
+    faqCtaSection,
 
     footerSectionsData,
     navigationItemsData,

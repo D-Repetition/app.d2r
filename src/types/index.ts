@@ -52,6 +52,10 @@ export type FaqItem = {
     question: string;
     answer: string;
     isOpen: boolean;
+    btn?: {
+        label: string,
+        href: string
+    }
 };
 
 export type CTAButton = {
