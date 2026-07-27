@@ -678,7 +678,7 @@ const footerSectionsData: FooterSection[] = [
             },
             {
                 label: "Contact",
-                href: "/contact",
+                href: "/nous-contactez",
             },
         ],
     },

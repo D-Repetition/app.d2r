@@ -39,13 +39,13 @@ const Topbar = () => {
     return (
         <>
             <div
-                className={`hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-10 pl-6 py-2 pr-2 rounded-full bg-white border border-board-black/10 lg:flex transition-transform duration-300 ${hidden ? "-translate-y-32" : "translate-y-0"
+                className={`hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-11 pl-6 py-2 pr-2 rounded-full bg-white border border-board-black/10 lg:flex transition-transform duration-300 ${hidden ? "-translate-y-32" : "translate-y-0"
                     }`}
             >
                 <div className="flex items-center justify-start gap-10">
                     <Link href="/" className="">
                         <div className="flex items-center text-blue-navy">
-                            <Logo className="fill-board-black h-11!" />
+                            <Logo className="fill-board-black h-10!" />
                         </div>
                     </Link>
                     <div className="flex items-center text-blue-navy gap-4">
@@ -64,7 +64,7 @@ const Topbar = () => {
                             <ChevronDown className="fill-board-black group-hover:-rotate-180 duration-500" />
                             <div className="absolute top-8 left-0 duration-500 -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-0 overflow-hidden h-4 w-20 group-hover:w-auto group-hover:h-auto z-0 group-hover:z-1000"><Resources /></div>
                         </div>
-                        <Link href="/" className="">
+                        <Link href="/nous-contactez" className="">
                             <div className="flex items-center text-board-black">
                                 Contact
                             </div>

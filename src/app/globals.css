@@ -259,3 +259,7 @@ body {
     transform: translateX(-50%);
   }
 }
+
+.text-simple {
+  font-size: clamp();
+}

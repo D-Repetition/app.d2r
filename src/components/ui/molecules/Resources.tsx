@@ -12,7 +12,7 @@ const Resources = () => {
                             FAQ
                         </div>
                     </Link>
-                    <Link href="/contact" className="">
+                    <Link href="/nous-contactez" className="">
                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
                             Contact
                         </div>

@@ -8,7 +8,7 @@ type CTAI = CTASection & ComponentProps<'div'>
 
 const CTA = (props: CTAI) => {
     return (
-        <section {...props} className='h-[60vh] w-full relative flex items-center justify-center flex-col'>
+        <section {...props} className='min-h-[60vh] py-12 w-full relative flex items-center justify-center flex-col'>
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <img src={props.background_image} className='object-cover oject-center w-full h-full' alt={props.title} />
             </div>
