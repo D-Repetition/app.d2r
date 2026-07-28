@@ -4,6 +4,7 @@ import Button from '../../atomes/Button'
 import { UserFace } from '@/components/assets/icons'
 import { subjectSectionData } from '@/constants/homeSectionsData'
 import { HomeSubject } from '../../molecules/Subject'
+import Image from 'next/image'
 
 const AccompaniementAllKeySubject = () => {
     return (
@@ -54,7 +55,7 @@ const AccompaniementAllKeySubject = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full gap-2">
-                    <img src="/images/info.png" className='h-[2vh]' alt="Infos" />
+                    <Image src="/images/info.png" className='h-[2vh]' alt="Infos" />
                     Vous ne trouvez pas la matière recherchée ?&nbsp;<Link href="" className='underline underline-offset-4'>Contactez-nous</Link>, nous étudions chaque demande.
                 </div>
             </div>

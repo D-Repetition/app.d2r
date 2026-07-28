@@ -1,5 +1,5 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const Discover = () => {
     return (
@@ -32,7 +32,7 @@ const Discover = () => {
                 </Link>
             </div>
             <div className="w-34 bg-poppy-red rounded-sm flex items-center justify-center p-1">
-                <img src="/images/discover.png" className='h-37.5 w-32.25' alt="discover image" />
+                <Image src="/images/discover.png" className='h-37.5 w-32.25' alt="discover image" />
             </div>
         </div>
     )

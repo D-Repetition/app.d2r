@@ -2,12 +2,9 @@
 
 import Link from "next/link"
 import Button from "../../atomes/Button"
-import { ChevronDown, UserFace } from "@/components/assets/icons"
-import WhoWeAreCarousel from "../../molecules/WhoWeAreCarousel"
-import { Subject } from "../../molecules/Subject"
-import { subjectsData } from "@/constants/homeSectionsData"
-import SearchField from "../../molecules/SearchField"
-import Round from "../../atomes/Round"
+import { UserFace } from "@/components/assets/icons"
+import Image from 'next/image'
+
 
 const Hero = () => {
     return (
@@ -27,12 +24,12 @@ const Hero = () => {
                             </Button>
                         </Link>
                     </div>
-                    <img src="/images/users.png" className="h-[8vh]" alt="Users" />
-                    <div className="flex items-center justify-center gap-2"><img src="/images/verify.png" className="" alt="Verify png" /><span className="">Plus de 50 répétiteurs vérifiés</span></div>
+                    <Image src="/images/users.png" className="h-[8vh]" alt="Users" />
+                    <div className="flex items-center justify-center gap-2"><Image src="/images/verify.png" className="" alt="Verify png" /><span className="">Plus de 50 répétiteurs vérifiés</span></div>
                     <div className="marquee-container">
                         <div className="marquee-track">
-                            <img src="/images/TeacherHorizScroll.png" alt="" />
-                            <img src="/images/TeacherHorizScroll.png" alt="" />
+                            <Image src="/images/TeacherHorizScroll.png" alt="" />
+                            <Image src="/images/TeacherHorizScroll.png" alt="" />
                         </div>
                     </div>
                 </div>

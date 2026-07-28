@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image'
 import Button from '../../atomes/Button'
 import { UserFace } from '@/components/assets/icons'
 
@@ -26,19 +26,19 @@ const Method = () => {
                 <div className="w-full flex flex-col items-center justify-start gap-11">
                     <div className="w-full max-lg:grid max-lg:grid-cols-3 max-lg:gap-2 gap-y-8 lg:flex items-center justify-between">
                         <div className="flex flex-col lg:items-start items-center gap-3">
-                            <img src="/images/how-it-work/illustration-5.png" className='h-[12vh]' alt="Illustration 5" />
+                            <Image src="/images/how-it-work/illustration-5.png" className='h-[12vh]' alt="Illustration 5" />
                             <div className="simpleText font-normal! max-lg:text-[12px]! max-lg:leading-[14px]! max-lg:text-center!">Enseignants qualifiés</div>
                         </div>
                         <div className="flex flex-col lg:items-start items-center gap-3">
-                            <img src="/images/how-it-work/illustration-6.png" className='h-[12vh]' alt="Illustration 6" />
+                            <Image src="/images/how-it-work/illustration-6.png" className='h-[12vh]' alt="Illustration 6" />
                             <div className="simpleText font-normal! max-lg:text-[12px]! max-lg:leading-[14px]! max-lg:text-center!">Approche inspirée des neurosciences</div>
                         </div>
                         <div className="flex flex-col lg:items-start items-center gap-3">
-                            <img src="/images/how-it-work/illustration-7.png" className='h-[12vh]' alt="Illustration 7" />
+                            <Image src="/images/how-it-work/illustration-7.png" className='h-[12vh]' alt="Illustration 7" />
                             <div className="simpleText font-normal! max-lg:text-[12px]! max-lg:leading-[14px]! max-lg:text-center!">Suivi pédagogique rigoureux</div>
                         </div>
                         <div className="flex flex-col lg:items-start items-center gap-3">
-                            <img src="/images/how-it-work/illustration-8.png" className='h-[12vh]' alt="Illustration 8" />
+                            <Image src="/images/how-it-work/illustration-8.png" className='h-[12vh]' alt="Illustration 8" />
                             <div className="simpleText font-normal! max-lg:text-[12px]! max-lg:leading-[14px]! max-lg:text-center!">Communication avec les familles</div>
                         </div>
                     </div>

@@ -46,7 +46,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                         aria-invalid={!!error}
                         aria-describedby={error ? `${inputId}-error` : undefined}
                         className={`
-                            h-10 w-full rounded-lg border bg-white px-3
+                            h-10 w-full rounded-full border bg-transparent px-5
                             font-inter text-sm text-board-black
                             placeholder:text-board-black/40
                             transition-colors duration-150

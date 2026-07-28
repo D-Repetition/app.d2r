@@ -1,21 +1,22 @@
 import { Students } from '@/components/assets/icons'
 import { SubjectHome, SubjectItself } from '@/types'
+import Image from 'next/image'
 import React, { ComponentProps } from 'react'
 
 type HomeSubjectI = SubjectHome & ComponentProps<'div'>
 type SubjectItselfI = SubjectItself & ComponentProps<'div'>
 
 const HomeSubject = (props: HomeSubjectI) => {
-  return (
-      <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-between gap-[4vh] relative w-[19.75vw] self-stretch shrink-0 overflow-hidden', props.className, props.bg_color].join(" ")}>
-          <img src={`/images/subjects/${props.icon}`} className='absolute top-2 -right-8 h-[65%] opacity-5' alt="" />
-          <div className="flex flex-col gap-3">
-              <div className="titleInter">{props.title}</div>
-              <div className="text-board-black/40">{props.description}</div>
-          </div>
-          <div className="flex items-center justify-start gap-1"><Students className='fill-board-black h-7' />{ props.teacher_number }</div>
-    </div>
-  )
+    return (
+        <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-between gap-[4vh] relative w-[19.75vw] self-stretch shrink-0 overflow-hidden', props.className, props.bg_color].join(" ")}>
+            <Image src={`/images/subjects/${props.icon}`} className='absolute top-2 -right-8 h-[65%] opacity-5' alt="" />
+            <div className="flex flex-col gap-3">
+                <div className="titleInter">{props.title}</div>
+                <div className="text-board-black/40">{props.description}</div>
+            </div>
+            <div className="flex items-center justify-start gap-1"><Students className='fill-board-black h-7' />{props.teacher_number}</div>
+        </div>
+    )
 }
 
 const Subject = (props: SubjectItselfI) => {

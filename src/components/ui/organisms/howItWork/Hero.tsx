@@ -8,6 +8,7 @@ import { Subject } from "../../molecules/Subject"
 import { subjectsData } from "@/constants/homeSectionsData"
 import SearchField from "../../molecules/SearchField"
 import Round from "../../atomes/Round"
+import Image from "next/image"
 
 const Hero = () => {
     return (
@@ -28,7 +29,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-                <img src="/images/how-it-work/hero.png" className="h-[22.5vh]" alt="Users" />
+                <Image src="/images/how-it-work/hero.png" className="h-[22.5vh]" alt="Users" />
             </div>
         </section>
     )

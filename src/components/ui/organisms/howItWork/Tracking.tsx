@@ -1,13 +1,8 @@
 "use client"
 
-import Link from "next/link"
-import Button from "../../atomes/Button"
-import { Arrow, ChevronDown, UserFace } from "@/components/assets/icons"
-import WhoWeAreCarousel from "../../molecules/WhoWeAreCarousel"
-import { Subject } from "../../molecules/Subject"
-import { subjectsData } from "@/constants/homeSectionsData"
-import SearchField from "../../molecules/SearchField"
-import Round from "../../atomes/Round"
+import { Arrow } from "@/components/assets/icons"
+import Image from 'next/image'
+
 
 const Tracking = () => {
     return (
@@ -28,14 +23,14 @@ const Tracking = () => {
                             <Arrow className='fill-board-black' />
                         </div>
                         <div className="flex h-full flex-col items-center justify-start gap-3">
-                            <div className="font-dm-serif text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
+                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
                                 Compte rendu détaillé
                             </div>
 
-                            <div className="text-[.9vw] text-board-black/80 w-full">
+                            <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Le professeur renseigne les notions étudiées, les progrès observés et les recommandations.
                             </div>
-                            <img src="/images/how-it-work/illustration-1.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-1.png" className='h-[20vh]' alt="Illustration 1" />
                         </div>
                     </div>
                     <div
@@ -48,14 +43,14 @@ const Tracking = () => {
                             <Arrow className='fill-board-black' />
                         </div>
                         <div className="flex h-full flex-col items-center justify-start gap-3">
-                            <div className="font-dm-serif text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
+                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
                                 Validation de la séance
                             </div>
 
-                            <div className="text-[.9vw] text-board-black/80 w-full">
+                            <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les parents confirment la réalisation du cours pour garantir la transparence.
                             </div>
-                            <img src="/images/how-it-work/illustration-2.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-2.png" className='h-[20vh]' alt="Illustration 1" />
 
                         </div>
                     </div>
@@ -69,14 +64,14 @@ const Tracking = () => {
                             <Arrow className='fill-board-black' />
                         </div>
                         <div className="flex h-full flex-col items-center justify-start gap-3">
-                            <div className="font-dm-serif text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
+                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
                                 Suivi de la progression
                             </div>
 
-                            <div className="text-[.9vw] text-board-black/80 w-full">
+                            <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les objectifs, les évaluations et les observations sont mis à jour au fil des séances.
                             </div>
-                            <img src="/images/how-it-work/illustration-3.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-3.png" className='h-[20vh]' alt="Illustration 1" />
 
                         </div>
                     </div>
@@ -87,14 +82,14 @@ const Tracking = () => {
                         ].join(" ")}
                     >
                         <div className="flex h-full flex-col items-center justify-start gap-3">
-                            <div className="font-dm-serif text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
+                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90 w-full">
                                 Notifications
                             </div>
 
-                            <div className="text-[.9vw] text-board-black/80 w-full">
+                            <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les familles sont informées après chaque intervention importante.
                             </div>
-                            <img src="/images/how-it-work/illustration-4.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-4.png" className='h-[20vh]' alt="Illustration 1" />
 
                         </div>
                     </div>

@@ -31,7 +31,7 @@ const FAQQuestion = ({
                 onClick={onToggle}
                 className="flex w-full items-center justify-between text-left"
             >
-                <h3 className="font-dm-serif text-[1.6vw]">{question}</h3>
+                <h3 className="font-dm-serif lg:text-[1.6vw]">{question}</h3>
 
                 <span className="shrink-0">
                     {isOpen ? <Minus /> : <Add />}
@@ -46,12 +46,12 @@ const FAQQuestion = ({
             >
                 <div className="overflow-hidden flex flex-col items-start justify-start gap-4">
                     <div
-                        className="font-inter text-[1.1vw] leading-relaxed text-board-black/60 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1 [&_p]:mb-2 [&_p:last-child]:mb-0"
+                        className="font-inter lg:text-[1.1vw] leading-relaxed text-board-black/60 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1 [&_p]:mb-2 [&_p:last-child]:mb-0"
                         dangerouslySetInnerHTML={{ __html: answer }}
                     />
                     {
                         btn && <Link href={btn.href} className="">
-                            <Button className="bg-board-black text-white w-full">{ btn.label }</Button>
+                            <Button className="bg-board-black text-white w-full">{btn.label}</Button>
                         </Link>
                     }
                 </div>

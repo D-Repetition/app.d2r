@@ -1,5 +1,6 @@
 import { Arrow, Star } from '@/components/assets/icons'
 import { TeacherI } from '@/types'
+import Image from 'next/image'
 import { ComponentProps } from 'react'
 
 type TeacherCardI = TeacherI & ComponentProps<'div'>
@@ -7,7 +8,7 @@ type TeacherCardI = TeacherI & ComponentProps<'div'>
 const TeacherCard = (props: TeacherCardI) => {
     return (
         <div {...props} className={['h-[70vh] w-[30vw] shrink-0 rounded-lg overflow-hidden relative', props.className].join(" ")}>
-            <img src={`${props.photo}`} className='relative z-0 object-cover object-center w-full h-full' alt="" />
+            <Image src={`${props.photo}`} className='relative z-0 object-cover object-center w-full h-full' alt="" />
             <div className="absolute h-[33%] left-0 right-0 bottom-0 black-gradient z-0"></div>
             <div className="absolute inset-0 px-7 py-5 flex items-center justify-between flex-col">
                 <div className="flex w-full items-center justify-end">
@@ -50,7 +51,7 @@ const TeacherCard = (props: TeacherCardI) => {
                                                 index < props.subjects.length - 1 &&
                                                 <span className="">
                                                     {s} {
-                                                            (props.subjects.length - 1 - index) > 1 && <span>,</span>
+                                                        (props.subjects.length - 1 - index) > 1 && <span>,</span>
                                                     }
                                                 </span>
                                             }
@@ -70,10 +71,10 @@ const TeacherCard = (props: TeacherCardI) => {
                         <div className="flex flex-col gap-1/2">
                             <div className="flex items-center justify-start gap-2"><div className="simpleText2 text-white">{props.full_name}</div>
                                 {
-                                    props.isTrueCard && <img src="/images/verify.png" className='' alt="verify png" />
+                                    props.isTrueCard && <Image src="/images/verify.png" className='' alt="verify png" />
                                 }
                             </div>
-                            <div className="small text-white/80">{ props.bio }</div>
+                            <div className="small text-white/80">{props.bio}</div>
                         </div>
                         <div className="w-12 h-7 shrink-0 border border-2 border-white flex items-center justify-center rounded-full">
                             <Arrow className='fill-white' />

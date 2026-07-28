@@ -9,7 +9,7 @@ const KPI = () => {
             <div className="w-full max-w-[90%] mx-auto min-h-[80vh] flex flex-col items-center justify-between py-[6vh] gap-12">
                 <div className="flex items-start justify-between gap-6 w-full h-[40vh]">
                     <div className="flex flex-col items-start justify-start gap-2 text-board-black max-w-[45%] h-full">
-                        <div className="text-[1.4vw] text-start">Chiffres clés</div>
+                        <div className="lg:text-[1.4vw] text-start">Chiffres clés</div>
                         <div className="title text-start">D²Répétition en quelques chiffres</div>
                     </div>
                     <div className="flex flex-col items-start justify-end gap-6 h-full max-w-[45%]">

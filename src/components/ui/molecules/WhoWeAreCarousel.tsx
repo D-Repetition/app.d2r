@@ -1,4 +1,5 @@
 import { navigationItemsData, slidesData } from '@/constants/homeSectionsData'
+import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 
 const AUTO_PLAY_DELAY = 7000
@@ -49,12 +50,8 @@ const WhoWeAreCarousel: React.FC = () => {
               style={{ width: `${100 / slidesData.length}%` }}
             >
               <div className="border border-[0.5px] border-board-black/20 rounded-xl relative overflow-hidden">
-                <img
-                  src={sd.image}
-                  className='w-full h-full object-cover object-center'
-                  alt={sd.title}
-                />
-                <div className="absolute px-4 py-2 bg-white text-[1.3vw] font-medium bottom-0 left-0 right-0 z-100">
+                <Image src={sd.image} className='w-full h-full object-cover object-center' alt={sd.title} />
+                <div className="absolute px-4 py-2 bg-white lg:text-[1.3vw] font-medium bottom-0 left-0 right-0 z-100">
                   {sd.title}
                 </div>
               </div>
@@ -75,7 +72,7 @@ const WhoWeAreCarousel: React.FC = () => {
                         i < sd.statistics.length - 1 ? sd.dividerColor : "",
                       ].join(" ")}
                     >
-                      <span className='text-[2vw]'>{st.value}</span>&nbsp;
+                      <span className='lg:text-[2vw]'>{st.value}</span>&nbsp;
                       <span>{st.label}</span>
                     </div>
                   ))}

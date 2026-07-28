@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Button from "../../atomes/Button"
 import { UserFace } from "@/components/assets/icons"
+import Image from "next/image"
 
 const Hero = () => {
     return (
@@ -24,7 +25,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="overflow-hidden rounded-4xl">
-                    <img src="/images/hero.png" className="w-full h-full object-cover" alt="Hero bg" />
+                    <Image src="/images/hero.png" className="w-full h-full object-cover" alt="Hero bg" />
                 </div>
             </div>
             <div className="w-full max-lg:grid max-lg:grid-cols-3 max-lg:gap-2 gap-y-8 lg:flex items-center justify-between">
@@ -38,7 +39,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col lg:items-start items-center gap-3">
                     <div className="title">35</div>
-                    <div className="simpleText font-normal! max-lg:text-[12px]! max-lg:leading-[14px]! max-lg:text-center!">Enseignants <br className="hidden max-lg:block "/> actifs</div>
+                    <div className="simpleText font-normal! max-lg:text-[12px]! max-lg:leading-[14px]! max-lg:text-center!">Enseignants <br className="hidden max-lg:block " /> actifs</div>
                 </div>
                 <div className="flex flex-col lg:items-start items-center gap-3">
                     <div className="title">97%</div>

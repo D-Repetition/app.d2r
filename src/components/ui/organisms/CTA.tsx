@@ -1,8 +1,9 @@
 import { CTASection } from '@/types'
 import Link from 'next/link'
-import React, { ComponentProps } from 'react'
+import { ComponentProps } from 'react'
 import Button from '../atomes/Button'
 import { Arrow, Call, Folder, UserFace } from '@/components/assets/icons'
+import Image from 'next/image'
 
 type CTAI = CTASection & ComponentProps<'div'>
 
@@ -10,7 +11,7 @@ const CTA = (props: CTAI) => {
     return (
         <section {...props} className='min-h-[60vh] py-12 w-full relative flex items-center justify-center flex-col'>
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <img src={props.background_image} className='object-cover oject-center w-full h-full' alt={props.title} />
+                <Image src={props.background_image} className='object-cover oject-center w-full h-full' alt={props.title} />
             </div>
             <div className="h-[8%] w-full absolute z-1 bottom-0 left-0 right-0 bg-board-black rounded-[54px_54px_0px_0px]"></div>
             <div className="relative z-2 flex items-center justify-center flex-col gap-4.5 w-full h-full">
