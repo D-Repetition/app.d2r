@@ -28,8 +28,8 @@ const Hero = () => {
                     <div className="flex items-center justify-center gap-2"><Image src="/images/verify.png" className="" alt="Verify png" /><span className="">Plus de 50 répétiteurs vérifiés</span></div>
                     <div className="marquee-container">
                         <div className="marquee-track">
-                            <Image src="/images/TeacherHorizScroll.png" alt="" />
-                            <Image src="/images/TeacherHorizScroll.png" alt="" />
+                            <Image src="/images/TeacherHorizScroll.png" alt="Bandeau de photos des enseignants" />
+                            <Image src="/images/TeacherHorizScroll.png" alt="Bandeau de photos des enseignants" />
                         </div>
                     </div>
                 </div>

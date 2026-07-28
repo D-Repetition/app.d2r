@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
                             </div>
                         </div>
                     </div>
-                    <Image src="/images/why-choose-us/illustration-1.png" className='h-[20vh]' alt="" />
+                    <Image src="/images/why-choose-us/illustration-1.png" className='h-[20vh]' alt="Illustration pourquoi choisir D2Repetition" />
                 </div>
                 <div className="w-full grid max-lg:grid-cols-3 lg:grid-cols-6">
                     <div className="p-4 flex flex-col lg:items-start items-center gap-3 bg-shade-cyan">

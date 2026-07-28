@@ -11,7 +11,7 @@ const Teachers = () => {
         <section className='min-h-svh mx-auto flex flex-col items-start pt-20 lg:pt-24 pb-12 lg:pb-30'>
             <div className="w-full min-h-svh flex flex-col items-center gap-[12vh]">
                 <div className="flex flex-col items-center justify-start lg:max-w-[35vw] gap-4 relative">
-                    <Image src='/images/teacherIllustration.png' className='absolute -bottom-8 left-[-6vw] h-[65%]' alt="" />
+                    <Image src='/images/teacherIllustration.png' className='absolute -bottom-8 left-[-6vw] h-[65%]' alt="Illustration des enseignants" />
 
                     <div className='title text-center'>Des professeurs à la hauteur de vos attentes</div>
                     <div className="simpleText text-center">Chaque professeur intègre la plateforme après une sélection rigoureuse. Diplômes, expérience et pédagogie sont vérifiés avant toute affectation.</div>

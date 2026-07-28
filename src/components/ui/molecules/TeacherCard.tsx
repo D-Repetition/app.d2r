@@ -8,7 +8,7 @@ type TeacherCardI = TeacherI & ComponentProps<'div'>
 const TeacherCard = (props: TeacherCardI) => {
     return (
         <div {...props} className={['h-[70vh] w-[30vw] shrink-0 rounded-lg overflow-hidden relative', props.className].join(" ")}>
-            <Image src={`${props.photo}`} className='relative z-0 object-cover object-center w-full h-full' alt="" />
+            <Image src={`${props.photo}`} className='relative z-0 object-cover object-center w-full h-full' alt={`Photo de ${props.full_name}`} />
             <div className="absolute h-[33%] left-0 right-0 bottom-0 black-gradient z-0"></div>
             <div className="absolute inset-0 px-7 py-5 flex items-center justify-between flex-col">
                 <div className="flex w-full items-center justify-end">

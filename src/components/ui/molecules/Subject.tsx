@@ -9,7 +9,7 @@ type SubjectItselfI = SubjectItself & ComponentProps<'div'>
 const HomeSubject = (props: HomeSubjectI) => {
     return (
         <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-between gap-[4vh] relative w-[19.75vw] self-stretch shrink-0 overflow-hidden', props.className, props.bg_color].join(" ")}>
-            <Image src={`/images/subjects/${props.icon}`} className='absolute top-2 -right-8 h-[65%] opacity-5' alt="" />
+            <Image src={`/images/subjects/${props.icon}`} className='absolute top-2 -right-8 h-[65%] opacity-5' alt={`Illustration de la matière ${props.title}`} />
             <div className="flex flex-col gap-3">
                 <div className="titleInter">{props.title}</div>
                 <div className="text-board-black/40">{props.description}</div>

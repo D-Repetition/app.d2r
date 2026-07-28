@@ -36,8 +36,8 @@ const WhyFamilyChooseUs = () => {
                     </div>
 
                     <div className="flex items-center justify-center gap-8">
-                        <Image src="/images/davys.png" className="lg:h-[10vh]" alt="" />
-                        <Image src="/images/fnepi.png" className="lg:h-[7vh]" alt="" />
+                        <Image src="/images/davys.png" className="lg:h-[10vh]" alt="Logo du partenaire Davys" />
+                        <Image src="/images/fnepi.png" className="lg:h-[7vh]" alt="Logo du partenaire FNEPI" />
                     </div>
                 </div>
 
