@@ -30,7 +30,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Le professeur renseigne les notions étudiées, les progrès observés et les recommandations.
                             </div>
-                            <Image src="/images/how-it-work/illustration-1.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-1.png" className='h-[20vh]' alt="Illustration compte rendu detaille" />
                         </div>
                     </div>
                     <div
@@ -50,7 +50,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les parents confirment la réalisation du cours pour garantir la transparence.
                             </div>
-                            <Image src="/images/how-it-work/illustration-2.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-2.png" className='h-[20vh]' alt="Illustration validation de la seance" />
 
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les objectifs, les évaluations et les observations sont mis à jour au fil des séances.
                             </div>
-                            <Image src="/images/how-it-work/illustration-3.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-3.png" className='h-[20vh]' alt="Illustration suivi de la progression" />
 
                         </div>
                     </div>
@@ -89,7 +89,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les familles sont informées après chaque intervention importante.
                             </div>
-                            <Image src="/images/how-it-work/illustration-4.png" className='h-[20vh]' alt="Illustration 1" />
+                            <Image src="/images/how-it-work/illustration-4.png" className='h-[20vh]' alt="Illustration notifications familles" />
 
                         </div>
                     </div>

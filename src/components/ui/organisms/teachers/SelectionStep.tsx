@@ -25,7 +25,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Analyse des diplômes, de l'expérience et des compétences.
                         </div>
-                        <Image src="/images/selection-step/illustration-1.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-1.png" className='h-[20vh]' alt="Illustration etude du dossier" />
                     </div>
                 </div>
                 <div
@@ -45,7 +45,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Évaluation des connaissances et des aptitudes pédagogiques.
                         </div>
-                        <Image src="/images/selection-step/illustration-2.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-2.png" className='h-[20vh]' alt="Illustration validation pedagogique" />
 
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Échange sur la motivation, les valeurs et la posture professionnelle.
                         </div>
-                        <Image src="/images/selection-step/illustration-3.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-3.png" className='h-[20vh]' alt="Illustration entretien individuel" />
 
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Chaque enseignant est accompagné et évalué tout au long de sa collaboration.
                         </div>
-                        <Image src="/images/selection-step/illustration-4.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-4.png" className='h-[20vh]' alt="Illustration suivi continu" />
 
                     </div>
                 </div>

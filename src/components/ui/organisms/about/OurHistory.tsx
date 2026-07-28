@@ -17,9 +17,9 @@ const OurHistory = () => {
                         Nous avons choisi de repenser les cours de répétition en proposant un <span className='text-bold-white'>accompagnement structuré</span>, un <span className='text-bold-white'>suivi pédagogique personnalisé</span> et une <span className='text-bold-white'>communication continue</span> avec les parents afin d'aider chaque élève à <span className='text-bold-white'>progresser durablement</span>.“
                     </p>
                 </div>
-                <Image src="/images/curve-u.png" className='h-[16vh]' alt="Curve" />
+                <Image src="/images/curve-u.png" className='h-[16vh]' alt="Motif decoratif courbe" />
             </div>
-            <Image src="/images/curve.png" className='absolute top-0 bottom-0 right-0 h-svh' alt="Curve" />
+            <Image src="/images/curve.png" className='absolute top-0 bottom-0 right-0 h-svh' alt="Motif decoratif lateral" />
         </section>
     )
 }

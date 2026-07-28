@@ -71,7 +71,7 @@ const OurCommitment = () => {
                             "bg-blue-navy/5",
                         ].join(" ")}
                     >
-                        <Image src="/images/commit/commit.png" className='h-[15vh]' alt="Commit-1" />
+                        <Image src="/images/commit/commit.png" className='h-[15vh]' alt="Illustration de nos engagements pedagogiques" />
                     </div>
                     <div
                         className={[
@@ -95,7 +95,7 @@ const OurCommitment = () => {
                             "bg-blue-navy/5",
                         ].join(" ")}
                     >
-                        <Image src="/images/commit/commit-2.png" className='h-[15vh]' alt="Commit-1" />
+                        <Image src="/images/commit/commit-2.png" className='h-[15vh]' alt="Illustration du suivi des engagements" />
                     </div>
                     <div
                         className={[

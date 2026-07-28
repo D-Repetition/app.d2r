@@ -55,7 +55,7 @@ const AccompaniementAllKeySubject = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full gap-2">
-                    <Image src="/images/info.png" className='h-[2vh]' alt="Infos" />
+                    <Image src="/images/info.png" className='h-[2vh]' alt="Icone information" />
                     Vous ne trouvez pas la matière recherchée ?&nbsp;<Link href="" className='underline underline-offset-4'>Contactez-nous</Link>, nous étudions chaque demande.
                 </div>
             </div>

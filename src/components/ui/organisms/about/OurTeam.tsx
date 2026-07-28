@@ -18,10 +18,10 @@ const OurTeam = () => {
                         <div className="absolute inset-0 rotate-[-0.5deg] overflow-hidden">
                             <Image src="/images/cta/cta-3.png" className='w-full h-full object-cover object-center' alt="Arriere-plan de la section Notre equipe" />
                         </div>
-                        <Image src="/images/home-fly.png" className="z-100 h-[14vh] rotate-z-10 rotate-y-180 absolute top-6 right-12" alt="Home fly" />
+                        <Image src="/images/home-fly.png" className="z-100 h-[14vh] rotate-z-10 rotate-y-180 absolute top-6 right-12" alt="Element graphique decoratif" />
                         <div className="flex items-center justify-start gap-20.5 relative z-100 w-[60%]">
                             <div className="h-[18vw] w-[16vw] shrink-0 rounded-lg overflow-hidden">
-                                <Image src="/images/team/d2.png" className='w-full h-full object-cover object-center' alt="D2" />
+                                <Image src="/images/team/d2.png" className='w-full h-full object-cover object-center' alt="Photo de Damparou Danfai" />
                             </div>
                             <div className="flex flex-col items-start justify-center gap-16">
                                 <div className="flex flex-col items-start justify-center">
@@ -36,7 +36,7 @@ const OurTeam = () => {
                         </div>
                     </div>
                     <div className="flex items-center justify-center w-full gap-2">
-                        <Image src="/images/info.png" className='h-[2vh] grayscale' alt="Infos" />
+                        <Image src="/images/info.png" className='h-[2vh] grayscale' alt="Icone information" />
                         <span>D²Répétition s'appuie sur une équipe pluridisciplinaire qui œuvre chaque jour pour garantir un accompagnement de qualité.</span>
                     </div>
                     <div className="w-full grid grid-cols-3 gap-11 h-fit">

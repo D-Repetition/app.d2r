@@ -26,7 +26,7 @@ const OurTeachersValues = () => {
                                 Analyse des diplômes, de l'expérience et des compétences.
                             </div>
                         </div>
-                        <Image src="/images/selection-step/illustration-5.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-5.png" className='h-[20vh]' alt="Illustration etude du dossier" />
                     </div>
                 </div>
                 <div
@@ -45,7 +45,7 @@ const OurTeachersValues = () => {
                                 Évaluation des connaissances et des aptitudes pédagogiques.
                             </div>
                         </div>
-                        <Image src="/images/selection-step/illustration-6.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-6.png" className='h-[20vh]' alt="Illustration validation pedagogique" />
 
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const OurTeachersValues = () => {
                             </div>
                         </div>
 
-                        <Image src="/images/selection-step/illustration-7.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-7.png" className='h-[20vh]' alt="Illustration entretien individuel" />
 
                     </div>
                 </div>
@@ -87,7 +87,7 @@ const OurTeachersValues = () => {
                             </div>
                         </div>
 
-                        <Image src="/images/selection-step/illustration-8.png" className='h-[20vh]' alt="Illustration 1" />
+                        <Image src="/images/selection-step/illustration-8.png" className='h-[20vh]' alt="Illustration suivi continu des enseignants" />
 
                     </div>
                 </div>

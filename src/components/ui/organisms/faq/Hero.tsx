@@ -8,7 +8,7 @@ const Hero = () => {
                     <div className="title text-center max-w-[60%]">Foire aux questions</div>
                     <div className="text-center subtitle font-normal! max-w-[40%]">Retrouvez les réponses aux questions les plus fréquentes concernant nos services, nos enseignants et le suivi pédagogique de votre enfant.</div>
                 </div>
-                <Image src="/images/why-choose-us/illustration-2.png" className="h-[55vh]" alt="Users" />
+                <Image src="/images/why-choose-us/illustration-2.png" className="h-[55vh]" alt="Illustration familles et accompagnement scolaire" />
             </div>
         </section>
     )

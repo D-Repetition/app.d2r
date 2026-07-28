@@ -17,7 +17,7 @@ const HowItWork = () => {
                             <Arrow className="fill-white opacity-100" />
                         </Button>
                     </div>
-                    <Image src="/images/howItWork.png" className='h-[18vh]' alt="How it work png" />
+                    <Image src="/images/howItWork.png" className='h-[18vh]' alt="Illustration du fonctionnement de D2Repetition" />
                 </div>
                 <div className="flex flex-col justify-between gap-[4vh]">
                     {

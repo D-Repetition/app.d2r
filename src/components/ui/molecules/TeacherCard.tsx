@@ -71,7 +71,7 @@ const TeacherCard = (props: TeacherCardI) => {
                         <div className="flex flex-col gap-1/2">
                             <div className="flex items-center justify-start gap-2"><div className="simpleText2 text-white">{props.full_name}</div>
                                 {
-                                    props.isTrueCard && <Image src="/images/verify.png" className='' alt="verify png" />
+                                    props.isTrueCard && <Image src="/images/verify.png" className='' alt="Badge profil enseignant verifie" />
                                 }
                             </div>
                             <div className="small text-white/80">{props.bio}</div>

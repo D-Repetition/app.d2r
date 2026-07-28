@@ -24,8 +24,8 @@ const Hero = () => {
                             </Button>
                         </Link>
                     </div>
-                    <Image src="/images/users.png" className="h-[8vh]" alt="Users" />
-                    <div className="flex items-center justify-center gap-2"><Image src="/images/verify.png" className="" alt="Verify png" /><span className="">Plus de 50 répétiteurs vérifiés</span></div>
+                    <Image src="/images/users.png" className="h-[8vh]" alt="Illustration enseignants et eleves" />
+                    <div className="flex items-center justify-center gap-2"><Image src="/images/verify.png" className="" alt="Badge verification des enseignants" /><span className="">Plus de 50 répétiteurs vérifiés</span></div>
                     <div className="marquee-container">
                         <div className="marquee-track">
                             <Image src="/images/TeacherHorizScroll.png" alt="Bandeau de photos des enseignants" />

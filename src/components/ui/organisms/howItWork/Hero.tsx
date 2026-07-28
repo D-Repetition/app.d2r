@@ -29,7 +29,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/how-it-work/hero.png" className="h-[22.5vh]" alt="Users" />
+                <Image src="/images/how-it-work/hero.png" className="h-[22.5vh]" alt="Illustration du parcours d accompagnement" />
             </div>
         </section>
     )
