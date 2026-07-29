@@ -1,7 +1,7 @@
 "use client"
 
 import { whyFamilyChooseUsSectionData } from '@/constants/homeSectionsData';
-import React, { useState } from 'react'
+import React from 'react'
 import Button from '../atomes/Button';
 import Image from 'next/image';
 
@@ -13,6 +13,8 @@ const WhyFamilyCarousel = ({ whyId = 1 }: WhyFamilyCarouselI) => {
     const currentWhyFamilyCarousel = whyFamilyChooseUsSectionData.find(
         ({ id }) => id === whyId
     );
+    const currentImg = currentWhyFamilyCarousel?.image;
+
     return (
         <div className='w-full h-full grid grid-cols-2 gap-6'>
             <div className='grid grid-rows-[1fr_70px] gap-2'>
@@ -27,7 +29,7 @@ const WhyFamilyCarousel = ({ whyId = 1 }: WhyFamilyCarouselI) => {
             <div className='grid grid-rows-[70px_1fr] gap-2'>
                 <div />
                 <div className="order-2 overflow-hidden rounded-lg">
-                    <Image src={`/images/${currentWhyFamilyCarousel?.image}`} className='h-full w-full object-cover' alt={currentWhyFamilyCarousel?.title!} />
+                    {currentImg && <Image src={currentImg} className='h-full w-full object-cover' alt={currentWhyFamilyCarousel?.title!} />}
                 </div>
             </div>
         </div>

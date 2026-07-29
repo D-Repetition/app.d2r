@@ -6,6 +6,7 @@ import { whyFamilyChooseUsSectionData } from "@/constants/homeSectionsData";
 import RoundButton from "../../atomes/RoundButton";
 import WhyFamilyCarousel from "../../molecules/WhyFamilyCarousel";
 import Image from "next/image";
+import { Images } from "@/constants/images";
 
 const MAX = whyFamilyChooseUsSectionData.length;
 const AUTO_PLAY_DELAY = 5000;
@@ -36,14 +37,14 @@ const WhyFamilyChooseUs = () => {
                     </div>
 
                     <div className="flex items-center justify-center gap-8">
-                        <Image src="/images/davys.png" className="lg:h-[10vh]" alt="Logo du partenaire Davys" />
-                        <Image src="/images/fnepi.png" className="lg:h-[7vh]" alt="Logo du partenaire FNEPI" />
+                        <Image src={Images.Davys} className="lg:h-[10vh] w-auto object-contain shrink-0" alt="Logo du partenaire Davys" />
+                        <Image src={Images.Fnepi} className="lg:h-[7vh] w-auto object-contain shrink-0" alt="Logo du partenaire FNEPI" />
                     </div>
                 </div>
 
                 <div className="h-auto w-full py-10 lg:pt-40 lg:pb-24 grid grid-cols-2">
                     <div className="flex flex-col items-start justify-between gap-8 lg:gap-[3vh]">
-                        <Image src="/images/home-fly.png" className="h-[12vh]" alt="Element graphique decoratif" />
+                        <Image src={Images.HomeFly} className="h-[12vh] w-auto object-contain" alt="Element graphique decoratif" />
 
                         <div className="title">
                             Pourquoi les familles nous choisissent
@@ -52,12 +53,12 @@ const WhyFamilyChooseUs = () => {
                         <div className="subtitle">Parce qu'un bon professeur ne suffit pas. Il faut aussi savoir ce qui se passe, quand ça se passe, et pouvoir le confirmer. C'est exactement ce que D²Répétition vous offre.</div>
                         <div className="flex items-start gap-9">
                             <div className="flex flex-col items-start gap-3">
-                                <Image src="/images/student.png" className="h-[5vh]" alt="Icone nombre d eleves suivis" />
+                                <Image src={Images.Student} className="h-[5vh] w-auto object-contain" alt="Icone nombre d eleves suivis" />
                                 <div className="secondaryTitle">200+ élèves suivis</div>
                                 <div className="simpleText">Sur l'ensemble de nos centres</div>
                             </div>
                             <div className="flex flex-col items-start gap-3">
-                                <Image src="/images/teacher.png" className="h-[5vh]" alt="Icone nombre de professeurs actifs" />
+                                <Image src={Images.Teacher} className="h-[5vh] w-auto object-contain" alt="Icone nombre de professeurs actifs" />
                                 <div className="secondaryTitle">45+ professeurs actifs</div>
                                 <div className="simpleText">Validés et évalués en continu</div>
                             </div>

@@ -16,10 +16,11 @@ const OurChallenges = () => {
                 <div className="w-full h-[65vh] grid grid-cols-3 grid-rows-2 gap-11">
                     {
                         supportCategoriesData.map((scd, index) => {
+                            const iconImg = scd.icon;
                             return (
                                 <>
                                     <div className={["rounded-lg p-[2vw] relative", scd.backgroundColor].join(" ")}>
-                                        <Image src={scd.icon} className='absolute top-4 right-0 opacity-5 h-[14vh]' alt={scd.title} />
+                                        <Image src={iconImg} className='absolute top-4 right-0 opacity-5 h-[14vh] w-auto object-contain' alt={scd.title} />
                                         <div className="absolute bottom-6 right-8 text-[1.4rem] font-bold w-[3.2vw] h-[3.2vw] flex items-center justify-center text-board-black border border-board-black rounded-full">
                                             {scd.id}
                                         </div>

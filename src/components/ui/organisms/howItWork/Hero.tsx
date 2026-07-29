@@ -9,10 +9,11 @@ import { subjectsData } from "@/constants/homeSectionsData"
 import SearchField from "../../molecules/SearchField"
 import Round from "../../atomes/Round"
 import Image from "next/image"
+import { Images } from "@/constants/images"
 
 const Hero = () => {
     return (
-        <section className="w-full min-h-svh mx-auto flex flex-col items-center pt-24 lg:pt-44 pb-12 lg:pb-10 justify-center gap-6 lg:gap-[75px]">
+        <section className="w-full min-h-svh mx-auto flex flex-col items-center pt-30 lg:pt-44 pb-12 lg:pb-10 justify-center gap-6 lg:gap-[75px]">
             <div className="w-full flex flex-col items-center justify-start gap-15">
                 <div className="flex flex-col items-center justify-start gap-8 w-full">
                     <div className="title text-center max-w-[60%]">Un accompagnement simple, <br className="lg:block hidden" />transparent et pensé pour votre enfant</div>
@@ -29,7 +30,7 @@ const Hero = () => {
                         </Link>
                     </div>
                 </div>
-                <Image src="/images/how-it-work/hero.png" className="h-[22.5vh]" alt="Illustration du parcours d accompagnement" />
+                <Image src={Images.HowItWorkHero} className="h-[22.5vh] w-auto object-contain" alt="Illustration du parcours d accompagnement" />
             </div>
         </section>
     )

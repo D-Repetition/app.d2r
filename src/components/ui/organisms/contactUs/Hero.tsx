@@ -1,3 +1,4 @@
+import { Images } from '@/constants/images'
 import Image from 'next/image'
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="rounded-lg bg-board-black/10 flex items-center justify-center">
-                    <Image src="/images/contact-us.png" className='h-[40vh]' alt="Contact us" />
+                    <Image src={Images.ContactUs} className='h-[40vh] w-auto object-contain' alt="Contact us" />
                 </div>
             </div>
         </section>

@@ -1,4 +1,5 @@
 import { Arrow } from '@/components/assets/icons'
+import { Images } from '@/constants/images'
 import Image from 'next/image'
 
 const OurTeachersValues = () => {
@@ -26,7 +27,7 @@ const OurTeachersValues = () => {
                                 Analyse des diplômes, de l'expérience et des compétences.
                             </div>
                         </div>
-                        <Image src="/images/selection-step/illustration-5.png" className='h-[20vh]' alt="Illustration etude du dossier" />
+                        <Image src={Images.SelectionStepIllustration5} className='h-[20vh] w-auto object-contain' alt="Illustration etude du dossier" />
                     </div>
                 </div>
                 <div
@@ -45,7 +46,7 @@ const OurTeachersValues = () => {
                                 Évaluation des connaissances et des aptitudes pédagogiques.
                             </div>
                         </div>
-                        <Image src="/images/selection-step/illustration-6.png" className='h-[20vh]' alt="Illustration validation pedagogique" />
+                        <Image src={Images.SelectionStepIllustration6} className='h-[20vh] w-auto object-contain' alt="Illustration validation pedagogique" />
 
                     </div>
                 </div>
@@ -66,7 +67,7 @@ const OurTeachersValues = () => {
                             </div>
                         </div>
 
-                        <Image src="/images/selection-step/illustration-7.png" className='h-[20vh]' alt="Illustration entretien individuel" />
+                        <Image src={Images.SelectionStepIllustration7} className='h-[20vh] w-auto object-contain' alt="Illustration entretien individuel" />
 
                     </div>
                 </div>
@@ -87,7 +88,7 @@ const OurTeachersValues = () => {
                             </div>
                         </div>
 
-                        <Image src="/images/selection-step/illustration-8.png" className='h-[20vh]' alt="Illustration suivi continu des enseignants" />
+                        <Image src={Images.SelectionStepIllustration8} className='h-[20vh] w-auto object-contain' alt="Illustration suivi continu des enseignants" />
 
                     </div>
                 </div>

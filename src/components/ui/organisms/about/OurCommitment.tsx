@@ -1,4 +1,5 @@
 import { Arrow } from '@/components/assets/icons'
+import { Images } from '@/constants/images'
 import Image from 'next/image'
 import React from 'react'
 
@@ -71,7 +72,7 @@ const OurCommitment = () => {
                             "bg-blue-navy/5",
                         ].join(" ")}
                     >
-                        <Image src="/images/commit/commit.png" className='h-[15vh]' alt="Illustration de nos engagements pedagogiques" />
+                        <Image src={Images.Commit} className='h-[15vh] w-auto object-contain' alt="Illustration de nos engagements pedagogiques" />
                     </div>
                     <div
                         className={[
@@ -95,7 +96,7 @@ const OurCommitment = () => {
                             "bg-blue-navy/5",
                         ].join(" ")}
                     >
-                        <Image src="/images/commit/commit-2.png" className='h-[15vh]' alt="Illustration du suivi des engagements" />
+                        <Image src={Images.Commit2} className='h-[15vh] w-auto object-contain' alt="Illustration du suivi des engagements" />
                     </div>
                     <div
                         className={[

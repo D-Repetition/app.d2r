@@ -2,6 +2,7 @@
 
 import { Arrow } from "@/components/assets/icons"
 import Image from 'next/image'
+import { Images } from "@/constants/images"
 
 
 const Tracking = () => {
@@ -30,7 +31,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Le professeur renseigne les notions étudiées, les progrès observés et les recommandations.
                             </div>
-                            <Image src="/images/how-it-work/illustration-1.png" className='h-[20vh]' alt="Illustration compte rendu detaille" />
+                            <Image src={Images.HowItWorkIllustration1} className='h-[20vh] w-auto object-contain' alt="Illustration compte rendu detaille" />
                         </div>
                     </div>
                     <div
@@ -50,7 +51,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les parents confirment la réalisation du cours pour garantir la transparence.
                             </div>
-                            <Image src="/images/how-it-work/illustration-2.png" className='h-[20vh]' alt="Illustration validation de la seance" />
+                            <Image src={Images.HowItWorkIllustration2} className='h-[20vh] w-auto object-contain' alt="Illustration validation de la seance" />
 
                         </div>
                     </div>
@@ -71,7 +72,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les objectifs, les évaluations et les observations sont mis à jour au fil des séances.
                             </div>
-                            <Image src="/images/how-it-work/illustration-3.png" className='h-[20vh]' alt="Illustration suivi de la progression" />
+                            <Image src={Images.HowItWorkIllustration3} className='h-[20vh] w-auto object-contain' alt="Illustration suivi de la progression" />
 
                         </div>
                     </div>
@@ -89,7 +90,7 @@ const Tracking = () => {
                             <div className="lg:text-[.9vw] text-board-black/80 w-full">
                                 Les familles sont informées après chaque intervention importante.
                             </div>
-                            <Image src="/images/how-it-work/illustration-4.png" className='h-[20vh]' alt="Illustration notifications familles" />
+                            <Image src={Images.HowItWorkIllustration4} className='h-[20vh] w-auto object-contain' alt="Illustration notifications familles" />
 
                         </div>
                     </div>

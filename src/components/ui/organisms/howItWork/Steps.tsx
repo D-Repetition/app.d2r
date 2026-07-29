@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-
+import { Images } from '@/constants/images'
 
 const Steps = () => {
     return (
@@ -14,7 +14,7 @@ const Steps = () => {
                 <div className="grid grid-cols-[2fr_1fr] w-full">
                     <div className="flex flex-col justify-between gap-[6vh]">
                         <div className="flex items-start justify-start gap-[2vw]">
-                            <Image src="/images/how-it-work/one.png" className="h-[16vh]" alt="Etape 1 inscription" />
+                            <Image src={Images.HowItWorkOne} className="h-[16vh] w-auto object-contain" alt="Etape 1 inscription" />
                             <div className="flex flex-col gap-3 items-start justify-start w-full">
                                 <div className="flex flex-col items-start justify-start w-full">
                                     <div className="lg:text-[1.2vw]">Inscription</div>
@@ -24,7 +24,7 @@ const Steps = () => {
                             </div>
                         </div>
                         <div className="flex items-start justify-start gap-[2vw] w-full">
-                            <Image src="/images/how-it-work/two.png" className="h-[16vh]" alt="Etape 2 analyse des besoins" />
+                            <Image src={Images.HowItWorkTwo} className="h-[16vh] w-auto object-contain" alt="Etape 2 analyse des besoins" />
                             <div className="flex flex-col gap-3 items-start justify-start w-full">
                                 <div className="flex flex-col items-start justify-start">
                                     <div className="lg:text-[1.2vw]">Analyse des besoins</div>
@@ -34,7 +34,7 @@ const Steps = () => {
                             </div>
                         </div>
                         <div className="flex items-start justify-start gap-[2vw] w-full">
-                            <Image src="/images/how-it-work/three.png" className="h-[16vh]" alt="Etape 3 affectation du professeur" />
+                            <Image src={Images.HowItWorkThree} className="h-[16vh] w-auto object-contain" alt="Etape 3 affectation du professeur" />
                             <div className="flex flex-col gap-3 items-start justify-start w-full">
                                 <div className="flex flex-col items-start justify-start">
                                     <div className="lg:text-[1.2vw]">Affectation du professeur</div>
@@ -44,7 +44,7 @@ const Steps = () => {
                             </div>
                         </div>
                         <div className="flex items-start justify-start gap-[2vw] w-full">
-                            <Image src="/images/how-it-work/four.png" className="h-[16vh]" alt="Etape 4 suivi pedagogique" />
+                            <Image src={Images.HowItWorkFour} className="h-[16vh] w-auto object-contain" alt="Etape 4 suivi pedagogique" />
                             <div className="flex flex-col gap-3 items-start justify-start w-full">
                                 <div className="flex flex-col items-start justify-start">
                                     <div className="lg:text-[1.2vw]">Suivi pédagogique</div>
@@ -55,7 +55,7 @@ const Steps = () => {
                         </div>
                     </div>
                     <div className=" flex items-end justify-end">
-                        <Image src="/images/how-it-work/illustration.png" className="h-[80vh]" alt="Illustration globale du parcours en 4 etapes" />
+                        <Image src={Images.HowItWorkIllustration} className="h-[80vh] w-auto object-contain" alt="Illustration globale du parcours en 4 etapes" />
                     </div>
                 </div>
             </div>

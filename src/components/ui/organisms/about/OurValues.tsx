@@ -15,17 +15,19 @@ const OurValues = () => {
                 </div>
                 <div className="relative h-svh overflow-hidden">
                     <div className="flex flex-col gap-8 animate-marquee-vertical">
-                        {[...valuesData, ...valuesData].map((vd, index) => (
-                            <div
-                                key={`${vd.id}-${index}`}
-                                className={[
-                                    "max-w-[20vw] min-h-[26vh] shrink-0 rounded-lg p-[2vw] relative",
-                                    vd.backgroundColor,
-                                ].join(" ")}
-                            >
-                                <div className="absolute bottom-6 right-8 text-[1.4rem] font-bold w-[3.2vw] h-[3.2vw] flex items-center justify-center text-board-black border border-board-black rounded-full">
-                                    <Image src={vd.icon} className="h-14" alt={vd.title} />
-                                </div>
+                        {[...valuesData, ...valuesData].map((vd, index) => {
+                            const iconImg = vd.icon;
+                            return (
+                                <div
+                                    key={`${vd.id}-${index}`}
+                                    className={[
+                                        "max-w-[20vw] min-h-[26vh] shrink-0 rounded-lg p-[2vw] relative",
+                                        vd.backgroundColor,
+                                    ].join(" ")}
+                                >
+                                    <div className="absolute bottom-6 right-8 text-[1.4rem] font-bold w-[3.2vw] h-[3.2vw] flex items-center justify-center text-board-black border border-board-black rounded-full">
+                                        <Image src={iconImg} className="h-14 w-auto object-contain" alt={vd.title} />
+                                    </div>
 
                                 <div className="flex h-full flex-col items-start justify-start gap-3">
                                     <div className="max-w-[70%] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
@@ -37,7 +39,8 @@ const OurValues = () => {
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        );
+                    })}
                     </div>
                 </div>
             </div>

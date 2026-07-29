@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Button from '../atomes/Button'
 import { Arrow } from '@/components/assets/icons'
 import Image from 'next/image'
+import { Images } from '@/constants/images'
 
 const Resources = () => {
     return (
@@ -32,7 +33,7 @@ const Resources = () => {
                 </Link>
             </div>
             <div className="w-34 bg-marigold-amber rounded-sm flex items-center justify-center p-1">
-                <Image src="/images/resources.png" className='h-37.5 w-32.25' alt="Illustration ressources et bibliotheque" />
+                <Image src={Images.Resources} className='h-37.5 w-32.25 w-auto object-contain' alt="Illustration ressources et bibliotheque" />
             </div>
         </div>
     )

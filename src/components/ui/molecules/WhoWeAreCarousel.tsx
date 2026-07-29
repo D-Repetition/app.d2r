@@ -43,14 +43,16 @@ const WhoWeAreCarousel: React.FC = () => {
             transition: `transform ${TRANSITION_DURATION}ms cubic-bezier(0.65, 0, 0.35, 1)`,
           }}
         >
-          {slidesData.map((sd) => (
-            <div
-              key={sd.id}
-              className="h-full grid grid-cols-[2fr_1fr] gap-[5vh] px-[2px]"
-              style={{ width: `${100 / slidesData.length}%` }}
-            >
-              <div className="border border-[0.5px] border-board-black/20 rounded-xl relative overflow-hidden">
-                <Image src={sd.image} className='w-full h-full object-cover object-center' alt={sd.title} />
+          {slidesData.map((sd) => {
+            const slideImg = sd.image;
+            return (
+              <div
+                key={sd.id}
+                className="h-full grid grid-cols-[2fr_1fr] gap-[5vh] px-[2px]"
+                style={{ width: `${100 / slidesData.length}%` }}
+              >
+                <div className="border border-[0.5px] border-board-black/20 rounded-xl relative overflow-hidden">
+                  <Image src={slideImg} className='w-full h-full object-cover object-center' alt={sd.title} />
                 <div className="absolute px-4 py-2 bg-white lg:text-[1.3vw] font-medium bottom-0 left-0 right-0 z-100">
                   {sd.title}
                 </div>
@@ -79,7 +81,8 @@ const WhoWeAreCarousel: React.FC = () => {
                 </div>
               </div>
             </div>
-          ))}
+          );
+        })}
         </div>
       </div>
 

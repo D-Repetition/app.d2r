@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Button from '../../atomes/Button'
 import { UserFace } from '@/components/assets/icons'
+import { Images } from '@/constants/images'
 
 const WhyChooseUs = () => {
     return (
@@ -31,7 +32,7 @@ const WhyChooseUs = () => {
                             </div>
                         </div>
                     </div>
-                    <Image src="/images/why-choose-us/illustration-1.png" className='h-[20vh]' alt="Illustration pourquoi choisir D2Repetition" />
+                    <Image src={Images.WhyChooseUsIllustration1} className='h-[20vh] w-auto object-contain' alt="Illustration pourquoi choisir D2Repetition" />
                 </div>
                 <div className="w-full grid max-lg:grid-cols-3 lg:grid-cols-6">
                     <div className="p-4 flex flex-col lg:items-start items-center gap-3 bg-shade-cyan">

@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Subject {
     title: string;
     description: string;
@@ -24,7 +26,7 @@ export interface SubjectItself extends Subject {
 /* TEACHERS SECTION */
 export interface TeacherI {
     full_name: string;
-    photo: string;
+    photo: StaticImageData | string;
     rating: number;
     levels: string[];
     subjects: string[];
@@ -38,7 +40,7 @@ export interface TestimonyI {
     full_name: string;
     role: string;
     testimony: string;
-    avatar: string;
+    avatar: StaticImageData | string;
     bg_color: string;
 }
 
@@ -68,7 +70,7 @@ export type CTAButton = {
 export interface CTASection {
     title: string;
     description: string;
-    background_image: string;
+    background_image: StaticImageData | string;
     buttons: CTAButton[];
 }
 
@@ -88,12 +90,6 @@ export interface Statistic {
     label: string;
 }
 
-export interface Statistic {
-    id: number;
-    value: string;
-    label: string;
-}
-
 export interface NavigationItem {
     id: number;
     title: string;
@@ -103,7 +99,7 @@ export interface NavigationItem {
 
 export interface ValueSlide {
     id: number;
-    image: string;
+    image: StaticImageData | string;
     title: string;
     active: boolean;
 
@@ -121,7 +117,7 @@ export interface SupportCategory {
     title: string;
     description: string;
     backgroundColor: string;
-    icon: string;
+    icon: StaticImageData | string;
 }
 
 export interface ValueItem {
@@ -129,5 +125,5 @@ export interface ValueItem {
     title: string;
     description: string;
     backgroundColor: string;
-    icon: string;
-}
+    icon: StaticImageData | string;
+}

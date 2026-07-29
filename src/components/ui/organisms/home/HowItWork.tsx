@@ -4,6 +4,7 @@ import { Arrow } from '@/components/assets/icons'
 import { howItWorksData } from '@/constants/homeSectionsData'
 import HowItWorkStep from '../../molecules/HowItWorkStep'
 import Image from 'next/image'
+import { Images } from '@/constants/images'
 
 const HowItWork = () => {
     return (
@@ -17,17 +18,13 @@ const HowItWork = () => {
                             <Arrow className="fill-white opacity-100" />
                         </Button>
                     </div>
-                    <Image src="/images/howItWork.png" className='h-[18vh]' alt="Illustration du fonctionnement de D2Repetition" />
+                    <Image src={Images.HowItWork} className='h-[18vh] w-auto object-contain' alt="Illustration du fonctionnement de D2Repetition" />
                 </div>
                 <div className="flex flex-col justify-between gap-[4vh]">
                     {
-                        howItWorksData.map((hiwd, index) => {
-                            return (
-                                <>
-                                    <HowItWorkStep key={index} {...hiwd} />
-                                </>
-                            );
-                        })
+                        howItWorksData.map((hiwd, index) => (
+                            <HowItWorkStep key={index} {...hiwd} />
+                        ))
                     }
                 </div>
             </div>

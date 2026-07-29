@@ -1,4 +1,5 @@
 import { Arrow } from '@/components/assets/icons'
+import { Images } from '@/constants/images'
 import Image from 'next/image'
 import React from 'react'
 
@@ -25,7 +26,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Analyse des diplômes, de l'expérience et des compétences.
                         </div>
-                        <Image src="/images/selection-step/illustration-1.png" className='h-[20vh]' alt="Illustration etude du dossier" />
+                        <Image src={Images.SelectionStepIllustration1} className='h-[20vh] w-auto object-contain' alt="Illustration etude du dossier" />
                     </div>
                 </div>
                 <div
@@ -45,7 +46,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Évaluation des connaissances et des aptitudes pédagogiques.
                         </div>
-                        <Image src="/images/selection-step/illustration-2.png" className='h-[20vh]' alt="Illustration validation pedagogique" />
+                        <Image src={Images.SelectionStepIllustration2} className='h-[20vh] w-auto object-contain' alt="Illustration validation pedagogique" />
 
                     </div>
                 </div>
@@ -66,7 +67,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Échange sur la motivation, les valeurs et la posture professionnelle.
                         </div>
-                        <Image src="/images/selection-step/illustration-3.png" className='h-[20vh]' alt="Illustration entretien individuel" />
+                        <Image src={Images.SelectionStepIllustration3} className='h-[20vh] w-auto object-contain' alt="Illustration entretien individuel" />
 
                     </div>
                 </div>
@@ -84,7 +85,7 @@ const SelectionStep = () => {
                         <div className="lg:text-[.9vw] text-board-black/80 w-full">
                             Chaque enseignant est accompagné et évalué tout au long de sa collaboration.
                         </div>
-                        <Image src="/images/selection-step/illustration-4.png" className='h-[20vh]' alt="Illustration suivi continu" />
+                        <Image src={Images.SelectionStepIllustration4} className='h-[20vh] w-auto object-contain' alt="Illustration suivi continu" />
 
                     </div>
                 </div>

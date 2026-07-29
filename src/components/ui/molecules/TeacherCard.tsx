@@ -1,4 +1,5 @@
 import { Arrow, Star } from '@/components/assets/icons'
+import { Images } from '@/constants/images'
 import { TeacherI } from '@/types'
 import Image from 'next/image'
 import { ComponentProps } from 'react'
@@ -8,7 +9,7 @@ type TeacherCardI = TeacherI & ComponentProps<'div'>
 const TeacherCard = (props: TeacherCardI) => {
     return (
         <div {...props} className={['h-[70vh] w-[30vw] shrink-0 rounded-lg overflow-hidden relative', props.className].join(" ")}>
-            <Image src={`${props.photo}`} className='relative z-0 object-cover object-center w-full h-full' alt={`Photo de ${props.full_name}`} />
+            <Image src={props.photo} className='relative z-0 object-cover object-center w-full h-full' alt={`Photo de ${props.full_name}`} />
             <div className="absolute h-[33%] left-0 right-0 bottom-0 black-gradient z-0"></div>
             <div className="absolute inset-0 px-7 py-5 flex items-center justify-between flex-col">
                 <div className="flex w-full items-center justify-end">
@@ -22,7 +23,7 @@ const TeacherCard = (props: TeacherCardI) => {
                             {
                                 props.levels.map((l, index) => {
                                     return (
-                                        <span>
+                                        <span key={`${l}-${index}`}>
                                             {
                                                 index < props.levels.length - 1 &&
                                                 <span className="">
@@ -46,7 +47,7 @@ const TeacherCard = (props: TeacherCardI) => {
                             {
                                 props.subjects.map((s, index) => {
                                     return (
-                                        <span>
+                                        <span key={`${s}-${index}`}>
                                             {
                                                 index < props.subjects.length - 1 &&
                                                 <span className="">
@@ -71,7 +72,7 @@ const TeacherCard = (props: TeacherCardI) => {
                         <div className="flex flex-col gap-1/2">
                             <div className="flex items-center justify-start gap-2"><div className="simpleText2 text-white">{props.full_name}</div>
                                 {
-                                    props.isTrueCard && <Image src="/images/verify.png" className='' alt="Badge profil enseignant verifie" />
+                                    props.isTrueCard && <Image src={Images.Verify} className='w-auto object-contain' alt="Badge profil enseignant verifie" />
                                 }
                             </div>
                             <div className="small text-white/80">{props.bio}</div>

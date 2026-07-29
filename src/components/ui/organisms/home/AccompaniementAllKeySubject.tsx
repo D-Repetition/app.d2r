@@ -6,6 +6,8 @@ import { subjectSectionData } from '@/constants/homeSectionsData'
 import { HomeSubject } from '../../molecules/Subject'
 import Image from 'next/image'
 
+import { Images } from '@/constants/images'
+
 const AccompaniementAllKeySubject = () => {
     return (
         <section className='min-h-svh mx-auto flex flex-col items-start pt-20 lg:pt-24 pb-12 lg:pb-10'>
@@ -35,9 +37,7 @@ const AccompaniementAllKeySubject = () => {
                         {
                             subjectSectionData[0].map((ssd) => {
                                 return (
-                                    <>
-                                        <HomeSubject key={ssd.title} {...ssd} />
-                                    </>
+                                    <HomeSubject key={ssd.title} {...ssd} />
                                 );
                             })
                         }
@@ -46,16 +46,14 @@ const AccompaniementAllKeySubject = () => {
                         {
                             subjectSectionData[1].map((ssd) => {
                                 return (
-                                    <>
-                                        <HomeSubject key={ssd.title} {...ssd} />
-                                    </>
+                                    <HomeSubject key={ssd.title} {...ssd} />
                                 );
                             })
                         }
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full gap-2">
-                    <Image src="/images/info.png" className='h-[2vh]' alt="Icone information" />
+                    <Image src={Images.Info} className='h-[2vh] w-auto object-contain' alt="Icone information" />
                     Vous ne trouvez pas la matière recherchée ?&nbsp;<Link href="" className='underline underline-offset-4'>Contactez-nous</Link>, nous étudions chaque demande.
                 </div>
             </div>

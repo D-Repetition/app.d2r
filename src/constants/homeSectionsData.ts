@@ -1,9 +1,10 @@
 import { CTASection, FaqItem, FooterSection, HowItWorksStep, NavigationItem, SubjectHome, SubjectItself, SupportCategory, TeacherI, TestimonyI, ValueItem, ValueSlide } from "@/types";
+import { Images } from "@/constants/images";
 
 const whyFamilyChooseUsSectionData = [
     {
         id: 1,
-        image: "whatHelearn.png",
+        image: Images.WhatHelearn,
         title: "Sachez exactement ce que votre enfant apprend.",
         description: "Planning, comptes rendus et objectifs accessibles à tout moment. Vous ne ratez plus rien.",
         buttonLabel: "Créer votre compte",
@@ -13,7 +14,7 @@ const whyFamilyChooseUsSectionData = [
     },
     {
         id: 2,
-        image: "seeEverything.png",
+        image: Images.SeeEverything,
         title: "Fini le flou après chaque cours.",
         description: "Chaque séance est documentée. Consultez ce qui a été travaillé, ce qui reste à revoir et les progrès réalisés, depuis votre téléphone.",
         buttonLabel: "Enregister vous",
@@ -23,7 +24,7 @@ const whyFamilyChooseUsSectionData = [
     },
     {
         id: 3,
-        image: "trackAll.png",
+        image: Images.TrackAll,
         title: "Un suivi qui vous parle vraiment.",
         description: "Recevez un compte rendu après chaque cours et suivez la progression de votre enfant semaine après semaine.",
         buttonLabel: "Commencer un suivi",
@@ -129,7 +130,7 @@ const subjectSectionData: SubjectHome[][] = [
 const teachers: TeacherI[] = [
     {
         full_name: "Amina K.",
-        photo: "/images/teachers/teacher-1.png",
+        photo: Images.Teacher1,
         rating: 4.8,
         levels: ["Collège", "Lycée"],
         subjects: ["Mathématiques", "Physique-Chimie"],
@@ -137,7 +138,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "Kevin A.",
-        photo: "/images/teachers/teacher-2.png",
+        photo: Images.Teacher2,
         rating: 4.9,
         levels: ["Primaire", "Collège"],
         subjects: ["Français", "Anglais"],
@@ -145,7 +146,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "Nadia M.",
-        photo: "/images/teachers/teacher-3.png",
+        photo: Images.Teacher3,
         rating: 4.8,
         levels: ["Collège", "Lycée"],
         subjects: ["SVT", "Physique-Chimie"],
@@ -153,7 +154,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "Jordan T.",
-        photo: "/images/teachers/teacher-4.png",
+        photo: Images.Teacher4,
         rating: 4.7,
         levels: ["Lycée"],
         subjects: ["Mathématiques", "Informatique"],
@@ -161,7 +162,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "Sarah D.",
-        photo: "/images/teachers/teacher-5.png",
+        photo: Images.Teacher5,
         rating: 4.9,
         levels: ["Collège", "Lycée"],
         subjects: ["Histoire-Géographie", "Philosophie"],
@@ -169,7 +170,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "David E.",
-        photo: "/images/teachers/teacher-6.png",
+        photo: Images.Teacher6,
         rating: 4.8,
         levels: ["Collège", "Lycée"],
         subjects: ["Espagnol", "Anglais"],
@@ -177,7 +178,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "Grâce B.",
-        photo: "/images/teachers/teacher-7.png",
+        photo: Images.Teacher7,
         rating: 5.0,
         levels: ["Primaire", "Collège"],
         subjects: ["Français", "Mathématiques"],
@@ -185,7 +186,7 @@ const teachers: TeacherI[] = [
     },
     {
         full_name: "Junior G.",
-        photo: "/images/teachers/teacher-8.png",
+        photo: Images.Teacher8,
         rating: 5.0,
         levels: ["Primaire", "Collège"],
         subjects: ["Français", "Mathématiques"],
@@ -200,7 +201,7 @@ const testimonies: TestimonyI[] = [
         role: "Père d'une élève en 3e",
         testimony:
             "J'ai enfin une visibilité sur les cours de ma fille. Avant, je payais sans savoir si le professeur venait vraiment. Maintenant, tout est validé et transparent.",
-        avatar: "/images/testimonies/avatar-1.svg",
+        avatar: Images.Avatar1,
         bg_color: "bg-poppy-orange",
     },
     {
@@ -208,7 +209,7 @@ const testimonies: TestimonyI[] = [
         role: "Mère d'un élève en Terminale, Lomé",
         testimony:
             "Depuis que mon fils est suivi par D²Répétition, je vois vraiment la différence. Je reçois un compte rendu après chaque cours et je sais exactement ce qui a été travaillé. C'est rassurant.",
-        avatar: "/images/testimonies/avatar-2.svg",
+        avatar: Images.Avatar2,
         bg_color: "bg-poppy-gold",
     },
     {
@@ -216,7 +217,7 @@ const testimonies: TestimonyI[] = [
         role: "Lycéen",
         testimony:
             "Le professeur que j'ai est vraiment patient. Il rédige un résumé après chaque cours que je peux relire ce qu'on a fait. Mes notes en maths ont nettement progressé.",
-        avatar: "/images/testimonies/avatar-3.svg",
+        avatar: Images.Avatar3,
         bg_color: "bg-shade-cyan",
     },
     {
@@ -224,7 +225,7 @@ const testimonies: TestimonyI[] = [
         role: "Mère d'un élève en CM2",
         testimony:
             "Ma fille a repris confiance en elle. Les professeurs sont ponctuels, attentifs et les comptes rendus me permettent de suivre sa progression semaine après semaine.",
-        avatar: "/images/testimonies/avatar-4.svg",
+        avatar: Images.Avatar4,
         bg_color: "bg-olive-green",
     },
     {
@@ -232,7 +233,7 @@ const testimonies: TestimonyI[] = [
         role: "Parent d'un élève en 5e",
         testimony:
             "La plateforme est simple à utiliser. J'apprécie particulièrement les rapports détaillés après chaque séance et la réactivité de l'équipe.",
-        avatar: "/images/testimonies/avatar-5.svg",
+        avatar: Images.Avatar5,
         bg_color: "bg-poppy-purple/90",
     },
     {
@@ -240,7 +241,7 @@ const testimonies: TestimonyI[] = [
         role: "Élève en Première",
         testimony:
             "Les explications sont claires et adaptées à mon niveau. Je suis beaucoup plus à l'aise en physique et en mathématiques depuis le début des répétitions.",
-        avatar: "/images/testimonies/avatar-6.svg",
+        avatar: Images.Avatar6,
         bg_color: "bg-poppy-pink",
     },
 ];
@@ -500,7 +501,7 @@ const homeCtaSection: CTASection = {
     description:
         "Rejoignez les familles qui font confiance à D²Répétition pour accompagner la réussite scolaire de leurs enfants.",
 
-    background_image: "/images/cta/cta-1.png",
+    background_image: Images.Cta1,
 
     buttons: [
         {
@@ -523,7 +524,7 @@ const aboutCtaSection: CTASection = {
     description:
         "Rejoignez les familles qui font confiance à D²Répétition pour accompagner la réussite scolaire de leurs enfants.",
 
-    background_image: "/images/cta/cta-2.png",
+    background_image: Images.Cta2,
 
     buttons: [
         {
@@ -546,7 +547,7 @@ const subjectCtaSection: CTASection = {
     description:
         "Notre équipe étudie chaque demande et peut vous proposer un accompagnement adapté selon les besoins de votre enfant.",
 
-    background_image: "/images/cta/cta-3.png",
+    background_image: Images.Cta3,
 
     buttons: [
         {
@@ -569,7 +570,7 @@ const teacherCtaSection: CTASection = {
     description:
         "Nous recherchons des enseignants passionnés, compétents et engagés dans la réussite des élèves.",
 
-    background_image: "/images/cta/cta-4.png",
+    background_image: Images.Cta4,
 
     buttons: [
         {
@@ -586,7 +587,7 @@ const howItWorkCtaSection: CTASection = {
     description:
         "Notre équipe vous accompagne dès votre demande d'inscription et reste à vos côtés tout au long du parcours scolaire.",
 
-    background_image: "/images/cta/cta-1.png",
+    background_image: Images.Cta1,
 
     buttons: [
         {
@@ -609,7 +610,7 @@ const faqCtaSection: CTASection = {
     description:
         "Notre équipe vous accompagne dès votre demande d'inscription et reste à vos côtés tout au long du parcours scolaire.",
 
-    background_image: "/images/cta/cta-2.png",
+    background_image: Images.Cta2,
 
     buttons: [
         {
@@ -771,7 +772,7 @@ const navigationItemsData: NavigationItem[] = [
 const slidesData: ValueSlide[] = [
     {
         id: 1,
-        image: "/images/value-1.png",
+        image: Images.Value1,
         title: "Une nouvelle vision des cours de répétition à domicile",
         active: true,
 
@@ -789,7 +790,7 @@ const slidesData: ValueSlide[] = [
 
     {
         id: 2,
-        image: "/images/value-2.png",
+        image: Images.Value2,
         title: "Accompagner chaque élève vers sa réussite",
         active: false,
 
@@ -807,7 +808,7 @@ const slidesData: ValueSlide[] = [
 
     {
         id: 3,
-        image: "/images/value-3.png",
+        image: Images.Value3,
         title: "Transparence, qualité et confiance au quotidien",
         active: false,
 
@@ -831,7 +832,7 @@ const supportCategoriesData: SupportCategory[] = [
         description:
             "Lecture, écriture, calcul, compréhension et raisonnement.",
         backgroundColor: "bg-shade-cyan/10",
-        icon: "/images/challenges/Learning.png",
+        icon: Images.ChallengesLearning,
     },
     {
         id: 2,
@@ -839,7 +840,7 @@ const supportCategoriesData: SupportCategory[] = [
         description:
             "Concentration, mémorisation, organisation et autonomie.",
         backgroundColor: "bg-olive-green/10",
-        icon: "/images/challenges/Brain.png",
+        icon: Images.ChallengesBrain,
     },
     {
         id: 3,
@@ -847,7 +848,7 @@ const supportCategoriesData: SupportCategory[] = [
         description:
             "Retard, baisse des résultats et préparation aux examens.",
         backgroundColor: "bg-poppy-red/10",
-        icon: "/images/challenges/Bag.png",
+        icon: Images.ChallengesBag,
     },
     {
         id: 4,
@@ -855,7 +856,7 @@ const supportCategoriesData: SupportCategory[] = [
         description:
             "Stress, motivation, confiance en soi et implication.",
         backgroundColor: "bg-blue-navy/10",
-        icon: "/images/challenges/Cup.png",
+        icon: Images.ChallengesCup,
     },
     {
         id: 5,
@@ -863,7 +864,7 @@ const supportCategoriesData: SupportCategory[] = [
         description:
             "Suivi des progrès et communication avec les parents.",
         backgroundColor: "bg-marigold-amber/10",
-        icon: "/images/challenges/Hug.png",
+        icon: Images.ChallengesHug,
     },
     {
         id: 6,
@@ -871,7 +872,7 @@ const supportCategoriesData: SupportCategory[] = [
         description:
             "Choix des séries, méthodes de travail et préparation de l'avenir.",
         backgroundColor: "bg-emerald-green/10",
-        icon: "/images/challenges/Direction.png",
+        icon: Images.ChallengesDirection,
     },
 ];
 
@@ -882,7 +883,7 @@ const valuesData: ValueItem[] = [
         description:
             "Nous recherchons en permanence la qualité dans chacune de nos prestations.",
         backgroundColor: "bg-shade-cyan/10",
-        icon: "/images/values/Excellence.png",
+        icon: Images.ValuesExcellence,
     },
     {
         id: 2,
@@ -890,7 +891,7 @@ const valuesData: ValueItem[] = [
         description:
             "Nous intervenons avec rigueur, ponctualité et responsabilité.",
         backgroundColor: "bg-olive-green/10",
-        icon: "/images/values/Professionnalisme.png",
+        icon: Images.ValuesProfessionnalisme,
     },
     {
         id: 3,
@@ -898,7 +899,7 @@ const valuesData: ValueItem[] = [
         description:
             "Nous intégrons les neurosciences éducatives et les technologies numériques.",
         backgroundColor: "bg-poppy-pink/10",
-        icon: "/images/values/Innovation.png",
+        icon: Images.ValuesInnovation,
     },
     {
         id: 4,
@@ -906,7 +907,7 @@ const valuesData: ValueItem[] = [
         description:
             "Nous agissons avec honnêteté, transparence et éthique.",
         backgroundColor: "bg-board-black/10",
-        icon: "/images/values/Integrity.png",
+        icon: Images.ValuesIntegrity,
     },
     {
         id: 5,
@@ -914,7 +915,7 @@ const valuesData: ValueItem[] = [
         description:
             "Nous nous impliquons pleinement dans la réussite de chaque élève.",
         backgroundColor: "bg-poppy-red/10",
-        icon: "/images/values/Engagement.png",
+        icon: Images.ValuesEngagement,
     },
     {
         id: 6,
@@ -922,7 +923,7 @@ const valuesData: ValueItem[] = [
         description:
             "Nous plaçons l'écoute et le respect au cœur de nos relations.",
         backgroundColor: "bg-poppy-gold/10",
-        icon: "/images/values/Respect.png",
+        icon: Images.ValuesRespect,
     },
 ];
 
