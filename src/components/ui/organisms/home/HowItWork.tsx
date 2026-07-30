@@ -9,7 +9,7 @@ import { Images } from '@/constants/images'
 const HowItWork = () => {
     return (
         <section className='min-h-svh mx-auto flex flex-col items-center pt-20 lg:pt-24 pb-12 lg:pb-30'>
-            <div className="w-full max-w-[90%] min-h-svh grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-[12vh]">
+            <div className="w-full max-w-[90%] min-h-svh grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[12vh]">
                 <div className="flex flex-col-reverse max-lg:gap-4 lg:flex-col items-start justify-between">
                     <div className="flex flex-col items-start gap-4 lg:gap-8">
                         <h3 className="title">Comment ça fonctionne?</h3>

@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className="w-full min-h-[7 0vh] mx-auto flex flex-col items-start lg:pt-4 pb-4 lg:pb-6 justify-start gap-6 lg:gap-[75px] bg-board-black">
       <div className="max-w-[90%] w-full text-white mx-auto flex flex-col items-center justify-start gap-[10vh]">
-        <div className="flex flex-col items-center justify-start gap-7 max-w-[40%]">
+        <div className="flex flex-col max-lg:items-start lg:items-center justify-start gap-7 max-lg:w-full lg:max-w-[40%]">
           <Link href="/" className="">
             <div className="flex items-center text-blue-navy">
               <Logo className="fill-white/80 h-13!" />
             </div>
           </Link>
-          <div className="subtitle2 text-center text-white/80">Centre de gestion des cours de répétition à domicile. Nous connectons les élèves avec des professeurs qualifiés et offrons aux parents une transparence totale sur le suivi scolaire.</div>
+          <div className="subtitle2 lg:text-center text-white/80">Centre de gestion des cours de répétition à domicile. Nous connectons les élèves avec des professeurs qualifiés et offrons aux parents une transparence totale sur le suivi scolaire.</div>
         </div>
         <div className="grid lg:grid-cols-5 w-full gap-16">
           {

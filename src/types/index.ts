@@ -48,6 +48,7 @@ export type HowItWorksStep = {
     step: number;
     title: string;
     description: string;
+    bg_color?: string;
 };
 
 export type FaqItem = {
@@ -126,4 +127,4 @@ export interface ValueItem {
     description: string;
     backgroundColor: string;
     icon: StaticImageData | string;
-}
+}

@@ -82,8 +82,8 @@ const WhatFamilySayCarousel = () => {
             </div>
 
             {/* Mobile : une seule carte avec boutons de part et d'autre */}
-            <div className="flex lg:hidden items-center justify-center gap-2 w-full px-2 overflow-hidden">
-                <RoundButton direction="left" isActive onClick={prev} />
+            <div className="flex lg:hidden items-center justify-center -gap-2 relative w-full ">
+                <RoundButton direction="left" isActive onClick={prev} className="absolute -translate-1/2 top-1/2 left-0 z-100" />
 
                 <div
                     key={visible[1].full_name}
@@ -92,7 +92,7 @@ const WhatFamilySayCarousel = () => {
                     <WhatFamilySayCard {...visible[1]} />
                 </div>
 
-                <RoundButton direction="right" isActive onClick={next} />
+                <RoundButton direction="right" isActive onClick={next} className="absolute -translate-1/2 top-1/2 -right-11 z-100" />
             </div>
         </div>
     );
