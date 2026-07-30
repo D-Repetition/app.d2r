@@ -39,7 +39,7 @@ const Topbar = () => {
     return (
         <>
             <div
-                className={`hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-1000 fixed mt-6 lg:mt-11 pl-6 lg:py-2 lg:pr-2 py-1 pr-1 rounded-full bg-white border border-board-black/10 lg:flex transition-transform duration-300 ${hidden ? "lg:-translate-y-32" : "lg:translate-y-0"
+                className={`hidden w-full maxw left-1/2 -translate-x-1/2 items-center justify-between z-10000 fixed mt-6 lg:mt-11 pl-6 lg:py-2 lg:pr-2 py-1 pr-1 rounded-full bg-white border border-board-black/10 lg:flex transition-transform duration-300 ${hidden ? "lg:-translate-y-32" : "lg:translate-y-0"
                     }`}
             >
                 <div className="flex items-center justify-start gap-10">
@@ -57,12 +57,12 @@ const Topbar = () => {
                         <div className="flex items-center text-board-black relative group">
                             <div className="">Découvrir</div>
                             <ChevronDown className="fill-board-black group-hover:-rotate-180 duration-500" />
-                            <div className="absolute top-8 left-0 duration-500 -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-0 overflow-hidden h-4 w-20 group-hover:w-auto group-hover:h-auto z-0 group-hover:z-1000"><Discover /></div>
+                            <div className="absolute top-8 left-0 duration-500 -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-0 overflow-hidden h-4 w-20 group-hover:w-auto group-hover:h-auto z-1000 group-hover:z-10000"><Discover /></div>
                         </div>
                         <div className="flex items-center text-board-black relative group">
                             <div className="">Ressources</div>
                             <ChevronDown className="fill-board-black group-hover:-rotate-180 duration-500" />
-                            <div className="absolute top-8 left-0 duration-500 -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-0 overflow-hidden h-4 w-20 group-hover:w-auto group-hover:h-auto z-0 group-hover:z-1000"><Resources /></div>
+                            <div className="absolute top-8 left-0 duration-500 -translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-0 overflow-hidden h-4 w-20 group-hover:w-auto group-hover:h-auto z-1000 group-hover:z-10000"><Resources /></div>
                         </div>
                         <Link href="/nous-contactez" className="">
                             <div className="flex items-center text-board-black">
@@ -85,7 +85,7 @@ const Topbar = () => {
             </div>
 
             <div
-                className={`fixed left-1/2 top-6 z-50 w-[min(92vw,1200px)] -translate-x-1/2 lg:hidden transition-transform duration-300`}
+                className={`fixed left-1/2 top-6 z-10000 w-[min(92vw,1200px)] -translate-x-1/2 lg:hidden transition-transform duration-300`}
             >
                 <div className="rounded-4xl border border-board-black/10 bg-white pl-6 py-1 pr-2 lg:py-2 shadow-[0px_10px_30px_rgba(0,0,0,0.08)]">
                     <div className="flex items-center justify-between gap-3">
