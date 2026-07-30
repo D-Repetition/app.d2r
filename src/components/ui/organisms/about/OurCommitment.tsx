@@ -6,23 +6,23 @@ import React from 'react'
 const OurCommitment = () => {
     return (
         <section className='min-h-svh w-full'>
-            <div className="w-full max-w-[75%] mx-auto min-h-svh flex flex-col items-center justify-start pt-[6vh] pb-[12vh] gap-20">
+            <div className="w-full max-w-[90%] lg:max-w-[75%] mx-auto min-h-svh flex flex-col items-center justify-start pt-[6vh] pb-[12vh] max-lg:gap-10 lg:gap-20">
                 <div className="flex flex-col items-center justify-start gap-6 w-full">
-                    <div className="title text-center max-w-[70%]">Nos engagements pour un accompagnement en toute confiance</div>
-                    <div className="text-center subtitle font-normal max-w-[60%]">Chaque famille bénéficie d'un suivi transparent, d'un accompagnement personnalisé et d'une équipe disponible à chaque étape.</div>
+                    <div className="title text-center max-lg:w-full lg:max-w-[70%]">Nos engagements pour un accompagnement en toute confiance</div>
+                    <div className="text-center subtitle font-normal  max-lg:w-full lg:max-w-[60%]">Chaque famille bénéficie d'un suivi transparent, d'un accompagnement personnalisé et d'une équipe disponible à chaque étape.</div>
                 </div>
-                <div className="w-full max-w-[80%] h-[75vh] grid grid-cols-3 grid-rows-3">
+                <div className="w-full max-lg:max-w-full lg:max-w-[80%] min-h-[75vh] grid lg:grid-cols-3 lg:grid-rows-3">
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-shade-cyan/80",
                         ].join(" ")}
                     >
-                        <div className="z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
+                        <div className="max-lg:hidden z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
                             <Arrow className='fill-board-black' />
                         </div>
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className="font-dm-serif max-lg:text-[20px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Validation des cours
                             </div>
 
@@ -33,15 +33,15 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-marigold-amber/80",
                         ].join(" ")}
                     >
-                        <div className="z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
+                        <div className="max-lg:hidden z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
                             <Arrow className='fill-board-black' />
                         </div>
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className="font-dm-serif max-lg:text-[20px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Réactivité
                             </div>
 
@@ -52,12 +52,12 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-poppy-pink/80",
                         ].join(" ")}
                     >
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className="font-dm-serif max-lg:text-[20px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Compte rendu pédagogique
                             </div>
 
@@ -68,7 +68,7 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative flex items-center justify-center",
+                            "max-lg:hidden max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 p-[2vw] relative flex items-center justify-center",
                             "bg-blue-navy/5",
                         ].join(" ")}
                     >
@@ -76,12 +76,12 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-poppy-red/80",
                         ].join(" ")}
                     >
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className="font-dm-serif max-lg:text-[20px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Suivi personnalisé
                             </div>
 
@@ -92,7 +92,7 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative flex items-center justify-center",
+                            "max-lg:hidden max-lg:max-w-full lg:max-w-[20vw] p-3 max-lg:min-h-[150px]  shrink-0 p-[2vw] relative flex items-center justify-center",
                             "bg-blue-navy/5",
                         ].join(" ")}
                     >
@@ -100,15 +100,15 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-olive-green/80",
                         ].join(" ")}
                     >
-                        <div className="z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
+                        <div className="max-lg:hidden z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
                             <Arrow className='fill-board-black' />
                         </div>
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className="font-dm-serif max-lg:text-[20px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Qualité pédagogique
                             </div>
 
@@ -119,15 +119,15 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-emerald-green/80",
                         ].join(" ")}
                     >
-                        <div className="z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
+                        <div className="max-lg:hidden z-100 absolute top-1/2 -right-9 -translate-1/2 h-9 w-9 flex items-center justify-center border border-board-black bg-white rounded-full">
                             <Arrow className='fill-board-black' />
                         </div>
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className=" max-lg:text-[20px] font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Innovation
                             </div>
 
@@ -138,12 +138,12 @@ const OurCommitment = () => {
                     </div>
                     <div
                         className={[
-                            "max-w-[20vw]  shrink-0 p-[2vw] relative",
+                            "max-lg:max-w-full lg:max-w-[20vw] max-lg:p-3 max-lg:min-h-[150px]  shrink-0 lg:p-[2vw] relative",
                             "bg-poppy-orange/80",
                         ].join(" ")}
                     >
-                        <div className="flex h-full flex-col items-start justify-start gap-3">
-                            <div className="font-dm-serif lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                        <div className="flex h-full flex-col items-start justify-start gap-3 py-3">
+                            <div className="font-dm-serif max-lg:text-[20px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
                                 Transparence
                             </div>
 
