@@ -7,7 +7,7 @@ type WhatFamilySayCardI = TestimonyI & ComponentProps<'div'>
 
 const WhatFamilySayCard = (props: WhatFamilySayCardI) => {
   return (
-    <div {...props} className={['shrink-0 flex flex-col justify-between rounded-lg px-10 py-5 h-[400px] lg:h-[70vh] w-[300px] lg:max-w-[25vw]', props.className, props.bg_color].join(" ")}>
+    <div {...props} className={['shrink-0 flex flex-col justify-between rounded-lg px-10 py-5 h-[400px] lg:h-[70vh] max-w-[300px] lg:max-w-[25vw]', props.className, props.bg_color].join(" ")}>
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-start gap-5">
           <div className="border border-board-black h-[5vh] w-[5vh] rounded-full overflow-hidden">
