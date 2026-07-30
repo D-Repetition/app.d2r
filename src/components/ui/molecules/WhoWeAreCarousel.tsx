@@ -30,7 +30,7 @@ const WhoWeAreCarousel: React.FC = () => {
 
   return (
     <div
-      className='w-[60vw] min-h-[50vh] flex flex-col gap-[3vh]'
+      className='max-lg:mx-auto max-lg:w-full lg:w-[60vw] min-h-[50vh] flex flex-col gap-[3vh]'
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -48,10 +48,10 @@ const WhoWeAreCarousel: React.FC = () => {
             return (
               <div
                 key={sd.id}
-                className="h-full grid grid-cols-[2fr_1fr] gap-[5vh] px-[2px]"
+                className="h-full grid max-lg:grid-cols-1 lg:grid-cols-[2fr_1fr] max-lg:gap-4 lg:gap-[5vh] px-[2px]"
                 style={{ width: `${100 / slidesData.length}%` }}
               >
-                <div className="border border-[0.5px] border-board-black/20 rounded-xl relative overflow-hidden">
+                <div className="border border-[0.5px] border-board-black/20 rounded-xl relative overflow-hidden max-lg:h-[200px]">
                   <Image src={slideImg} className='w-full h-full object-cover object-center' alt={sd.title} />
                 <div className="absolute px-4 py-2 bg-white lg:text-[1.3vw] font-medium bottom-0 left-0 right-0 z-100">
                   {sd.title}
@@ -64,7 +64,7 @@ const WhoWeAreCarousel: React.FC = () => {
                   sd.textColor,
                 ].join(" ")}
               >
-                <div>Statistiques</div>
+                <div className='max-lg:mb-4'>Statistiques</div>
                 <div className="flex flex-col items-start justify-between gap-7 w-full">
                   {sd.statistics.map((st, i) => (
                     <div
@@ -86,7 +86,7 @@ const WhoWeAreCarousel: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 w-full">
+      <div className="max-lg:flex lg:grid lg:grid-cols-3 w-full">
         {navigationItemsData.map((nid, index) => (
           <button
             key={nid.id}
@@ -94,7 +94,7 @@ const WhoWeAreCarousel: React.FC = () => {
             onClick={() => goToIndex(index)}
             className={[
               "border-t border-t-2 pt-4 px-4 text-left cursor-pointer transition-colors duration-300",
-              index === activeIndex ? "border-t-board-black" : "border-t-board-black/5",
+              index === activeIndex ? "border-t-board-black" : "border-t-board-black/5 block max-lg:hidden",
             ].join(" ")}
           >
             <div className="flex flex-col items-start justify-start gap-2">

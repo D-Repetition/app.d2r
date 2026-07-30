@@ -10,7 +10,7 @@ type CTAI = CTASection & ComponentProps<'div'>
 const CTA = (props: CTAI) => {
     const bgImage = props.background_image;
     return (
-        <section {...props} className='min-h-[60vh] py-12 w-full relative flex items-center justify-center flex-col max-lg:pb-[10%]'>
+        <section {...props} className='min-h-[60vh] py-12 w-full relative flex items-center justify-center flex-col max-lg:pb-16'>
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <Image src={bgImage} className='object-cover oject-center w-full h-full' alt={props.title} />
             </div>
