@@ -45,7 +45,23 @@
   }
 }
 
-.animate-marquee-vertical {
+@keyframes marquee-horizontal {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+
+  /* 1rem = la moitié de gap-8 */
+}
+
+@utility animate-marquee-horizontal {
+  animation: marquee-horizontal 20s linear infinite;
+}
+
+@utility animate-marquee-vertical {
   animation: marquee-vertical 40s linear infinite;
 }
 
