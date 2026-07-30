@@ -20,7 +20,7 @@ const OurChallenges = () => {
                             return (
                                 <>
                                     <div className={["rounded-lg p-[2vw] relative", scd.backgroundColor, "max-lg:w-full max-lg:mx-auto max-lg:max-w-full max-lg:min-h-[150px] items-stretch"].join(" ")}>
-                                        <Image src={iconImg} className='absolute top-4 right-0 opacity-5 h-[14vh] w-auto object-contain' alt={scd.title} />
+                                        <Image src={iconImg} className='absolute top-4 right-0 opacity-5 max-lg:h-16 lg:h-[14vh] w-auto object-contain' alt={scd.title} />
                                         <div className="absolute max-lg:bottom-3 max-lg:right-4 lg:bottom-6 lg:right-8 text-[1.4rem] font-bold max-lg:w-12 max-lg:h-12 lg:w-[3.2vw] lg:h-[3.2vw] flex items-center justify-center text-board-black border border-board-black rounded-full">
                                             {scd.id}
                                         </div>
