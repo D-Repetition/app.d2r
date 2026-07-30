@@ -8,18 +8,18 @@ type TeacherCardI = TeacherI & ComponentProps<'div'>
 
 const TeacherCard = (props: TeacherCardI) => {
     return (
-        <div {...props} className={['h-[70vh] w-[30vw] shrink-0 rounded-lg overflow-hidden relative', props.className].join(" ")}>
+        <div {...props} className={['max-lg:h-[420px] max-lg:w-[380px] lg:h-[70vh] lg:w-[30vw] shrink-0 rounded-lg overflow-hidden relative', props.className].join(" ")}>
             <Image src={props.photo} className='relative z-0 object-cover object-center w-full h-full' alt={`Photo de ${props.full_name}`} />
-            <div className="absolute h-[33%] left-0 right-0 bottom-0 black-gradient z-0"></div>
+            <div className="absolute h-[60%] lg:h-[33%] left-0 right-0 bottom-0 black-gradient z-0"></div>
             <div className="absolute inset-0 px-7 py-5 flex items-center justify-between flex-col">
                 <div className="flex w-full items-center justify-end">
                     {
                         !props.isTrueCard && <div className="h-6 flex gap-1/2 justify-start items-center bg-white px-2 text-board-black rounded-full"><Star className='fill-marigold-amber' /> <p className="">{props.rating}</p></div>
                     }
                 </div>
-                <div className="py-[1vh] flex flex-col gap-7 items-start justify-start w-full relative">
-                    <div className="flex flex-col items-start justify-start gap-1 relative z-1">
-                        <div className="text-white/80 w-full text-start">
+                <div className="py-[1vh] flex flex-col gap-4 lg:gap-7 items-start justify-start w-full relative">
+                    <div className="flex flex-col items-start justify-start lg:gap-1 relative z-1">
+                        <div className="text-white/80 w-full text-start max-lg:text-[12px]">
                             {
                                 props.levels.map((l, index) => {
                                     return (
@@ -43,7 +43,7 @@ const TeacherCard = (props: TeacherCardI) => {
                                 })
                             }
                         </div>
-                        <div className="text-white w-full text-start simple">
+                        <div className="text-white w-full text-start lg:simple">
                             {
                                 props.subjects.map((s, index) => {
                                     return (
@@ -70,12 +70,12 @@ const TeacherCard = (props: TeacherCardI) => {
                     </div>
                     <div className="flex items-center justify-between relative z-1 gap-4">
                         <div className="flex flex-col gap-1/2">
-                            <div className="flex items-center justify-start gap-2"><div className="simpleText2 text-white">{props.full_name}</div>
+                            <div className="flex items-center justify-start gap-2"><div className="lg:simpleText2 text-white">{props.full_name}</div>
                                 {
                                     props.isTrueCard && <Image src={Images.Verify} className='w-auto object-contain' alt="Badge profil enseignant verifie" />
                                 }
                             </div>
-                            <div className="small text-white/80">{props.bio}</div>
+                            <div className="max-lg:text-[12px] lg:small text-white/80">{props.bio}</div>
                         </div>
                         <div className="w-12 h-7 shrink-0 border border-2 border-white flex items-center justify-center rounded-full">
                             <Arrow className='fill-white' />

@@ -29,22 +29,22 @@ const WhyFamilyChooseUs = () => {
     }, [next]);
 
     return (
-        <section className="w-full max-w-[90%] min-h-svh mx-auto flex flex-col items-start pt-20 lg:pt-24 pb-12 lg:pb-10">
-            <div className="w-full min-h-svh flex flex-col items-center">
+        <section className="w-full max-w-[90%] min-h-svh mx-auto flex flex-col items-start pt-4 lg:pt-24 pb-12 lg:pb-10">
+            <div className="w-full min-h-svh flex flex-col items-center max-lg:gap-4">
                 <div className="flex flex-col items-center justify-start gap-8">
                     <div className="font-inter simpleText font-medium">
                         Nos partenaires de confiance
                     </div>
 
                     <div className="flex items-center justify-center gap-8">
-                        <Image src={Images.Davys} className="lg:h-[10vh] w-auto object-contain shrink-0" alt="Logo du partenaire Davys" />
-                        <Image src={Images.Fnepi} className="lg:h-[7vh] w-auto object-contain shrink-0" alt="Logo du partenaire FNEPI" />
+                        <Image src={Images.Davys} className="h-14 lg:h-[10vh] w-auto object-contain shrink-0" alt="Logo du partenaire Davys" />
+                        <Image src={Images.Fnepi} className="h-11 lg:h-[7vh] w-auto object-contain shrink-0" alt="Logo du partenaire FNEPI" />
                     </div>
                 </div>
 
-                <div className="h-auto w-full py-10 lg:pt-40 lg:pb-24 grid grid-cols-2">
-                    <div className="flex flex-col items-start justify-between gap-8 lg:gap-[3vh]">
-                        <Image src={Images.HomeFly} className="h-[12vh] w-auto object-contain" alt="Element graphique decoratif" />
+                <div className="h-auto w-full py-10 lg:pt-40 lg:pb-24 grid grid-cols-1 lg:grid-cols-2">
+                    <div className="flex flex-col items-start justify-between gap-3 lg:gap-[3vh]">
+                        <Image src={Images.HomeFly} className="h-16 h-[12vh] w-auto object-contain" alt="Element graphique decoratif" />
 
                         <div className="title">
                             Pourquoi les familles nous choisissent
@@ -52,19 +52,19 @@ const WhyFamilyChooseUs = () => {
 
                         <div className="subtitle">Parce qu'un bon professeur ne suffit pas. Il faut aussi savoir ce qui se passe, quand ça se passe, et pouvoir le confirmer. C'est exactement ce que D²Répétition vous offre.</div>
                         <div className="flex items-start gap-9">
-                            <div className="flex flex-col items-start gap-3">
-                                <Image src={Images.Student} className="h-[5vh] w-auto object-contain" alt="Icone nombre d eleves suivis" />
+                            <div className="flex flex-col items-start gap-1 lg:gap-3">
+                                <Image src={Images.Student} className="max-lg:h-6 h-[5vh] w-auto object-contain" alt="Icone nombre d eleves suivis" />
                                 <div className="secondaryTitle">200+ élèves suivis</div>
                                 <div className="simpleText">Sur l'ensemble de nos centres</div>
                             </div>
-                            <div className="flex flex-col items-start gap-3">
-                                <Image src={Images.Teacher} className="h-[5vh] w-auto object-contain" alt="Icone nombre de professeurs actifs" />
+                            <div className="flex flex-col items-start gap-1 lg:gap-3">
+                                <Image src={Images.Teacher} className="max-lg:h-6 h-[5vh] w-auto object-contain" alt="Icone nombre de professeurs actifs" />
                                 <div className="secondaryTitle">45+ professeurs actifs</div>
                                 <div className="simpleText">Validés et évalués en continu</div>
                             </div>
                         </div>
 
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center max-lg:mt-4 gap-4">
                             <RoundButton
                                 onClick={previous}
                                 isActive={currentCarousel !== 1}
@@ -79,7 +79,7 @@ const WhyFamilyChooseUs = () => {
                         </div>
                     </div>
 
-                    <div className="pl-[4vw]">
+                    <div className="max-lg:mt-10 lg:pl-[4vw]">
                         <WhyFamilyCarousel whyId={currentCarousel} />
                     </div>
                 </div>

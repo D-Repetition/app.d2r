@@ -26,10 +26,10 @@ const subjectIconsMap: Record<string, any> = {
 const HomeSubject = (props: HomeSubjectI) => {
     const iconImg = subjectIconsMap[props.icon] || props.icon;
     return (
-        <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-between gap-[4vh] relative w-[19.75vw] self-stretch shrink-0 overflow-hidden', props.className, props.bg_color].join(" ")}>
+        <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-between gap-[4vh] relative shrink-0 max-w-[300px] w-fit lg:w-[19.75vw] self-stretch shrink-0 overflow-hidden', props.className, props.bg_color].join(" ")}>
             <Image src={iconImg} className='absolute top-2 -right-8 h-[65%] opacity-5 w-auto object-contain' alt={`Illustration de la matière ${props.title}`} />
             <div className="flex flex-col gap-3">
-                <div className="titleInter">{props.title}</div>
+                <div className="text-[18px] lg:titleInter">{props.title}</div>
                 <div className="text-board-black/40">{props.description}</div>
             </div>
             <div className="flex items-center justify-start gap-1"><Students className='fill-board-black h-7' />{props.teacher_number}</div>

@@ -9,13 +9,13 @@ import { Images } from '@/constants/images'
 
 const Teachers = () => {
     return (
-        <section className='min-h-svh mx-auto flex flex-col items-start pt-20 lg:pt-24 pb-12 lg:pb-30'>
-            <div className="w-full min-h-svh flex flex-col items-center gap-[12vh]">
-                <div className="flex flex-col items-center justify-start lg:max-w-[35vw] gap-4 relative">
-                    <Image src={Images.TeacherIllustration} className='absolute -bottom-8 left-[-6vw] h-[65%] w-auto object-contain' alt="Illustration des enseignants" />
+        <section className='min-h-svh mx-auto flex flex-col items-start pt-4 lg:pt-24 pb-6 lg:pb-30'>
+            <div className="w-full min-h-svh flex flex-col items-center gap-14 lg:gap-[12vh]">
+                <div className="max-lg:max-w-[90%] max-lg:w-full max-lg:mx-auto flex flex-col items-center justify-start lg:max-w-[35vw] gap-4 relative">
+                    <Image src={Images.TeacherIllustration} className='absolute -bottom-8 left-[-6vw] h-[65%] w-auto object-contain max-lg:hidden lg:block' alt="Illustration des enseignants" />
 
-                    <div className='title text-center'>Des professeurs à la hauteur de vos attentes</div>
-                    <div className="simpleText text-center">Chaque professeur intègre la plateforme après une sélection rigoureuse. Diplômes, expérience et pédagogie sont vérifiés avant toute affectation.</div>
+                    <div className='title text-center'>Des professeurs à la hauteur <br className='max-lg:block lg:hidden' />de vos attentes</div>
+                    <div className="max-lg:subtitle lg:simpleText text-center">Chaque professeur intègre la plateforme après une sélection rigoureuse. Diplômes, expérience et pédagogie sont vérifiés avant toute affectation.</div>
                 </div>
                 <div className="relative w-full overflow-hidden">
                     <div className="flex w-max items-stretch gap-6 animate-marquee">

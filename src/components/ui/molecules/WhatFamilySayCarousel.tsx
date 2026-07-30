@@ -54,20 +54,21 @@ const WhatFamilySayCarousel = () => {
 
         return [previous, current, following];
     }, [active]);
+
     return (
-        <div className="flex flex-col items-center gap-[12vh]"
+        <div
+            className="flex flex-col items-center gap-[12vh]"
             onMouseEnter={stopAutoplay}
             onMouseLeave={startAutoplay}
         >
-            <div className="flex items-end justify-center gap-8 overflow-hidden px-8">
+            {/* Desktop : layout actuel inchangé */}
+            <div className="hidden lg:flex items-end justify-center gap-8 overflow-hidden px-8">
                 {visible.map((testimony, index) => (
                     <div
                         key={testimony.full_name}
                         className={[
                             "transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]",
-                            index === 1
-                                ? "scale-100"
-                                : "scale-90",
+                            index === 1 ? "scale-100" : "scale-90",
                         ].join(" ")}
                     >
                         <WhatFamilySayCard {...testimony} />
@@ -75,18 +76,23 @@ const WhatFamilySayCarousel = () => {
                 ))}
             </div>
 
-            <div className="flex items-center justify-center gap-4">
-                <RoundButton
-                    direction="left"
-                    isActive
-                    onClick={prev}
-                />
+            <div className="hidden lg:flex items-center justify-center gap-4">
+                <RoundButton direction="left" isActive onClick={prev} />
+                <RoundButton direction="right" isActive onClick={next} />
+            </div>
 
-                <RoundButton
-                    direction="right"
-                    isActive
-                    onClick={next}
-                />
+            {/* Mobile : une seule carte avec boutons de part et d'autre */}
+            <div className="flex lg:hidden items-center justify-center gap-2 w-full px-2 overflow-hidden">
+                <RoundButton direction="left" isActive onClick={prev} />
+
+                <div
+                    key={visible[1].full_name}
+                    className="transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] scale-100"
+                >
+                    <WhatFamilySayCard {...visible[1]} />
+                </div>
+
+                <RoundButton direction="right" isActive onClick={next} />
             </div>
         </div>
     );
