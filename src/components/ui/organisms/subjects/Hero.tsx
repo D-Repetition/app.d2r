@@ -12,18 +12,18 @@ import Round from "../../atomes/Round"
 const Hero = () => {
     return (
         <section className="w-full max-w-[90%] min-h-svh mx-auto flex flex-col items-start pt-30 lg:pt-44 pb-12 lg:pb-10 justify-start gap-6 lg:gap-[75px]">
-            <div className="w-full flex flex-col items-center justify-start gap-15">
+            <div className="w-full flex flex-col items-center justify-start gap-8 lg:gap-15">
                 <div className="flex flex-col items-center justify-start gap-6 w-full">
                     <div className="title text-center">Un accompagnement dans toutes les matières clés</div>
                     <div className="text-center subtitle font-normal!">Des cours personnalisés pour aider chaque élève à progresser et atteindre ses objectifs.</div>
                 </div>
 
-                <div className="max-w-125 flex items-center justify-center gap-2">
+                <div className="max-w-125 w-full flex items-center justify-center gap-2">
                     <SearchField placeholder="Rechercher une matière" />
                     <Round isActive={true} />
                 </div>
 
-                <div className="w-full max-w-[85%] grid grid-cols-3 gap-12">
+                <div className="w-full max-lg:max-w-[90%] lg:max-w-[85%] grid max-lg:grid-cols-1 lg:grid-cols-3 max-lg:gap-6 lg:gap-12">
                     {
                         subjectsData.map((sd, index) => {
                             return (

@@ -36,7 +36,7 @@ const SearchField = ({
     }
 
     return (
-        <div className={['relative w-[32vw] shrink-0 h-[6vh] border border-2 rounded-full border-board-black', className].join(" ")}>
+        <div className={['relative max-lg:w-[250px] lg:w-[32vw] shrink-0 max-lg:h-12 lg:h-[6vh] border border-2 rounded-full border-board-black', className].join(" ")}>
             <input
                 type="text"
                 className='w-full h-full border-none outline-none px-5'
@@ -48,7 +48,7 @@ const SearchField = ({
             <button
                 type="button"
                 onClick={handleSearch}
-                className='h-[4.5vh] w-[4.5vh] -translate-y-1/2 rounded-full flex items-center justify-center bg-board-black absolute right-1.5 top-1/2'
+                className='max-lg:h-9 max-lg:w-9 lg:h-[4.5vh] lg:w-[4.5vh] -translate-y-1/2 rounded-full flex items-center justify-center bg-board-black absolute right-1.5 top-1/2'
             >
                 <Search className="fill-white opacity-100" />
             </button>

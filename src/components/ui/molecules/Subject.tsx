@@ -41,7 +41,7 @@ const Subject = (props: SubjectItselfI) => {
     return (
         <div {...props} className={['px-8 py-12 rounded-lg flex flex-col items-start justify-start gap-2', props.className, props.bg_color].join(" ")}>
             {
-                props.tags.length > 0 && <div className="flex gap-1 items-start justify-start">
+                props.tags.length > 0 && <div className="flex gap-1 items-start justify-start max-lg:mb-2">
                     {
                         props.tags.map((t) => {
                             return (
@@ -62,8 +62,8 @@ const Subject = (props: SubjectItselfI) => {
                 </div>
             }
             <div className="flex flex-col gap-3">
-                <div className="titleInter">{props.title}</div>
-                <div className="text-board-black/40">{props.description}</div>
+                <div className="max-lg:text-[24px]! max-lg:leading-[32px]! titleInter">{props.title}</div>
+                <div className="max-lg:text-[14px] text-board-black/40">{props.description}</div>
             </div>
             <div className="flex items-center justify-start gap-1 mt-3"><Students className='fill-board-black h-7' />{props.teacher_number} Enseignants</div>
         </div>
