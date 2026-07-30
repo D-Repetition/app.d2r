@@ -5,12 +5,12 @@ import React from 'react'
 const OurMissionAndVision = () => {
     return (
         <section className='min-h-svh w-full relative'>
-            <Image src={Images.CurveCyan} className='absolute left-0 bottom-0 h-[30vh] w-auto object-contain' alt="Motif decoratif cyan" />
-            <div className="w-full max-w-[75%] mx-auto min-h-svh flex flex-col items-center justify-between py-[6vh] gap-20">
+            <Image src={Images.CurveCyan} className='hidden lg:block absolute left-0 bottom-0 h-[30vh] w-auto object-contain' alt="Motif decoratif cyan" />
+            <div className="w-full max-lg:max-w-[90%] lg:max-w-[75%] mx-auto min-h-svh flex flex-col items-center justify-between py-[6vh] max-lg:gap-16 lg:gap-20">
                 <div className="lg:text-[1.4vw] text-center">Mission & Vision</div>
-                <div className="w-full h-[85vh] grid grid-cols-2 gap-[8vw]">
+                <div className="w-full min-h-[85vh] grid max-lg:grid-cols-1 lg:grid-cols-2 max-lg:gap-20 lg:gap-[8vw]">
                     <div className="flex flex-col items-start">
-                        <div className="flex flex-col items-start justify-start gap-8 lg:gap-[3vh]">
+                        <div className="flex flex-col items-start justify-start gap-6 lg:gap-[3vh]">
                             <div className="flex flex-col items-start justify-start gap-1">
                                 <Image src={Images.Goat} className="h-[10vh] w-auto object-contain" alt="Illustration de notre mission educative" />
 
@@ -19,14 +19,14 @@ const OurMissionAndVision = () => {
                                 </div></div>
 
                             <div className="lg:text-[1vw] font-medium">Offrir à chaque apprenant un accompagnement scolaire personnalisé, rigoureux et innovant grâce à des enseignants compétents, un suivi pédagogique permanent et des méthodes inspirées des neurosciences éducatives.</div>
-                            <div className="flex items-start gap-9">
+                            <div className="flex items-start max-lg:gap-4 lg:gap-9">
                                 <div className="flex flex-col items-start gap-3">
-                                    <Image src={Images.Student} className="h-[4vh] w-auto object-contain" alt="Icone eleves accompagnes" />
+                                    <Image src={Images.Student} className="max-lg:h-6 lg:h-[4vh] w-auto object-contain" alt="Icone eleves accompagnes" />
                                     <div className="lg:text-[1vw] font-medium">458+ Élèves accompagnés</div>
                                     <div className="lg:text-[.85vw] font-normal">Depuis notre création</div>
                                 </div>
                                 <div className="flex flex-col items-start gap-3">
-                                    <Image src={Images.Teacher} className="h-[4vh] w-auto object-contain" alt="Icone enseignants actifs" />
+                                    <Image src={Images.Teacher} className="max-lg:h-6 lg:h-[4vh] w-auto object-contain" alt="Icone enseignants actifs" />
                                     <div className="lg:text-[1vw] font-medium">35 Enseignants actifs</div>
                                     <div className="lg:text-[.85vw] font-normal">Sélectionnés et accompagnés</div>
                                 </div>
@@ -34,7 +34,7 @@ const OurMissionAndVision = () => {
                         </div>
                     </div>
                     <div className="flex flex-col items-start justify-center">
-                        <div className="flex flex-col items-start justify-center gap-8 lg:gap-[3vh]">
+                        <div className="flex flex-col items-start justify-center gap-6 lg:gap-[3vh]">
                             <div className="flex flex-col items-start justify-start gap-1">
                                 <Image src={Images.Lion} className="h-[10vh] w-auto object-contain" alt="Illustration de notre vision educative" />
 
@@ -43,14 +43,14 @@ const OurMissionAndVision = () => {
                                 </div></div>
 
                             <div className="lg:text-[1vw] font-medium">Devenir la référence en Afrique dans l'accompagnement scolaire personnalisé en développant un écosystème éducatif innovant intégrant les technologies numériques, les neurosciences éducatives et des pratiques pédagogiques centrées sur la réussite de chaque élève.</div>
-                            <div className="flex items-start gap-9">
+                            <div className="flex items-start max-lg:gap-4 lg:gap-9">
                                 <div className="flex flex-col items-start gap-3">
-                                    <Image src={Images.Student} className="h-[4vh] w-auto object-contain" alt="Icone annees d experience" />
+                                    <Image src={Images.Student} className="max-lg:h-6 lg:h-[4vh] w-auto object-contain" alt="Icone annees d experience" />
                                     <div className="lg:text-[1vw] font-medium">3+ Années d'expérience</div>
                                     <div className="lg:text-[.85vw] font-normal">Depuis 2023</div>
                                 </div>
                                 <div className="flex flex-col items-start gap-3">
-                                    <Image src={Images.Teacher} className="h-[4vh] w-auto object-contain" alt="Icone satisfaction des familles" />
+                                    <Image src={Images.Teacher} className="max-lg:h-6 lg:h-[4vh] w-auto object-contain" alt="Icone satisfaction des familles" />
                                     <div className="lg:text-[1vw] font-medium">97 % Familles satisfaites</div>
                                     <div className="lg:text-[.85vw] font-normal">Un accompagnement reconnu</div>
                                 </div>
