@@ -123,43 +123,43 @@ const Topbar = () => {
                                     </div>
                                 </Link>
                                 <Link href="/qui-sommes-nous" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                         Qui sommes-nous
                                     </div>
                                 </Link>
                                 <Link href="/matieres" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                         Nos matières
                                     </div>
                                 </Link>
                                 <Link href="/enseignants" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                         Nos professeurs
                                     </div>
                                 </Link>
                                 <Link href="/comment-ca-marche" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                         Comment ça marche
                                     </div>
                                 </Link>
                                 <Link href="/temoignages" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                         Témoignages
                                     </div>
                                 </Link>
                                 <div className="flex flex-col items-start justify-start gap-2">
                                     <Link href="/foire-aux-questions" className="">
-                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             FAQ
                                         </div>
                                     </Link>
                                     <Link href="/nous-contactez" className="">
-                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Contact
                                         </div>
                                     </Link>
                                     <Link href="/devenir-professeur" className="">
-                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Devenir professeur
                                         </div>
                                     </Link>
