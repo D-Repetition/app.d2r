@@ -9,12 +9,14 @@ import Discover from "./molecules/Discover"
 import Resources from "./molecules/Resources"
 import Menu from "../assets/icons/Menu"
 
-const DESKTOP_BREAKPOINT = 1024 
+const DESKTOP_BREAKPOINT = 1024
 
 const Topbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [hidden, setHidden] = useState(false)
     const lastScrollY = useRef(0)
+    const mobileNavRef = useRef<HTMLDivElement>(null)
+
 
     useEffect(() => {
         lastScrollY.current = window.scrollY
@@ -39,6 +41,30 @@ const Topbar = () => {
         window.addEventListener("scroll", handleScroll, { passive: true })
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
+
+    useEffect(() => {
+        if (!mobileMenuOpen) return
+
+        const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+            if (
+                mobileNavRef.current &&
+                event.target instanceof Node &&
+                !mobileNavRef.current.contains(event.target)
+            ) {
+                setMobileMenuOpen(false)
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside)
+        document.addEventListener("touchstart", handleClickOutside)
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside)
+            document.removeEventListener("touchstart", handleClickOutside)
+        }
+    }, [mobileMenuOpen])
+
+    const closeMobileMenu = () => setMobileMenuOpen(false)
 
     return (
         <>
@@ -89,6 +115,7 @@ const Topbar = () => {
             </div>
 
             <div
+                ref={mobileNavRef}
                 className={`fixed left-1/2 top-6 z-10000 w-[min(92vw,1200px)] -translate-x-1/2 lg:hidden transition-transform duration-300`}
             >
                 <div className="rounded-4xl border border-board-black/10 bg-white pl-6 py-1 pr-2 lg:py-2 shadow-[0px_10px_30px_rgba(0,0,0,0.08)] duration-300">
@@ -115,38 +142,38 @@ const Topbar = () => {
                         </div>
                     </div>
 
-                        <div className={["lg:hidden duration-400", mobileMenuOpen ? "mt-6 mb-4 h-auto" : "h-0 overflow-hidden"].join(" ")}>
-                            <div className="flex flex-col items-start gap-6">
-                                <Link href="/" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px]">
-                                        Acceuil
-                                    </div>
+                    <div className={["lg:hidden duration-400", mobileMenuOpen ? "mt-6 mb-4 h-auto" : "h-0 overflow-hidden"].join(" ")}>
+                        <div className="flex flex-col items-start gap-6">
+                            <Link href="/" className="" onClick={closeMobileMenu}>
+                                <div className="flex items-center text-board-black max-xl:text-[14px]">
+                                    Acceuil
+                                </div>
                             </Link>
-                            
+
                             <div className="">
                                 <div className="text-[12px] text-board-black/60 mb-2">Découvrir</div>
                                 <div className="pl-6 flex flex-col items-start text-blue-navy gap-4">
-                                    <Link href="/qui-sommes-nous" className="">
+                                    <Link href="/qui-sommes-nous" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Qui sommes-nous
                                         </div>
                                     </Link>
-                                    <Link href="/matieres" className="">
+                                    <Link href="/matieres" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Nos matières
                                         </div>
                                     </Link>
-                                    <Link href="/enseignants" className="">
+                                    <Link href="/enseignants" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Nos professeurs
                                         </div>
                                     </Link>
-                                    <Link href="/comment-ca-marche" className="">
+                                    <Link href="/comment-ca-marche" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Comment ça marche
                                         </div>
                                     </Link>
-                                    <Link href="/temoignages" className="">
+                                    <Link href="/temoignages" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Témoignages
                                         </div>
@@ -156,31 +183,31 @@ const Topbar = () => {
                             <div className="">
                                 <div className="text-[12px] text-board-black/60 mb-2">Ressources</div>
                                 <div className="pl-6 flex flex-col items-start text-blue-navy gap-4">
-                                    <Link href="/foire-aux-questions" className="">
+                                    <Link href="/foire-aux-questions" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             FAQ
                                         </div>
                                     </Link>
-                                    <Link href="/nous-contactez" className="">
+                                    <Link href="/nous-contactez" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Contact
                                         </div>
                                     </Link>
-                                    <Link href="/devenir-professeur" className="">
+                                    <Link href="/devenir-professeur" className="" onClick={closeMobileMenu}>
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Devenir professeur
                                         </div>
                                     </Link>
                                 </div>
                             </div>
-                                <Link href="/bibliotheque" className="mt-4">
-                                    <Button className="flex items-center text-white bg-board-black max-xl:text-[14px] text-nowrap">
-                                        <div className="">Notre bibliothèque</div>
-                                        <Arrow className='fill-white -rotate-45' />
-                                    </Button>
-                                </Link>
-                            </div>
+                            <Link href="/bibliotheque" className="mt-4" onClick={closeMobileMenu}>
+                                <Button className="flex items-center text-white bg-board-black max-xl:text-[14px] text-nowrap">
+                                    <div className="">Notre bibliothèque</div>
+                                    <Arrow className='fill-white -rotate-45' />
+                                </Button>
+                            </Link>
                         </div>
+                    </div>
                 </div>
             </div>
         </>
