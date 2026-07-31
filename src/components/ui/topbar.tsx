@@ -116,16 +116,16 @@ const Topbar = () => {
                     </div>
 
                         <div className={["lg:hidden duration-400", mobileMenuOpen ? "mt-6 mb-4 h-auto" : "h-0 overflow-hidden"].join(" ")}>
-                            <div className="flex flex-col items-start text-blue-navy gap-4">
+                            <div className="flex flex-col items-start gap-4">
                                 <Link href="/" className="">
                                     <div className="flex items-center text-board-black max-xl:text-[14px]">
                                         Acceuil
                                     </div>
                             </Link>
                             
-                            <div className="mt-1">
-                                <div className="text-[12px] text-board-black/60">Découvrir</div>
-                                <div className="pl-3">
+                            <div className="">
+                                <div className="text-[12px] text-board-black/60 :b-1">Découvrir</div>
+                                <div className="pl-3 flex flex-col items-start text-blue-navy gap-4">
                                     <Link href="/qui-sommes-nous" className="">
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Qui sommes-nous
@@ -153,8 +153,9 @@ const Topbar = () => {
                                     </Link>
                                 </div>
                             </div>
-                                
-                                <div className="flex flex-col items-start justify-start gap-2">
+                            <div className="">
+                                <div className="text-[12px] text-board-black/60 :b-1">Ressources</div>
+                                <div className="pl-3 flex flex-col items-start text-blue-navy gap-4">
                                     <Link href="/foire-aux-questions" className="">
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             FAQ
@@ -171,6 +172,7 @@ const Topbar = () => {
                                         </div>
                                     </Link>
                                 </div>
+                            </div>
                                 <Link href="/bibliotheque" className="mt-4">
                                     <Button className="flex items-center text-white bg-board-black max-xl:text-[14px] text-nowrap">
                                         <div className="">Notre bibliothèque</div>
