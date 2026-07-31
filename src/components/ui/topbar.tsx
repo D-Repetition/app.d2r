@@ -3,11 +3,11 @@
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import ChevronDown from "../assets/icons/ChevronDown"
-import ClosePanel from "../assets/icons/ClosePanel"
-import { Logo, UserFace } from "../assets/icons"
+import { Close, Logo, UserFace } from "../assets/icons"
 import Button from "./atomes/Button"
 import Discover from "./molecules/Discover"
 import Resources from "./molecules/Resources"
+import Menu from "../assets/icons/Menu"
 
 const DESKTOP_BREAKPOINT = 1024 // correspond au breakpoint `lg` de Tailwind
 
@@ -111,7 +111,7 @@ const Topbar = () => {
                                 aria-expanded={mobileMenuOpen}
                                 aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
                             >
-                                {mobileMenuOpen ? <ClosePanel className="h-6 w-6" /> : <ChevronDown className="fill-board-black -rotate-90" />}
+                                {mobileMenuOpen ? <Close className="h-6 w-6" /> : <Menu className="fill-board-black -rotate-90" />}
                             </button>
                         </div>
                     </div>
