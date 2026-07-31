@@ -9,6 +9,8 @@ import Button from "./atomes/Button"
 import Discover from "./molecules/Discover"
 import Resources from "./molecules/Resources"
 
+const DESKTOP_BREAKPOINT = 1024 // correspond au breakpoint `lg` de Tailwind
+
 const Topbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [hidden, setHidden] = useState(false)
@@ -18,6 +20,9 @@ const Topbar = () => {
         lastScrollY.current = window.scrollY
 
         const handleScroll = () => {
+            // On ne gère le hide-on-scroll (et la fermeture auto du menu) que sur desktop
+            if (window.innerWidth < DESKTOP_BREAKPOINT) return
+
             const currentScrollY = window.scrollY
 
             if (Math.abs(currentScrollY - lastScrollY.current) < 5) return
