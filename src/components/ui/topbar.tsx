@@ -91,7 +91,7 @@ const Topbar = () => {
             <div
                 className={`fixed left-1/2 top-6 z-10000 w-[min(92vw,1200px)] -translate-x-1/2 lg:hidden transition-transform duration-300`}
             >
-                <div className="rounded-4xl border border-board-black/10 bg-white pl-6 py-1 pr-2 lg:py-2 shadow-[0px_10px_30px_rgba(0,0,0,0.08)]">
+                <div className="rounded-4xl border border-board-black/10 bg-white pl-6 py-1 pr-2 lg:py-2 shadow-[0px_10px_30px_rgba(0,0,0,0.08)] duration-300">
                     <div className="flex items-center justify-between gap-3">
                         <Link href="/" className="shrink-0">
                             <div className="flex items-center text-blue-navy">
@@ -121,32 +121,39 @@ const Topbar = () => {
                                     <div className="flex items-center text-board-black max-xl:text-[14px]">
                                         Acceuil
                                     </div>
-                                </Link>
-                                <Link href="/qui-sommes-nous" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
-                                        Qui sommes-nous
-                                    </div>
-                                </Link>
-                                <Link href="/matieres" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
-                                        Nos matières
-                                    </div>
-                                </Link>
-                                <Link href="/enseignants" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
-                                        Nos professeurs
-                                    </div>
-                                </Link>
-                                <Link href="/comment-ca-marche" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
-                                        Comment ça marche
-                                    </div>
-                                </Link>
-                                <Link href="/temoignages" className="">
-                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
-                                        Témoignages
-                                    </div>
-                                </Link>
+                            </Link>
+                            
+                            <div className="mt-1">
+                                <div className="text-[12px] text-board-black/60">Découvrir</div>
+                                <div className="pl-3">
+                                    <Link href="/qui-sommes-nous" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
+                                            Qui sommes-nous
+                                        </div>
+                                    </Link>
+                                    <Link href="/matieres" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
+                                            Nos matières
+                                        </div>
+                                    </Link>
+                                    <Link href="/enseignants" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
+                                            Nos professeurs
+                                        </div>
+                                    </Link>
+                                    <Link href="/comment-ca-marche" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
+                                            Comment ça marche
+                                        </div>
+                                    </Link>
+                                    <Link href="/temoignages" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
+                                            Témoignages
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                                
                                 <div className="flex flex-col items-start justify-start gap-2">
                                     <Link href="/foire-aux-questions" className="">
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
