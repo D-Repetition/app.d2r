@@ -72,10 +72,10 @@ const Topbar = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-2 text-board-black">
-                    <Link href="/" className="">
+                    <Link href="/se-connecter" className="">
                         <Button>Se connecter</Button>
                     </Link>
-                    <Link href="/" className="">
+                    <Link href="/s-inscrire-en-tant-que-parent" className="">
                         <Button className="bg-blue-navy text-white">
                             <UserFace className="fill-white opacity-100" />
                             <div className="">Inscrire mon enfant</div>
@@ -96,7 +96,7 @@ const Topbar = () => {
                         </Link>
 
                         <div className="flex items-center gap-2 text-board-black">
-                            <Link href="/" className="">
+                            <Link href="/se-connecter" className="">
                                 <Button className="px-4 py-3">Se connecter</Button>
                             </Link>
                             <button
@@ -143,10 +143,10 @@ const Topbar = () => {
                                 </Link>
 
                                 <div className="grid gap-2 pt-1">
-                                    <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+                                    <Link href="/se-connecter" onClick={() => setMobileMenuOpen(false)}>
                                         <Button className="w-full">Se connecter</Button>
                                     </Link>
-                                    <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+                                    <Link href="/s-inscrire-en-tant-que-parent" onClick={() => setMobileMenuOpen(false)}>
                                         <Button className="w-full bg-blue-navy text-white">
                                             <UserFace className="fill-white opacity-100" />
                                             <div className="">Inscrire mon enfant</div>
