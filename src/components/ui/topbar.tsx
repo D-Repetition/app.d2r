@@ -9,7 +9,7 @@ import Discover from "./molecules/Discover"
 import Resources from "./molecules/Resources"
 import Menu from "../assets/icons/Menu"
 
-const DESKTOP_BREAKPOINT = 1024 // correspond au breakpoint `lg` de Tailwind
+const DESKTOP_BREAKPOINT = 1024 
 
 const Topbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,7 +20,6 @@ const Topbar = () => {
         lastScrollY.current = window.scrollY
 
         const handleScroll = () => {
-            // On ne gère le hide-on-scroll (et la fermeture auto du menu) que sur desktop
             if (window.innerWidth < DESKTOP_BREAKPOINT) return
 
             const currentScrollY = window.scrollY
@@ -111,54 +110,14 @@ const Topbar = () => {
                                 aria-expanded={mobileMenuOpen}
                                 aria-label={mobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
                             >
-                                {mobileMenuOpen ? <Close className="h-6 w-6" /> : <Menu className="fill-board-black -rotate-90" />}
+                                {mobileMenuOpen ? <Close className="h-6 w-6" /> : <Menu className="fill-board-black" />}
                             </button>
                         </div>
                     </div>
 
                     {mobileMenuOpen ? (
                         <div className="mt-4 rounded-3xl border border-board-black/10 bg-white p-4 shadow-[0px_10px_24px_rgba(0,0,0,0.08)]">
-                            <div className="flex flex-col gap-4 text-board-black">
-                                <Link href="/" className="flex items-center py-1" onClick={() => setMobileMenuOpen(false)}>
-                                    Acceuil
-                                </Link>
-
-                                <div className="space-y-2">
-                                    <div className="flex items-center text-board-black gap-2">
-                                        <span>Découvrir</span>
-                                        <ChevronDown className="fill-board-black" />
-                                    </div>
-                                    <div className="pl-3">
-                                        <Discover />
-                                    </div>
-                                </div>
-
-                                <div className="space-y-2">
-                                    <div className="flex items-center text-board-black gap-2">
-                                        <span>Ressources</span>
-                                        <ChevronDown className="fill-board-black" />
-                                    </div>
-                                    <div className="pl-3">
-                                        <Resources />
-                                    </div>
-                                </div>
-
-                                <Link href="/" className="flex items-center" onClick={() => setMobileMenuOpen(false)}>
-                                    Contact
-                                </Link>
-
-                                <div className="grid gap-2 pt-1">
-                                    <Link href="/se-connecter" onClick={() => setMobileMenuOpen(false)}>
-                                        <Button className="w-full">Se connecter</Button>
-                                    </Link>
-                                    <Link href="/s-inscrire-en-tant-que-parent" onClick={() => setMobileMenuOpen(false)}>
-                                        <Button className="w-full bg-blue-navy text-white">
-                                            <UserFace className="fill-white opacity-100" />
-                                            <div className="">Inscrire mon enfant</div>
-                                        </Button>
-                                    </Link>
-                                </div>
-                            </div>
+                            
                         </div>
                     ) : null}
                 </div>
