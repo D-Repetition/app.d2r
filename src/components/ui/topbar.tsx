@@ -116,7 +116,7 @@ const Topbar = () => {
                     </div>
 
                         <div className={["lg:hidden duration-400", mobileMenuOpen ? "mt-6 mb-4 h-auto" : "h-0 overflow-hidden"].join(" ")}>
-                            <div className="flex flex-col items-start gap-4">
+                            <div className="flex flex-col items-start gap-6">
                                 <Link href="/" className="">
                                     <div className="flex items-center text-board-black max-xl:text-[14px]">
                                         Acceuil
