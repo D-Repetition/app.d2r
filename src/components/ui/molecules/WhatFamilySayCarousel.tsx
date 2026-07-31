@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { testimonies } from "@/constants/homeSectionsData";
+import { testimonies } from "@/constants/sectionsData";
 import WhatFamilySayCard from "./WhatFamilySayCard";
 import RoundButton from "../atomes/RoundButton";
 

@@ -1,4 +1,4 @@
-import { navigationItemsData, slidesData } from '@/constants/homeSectionsData'
+import { navigationItemsData, slidesData } from '@/constants/sectionsData'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 
@@ -53,36 +53,36 @@ const WhoWeAreCarousel: React.FC = () => {
               >
                 <div className="border border-[0.5px] border-board-black/20 rounded-xl relative overflow-hidden max-lg:h-[200px]">
                   <Image src={slideImg} className='w-full h-full object-cover object-center' alt={sd.title} />
-                <div className="absolute px-4 py-2 bg-white lg:text-[1.3vw] font-medium bottom-0 left-0 right-0 z-100">
-                  {sd.title}
+                  <div className="absolute px-4 py-2 bg-white lg:text-[1.3vw] font-medium bottom-0 left-0 right-0 z-100">
+                    {sd.title}
+                  </div>
+                </div>
+                <div
+                  className={[
+                    "rounded-lg flex flex-col items-start justify-between px-4 py-5.25",
+                    sd.backgroundColor,
+                    sd.textColor,
+                  ].join(" ")}
+                >
+                  <div className='max-lg:mb-4'>Statistiques</div>
+                  <div className="flex flex-col items-start justify-between gap-7 w-full">
+                    {sd.statistics.map((st, i) => (
+                      <div
+                        key={i}
+                        className={[
+                          "w-full pb-2",
+                          i < sd.statistics.length - 1 ? sd.dividerColor : "",
+                        ].join(" ")}
+                      >
+                        <span className='lg:text-[2vw]'>{st.value}</span>&nbsp;
+                        <span>{st.label}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div
-                className={[
-                  "rounded-lg flex flex-col items-start justify-between px-4 py-5.25",
-                  sd.backgroundColor,
-                  sd.textColor,
-                ].join(" ")}
-              >
-                <div className='max-lg:mb-4'>Statistiques</div>
-                <div className="flex flex-col items-start justify-between gap-7 w-full">
-                  {sd.statistics.map((st, i) => (
-                    <div
-                      key={i}
-                      className={[
-                        "w-full pb-2",
-                        i < sd.statistics.length - 1 ? sd.dividerColor : "",
-                      ].join(" ")}
-                    >
-                      <span className='lg:text-[2vw]'>{st.value}</span>&nbsp;
-                      <span>{st.label}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
         </div>
       </div>
 

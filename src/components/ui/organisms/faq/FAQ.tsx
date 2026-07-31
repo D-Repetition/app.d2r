@@ -1,6 +1,6 @@
 "use client"
 
-import { faqFaqsData } from '@/constants/homeSectionsData'
+import { faqFaqsData } from '@/constants/sectionsData'
 import { useState } from 'react'
 import FAQQuestion from '../../molecules/FAQQuestion';
 import { FaqItem } from '@/types';

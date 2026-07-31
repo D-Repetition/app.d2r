@@ -4,7 +4,9 @@ import Verify from "../../public/images/verify.png";
 import Commit from "../../public/images/commit/commit.png";
 import Commit2 from "../../public/images/commit/commit-2.png";
 import CurveU from "../../public/images/curve-u.png";
+import CurveU2 from "../../public/images/curve-u2.png";
 import Curve from "../../public/images/curve.png";
+import Curve2 from "../../public/images/curve2.png";
 import CurveCyan from "../../public/images/curve-cyan.png";
 import Goat from "../../public/images/goat.png";
 import Student from "../../public/images/student.png";
@@ -17,7 +19,9 @@ import Info from "../../public/images/info.png";
 import Hero from "../../public/images/hero.png";
 import HowItWork from "../../public/images/howItWork.png";
 import Davys from "../../public/images/davys.png";
+import Davys2 from "../../public/images/davys2.png";
 import Fnepi from "../../public/images/fnepi.png";
+import Fnepi2 from "../../public/images/fnepi2.png";
 import HomeFly from "../../public/images/home-fly.png";
 import Users from "../../public/images/users.png";
 import TeacherIllustration from "../../public/images/teacherIllustration.png";
@@ -99,6 +103,16 @@ import D2 from "../../public/images/team/d2.png";
 import NF from "../../public/images/404/not-found.png";
 import Errors from "../../public/images/404/errors.png";
 
+/* Authentication Illustrations */
+import LoginIllustration from "../../public/images/auth/login.png"
+import ParentRegistrationIllustration from "../../public/images/auth/parent-registration.png"
+import ParentVerificationAccountIllustration from "../../public/images/auth/parent-verification-account.png"
+import BecomeTeacherStep1 from "../../public/images/auth/become-teacher-step1.png"
+import BecomeTeacherStep2 from "../../public/images/auth/become-teacher-step2.png"
+import BecomeTeacherStep3 from "../../public/images/auth/become-teacher-step3.png"
+import BecomeTeacherStep4 from "../../public/images/auth/become-teacher-step4.png"
+import BecomeTeacherStep5 from "../../public/images/auth/become-teacher-step5.png"
+
 export const Images = {
     Discover,
     Resources,
@@ -106,7 +120,9 @@ export const Images = {
     Commit,
     Commit2,
     CurveU,
+    CurveU2,
     Curve,
+    Curve2,
     CurveCyan,
     Goat,
     Student,
@@ -119,7 +135,9 @@ export const Images = {
     Hero,
     HowItWork,
     Davys,
+    Davys2,
     Fnepi,
+    Fnepi2,
     HomeFly,
     Users,
     TeacherIllustration,
@@ -199,5 +217,13 @@ export const Images = {
     Admin,
     D2,
     NF,
-    Errors
+    Errors,
+    LoginIllustration,
+    ParentRegistrationIllustration,
+    ParentVerificationAccountIllustration,
+    BecomeTeacherStep1,
+    BecomeTeacherStep2,
+    BecomeTeacherStep3,
+    BecomeTeacherStep4,
+    BecomeTeacherStep5,
 } as const;

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Logo } from '../assets/icons'
-import { footerSectionsData } from '@/constants/homeSectionsData'
+import { footerSectionsData } from '@/constants/sectionsData'
 
 const Footer = () => {
   return (

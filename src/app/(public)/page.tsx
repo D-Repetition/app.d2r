@@ -6,7 +6,7 @@ import HowItWork from "@/components/ui/organisms/home/HowItWork"
 import Teachers from "@/components/ui/organisms/home/Teachers"
 import WhatFamilySay from "@/components/ui/organisms/home/WhatFamilySay"
 import WhyFamilyChooseUs from "@/components/ui/organisms/home/WhyFamilyChooseUs"
-import { homeCtaSection } from "@/constants/homeSectionsData"
+import { homeCtaSection } from "@/constants/sectionsData"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
