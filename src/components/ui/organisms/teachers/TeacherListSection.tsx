@@ -14,7 +14,7 @@ const TeacherListSection = () => {
           <div className="w-full flex flex-col items-center justify-start gap-15">
               <div className="flex flex-col items-center justify-start gap-6 w-full">
                   <div className="title text-center">Des profils variés, une même exigence de qualité</div>
-                  <div className="text-center subtitle font-normal! max-w-[55%]">Chaque professeur intègre la plateforme après une sélection rigoureuse. Diplômes, expérience et pédagogie sont vérifiés avant toute affectation.</div>
+                  <div className="text-center subtitle font-normal! lg:max-w-[55%]">Chaque professeur intègre la plateforme après une sélection rigoureuse. Diplômes, expérience et pédagogie sont vérifiés avant toute affectation.</div>
               </div>
 
               <div className="max-w-125 flex items-center justify-center gap-2">
