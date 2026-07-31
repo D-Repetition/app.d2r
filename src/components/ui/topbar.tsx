@@ -117,7 +117,7 @@ const Topbar = () => {
 
                     {mobileMenuOpen ? (
                         <div className="my-4">
-                            <div className="flex flex-col items-center text-blue-navy gap-4">
+                            <div className="flex flex-col items-start text-blue-navy gap-4">
                                 <Link href="/" className="">
                                     <div className="flex items-center text-board-black max-xl:text-[14px]">
                                         Acceuil
@@ -165,8 +165,8 @@ const Topbar = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <Link href="/bibliotheque" className="mt-4 w-full">
-                                    <Button className="flex items-center justify-center text-white bg-board-black max-xl:text-[14px] text-nowrap w-full">
+                                <Link href="/bibliotheque" className="mt-4">
+                                    <Button className="flex items-center text-white bg-board-black max-xl:text-[14px] text-nowrap">
                                         <div className="">Notre bibliothèque</div>
                                         <Arrow className='fill-white -rotate-45' />
                                     </Button>
