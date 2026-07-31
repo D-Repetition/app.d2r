@@ -116,8 +116,19 @@ const Topbar = () => {
                     </div>
 
                     {mobileMenuOpen ? (
-                        <div className="mt-4 rounded-3xl border border-board-black/10 bg-white p-4 shadow-[0px_10px_24px_rgba(0,0,0,0.08)]">
-                            
+                        <div className="my-4 rounded-3xl border border-board-black/10 bg-white p-4 shadow-[0px_10px_24px_rgba(0,0,0,0.08)]">
+                            <div className="flex items-center text-blue-navy gap-4">
+                                <Link href="/" className="">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px]">
+                                        Acceuil
+                                    </div>
+                                </Link>
+                                <Link href="/nous-contactez" className="">
+                                    <div className="flex items-center text-board-black">
+                                        Contact
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                     ) : null}
                 </div>
