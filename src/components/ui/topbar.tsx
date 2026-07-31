@@ -115,8 +115,7 @@ const Topbar = () => {
                         </div>
                     </div>
 
-                    {mobileMenuOpen ? (
-                        <div className="my-4">
+                        <div className={["lg:hidden", mobileMenuOpen ? "my-4 h-auto" : "h-0 overflow-hidden"].join(" ")}>
                             <div className="flex flex-col items-start text-blue-navy gap-4">
                                 <Link href="/" className="">
                                     <div className="flex items-center text-board-black max-xl:text-[14px]">
@@ -173,7 +172,6 @@ const Topbar = () => {
                                 </Link>
                             </div>
                         </div>
-                    ) : null}
                 </div>
             </div>
         </>
