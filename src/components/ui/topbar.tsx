@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import ChevronDown from "../assets/icons/ChevronDown"
-import { Close, Logo, UserFace } from "../assets/icons"
+import { Arrow, Close, Logo, UserFace } from "../assets/icons"
 import Button from "./atomes/Button"
 import Discover from "./molecules/Discover"
 import Resources from "./molecules/Resources"
@@ -116,17 +116,60 @@ const Topbar = () => {
                     </div>
 
                     {mobileMenuOpen ? (
-                        <div className="my-4 rounded-3xl border border-board-black/10 bg-white p-4 shadow-[0px_10px_24px_rgba(0,0,0,0.08)]">
-                            <div className="flex items-center text-blue-navy gap-4">
+                        <div className="my-4">
+                            <div className="flex flex-col items-center text-blue-navy gap-4">
                                 <Link href="/" className="">
                                     <div className="flex items-center text-board-black max-xl:text-[14px]">
                                         Acceuil
                                     </div>
                                 </Link>
-                                <Link href="/nous-contactez" className="">
-                                    <div className="flex items-center text-board-black">
-                                        Contact
+                                <Link href="/qui-sommes-nous" className="">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        Qui sommes-nous
                                     </div>
+                                </Link>
+                                <Link href="/matieres" className="">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        Nos matières
+                                    </div>
+                                </Link>
+                                <Link href="/enseignants" className="">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        Nos professeurs
+                                    </div>
+                                </Link>
+                                <Link href="/comment-ca-marche" className="">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        Comment ça marche
+                                    </div>
+                                </Link>
+                                <Link href="/temoignages" className="">
+                                    <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                        Témoignages
+                                    </div>
+                                </Link>
+                                <div className="flex flex-col items-start justify-start gap-2">
+                                    <Link href="/foire-aux-questions" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                            FAQ
+                                        </div>
+                                    </Link>
+                                    <Link href="/nous-contactez" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                            Contact
+                                        </div>
+                                    </Link>
+                                    <Link href="/devenir-professeur" className="">
+                                        <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap underline underline-offset-2 hover:decoration-transparent duration-100">
+                                            Devenir professeur
+                                        </div>
+                                    </Link>
+                                </div>
+                                <Link href="/bibliotheque" className="mt-4 w-full">
+                                    <Button className="flex items-center justify-center text-white bg-board-black max-xl:text-[14px] text-nowrap w-full">
+                                        <div className="">Notre bibliothèque</div>
+                                        <Arrow className='fill-white -rotate-45' />
+                                    </Button>
                                 </Link>
                             </div>
                         </div>
