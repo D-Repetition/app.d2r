@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { Images } from '@/constants/images'
-import { howItWorks } from '@/constants/homeSectionsData'
+import { howItWorks } from '@/constants/sectionsData'
 
 const Steps = () => {
     return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { whyFamilyChooseUsSectionData } from "@/constants/homeSectionsData";
+import { whyFamilyChooseUsSectionData } from "@/constants/sectionsData";
 
 import RoundButton from "../../atomes/RoundButton";
 import WhyFamilyCarousel from "../../molecules/WhyFamilyCarousel";
@@ -37,8 +37,10 @@ const WhyFamilyChooseUs = () => {
                     </div>
 
                     <div className="flex items-center justify-center gap-8">
-                        <Image src={Images.Davys} className="h-14 lg:h-[10vh] w-auto object-contain shrink-0" alt="Logo du partenaire Davys" />
-                        <Image src={Images.Fnepi} className="h-11 lg:h-[7vh] w-auto object-contain shrink-0" alt="Logo du partenaire FNEPI" />
+                        {/* <Image src={Images.Davys} className="h-14 lg:h-[10vh] w-auto object-contain shrink-0" alt="Logo du partenaire Davys" />
+                        <Image src={Images.Fnepi} className="h-11 lg:h-[7vh] w-auto object-contain shrink-0" alt="Logo du partenaire FNEPI" /> */}
+                        <Image src={Images.Davys2} className="h-14 lg:h-[10vh] w-auto object-contain shrink-0" alt="Logo du partenaire Davys" />
+                        <Image src={Images.Fnepi2} className="h-11 lg:h-[7vh] w-auto object-contain shrink-0" alt="Logo du partenaire FNEPI" />
                     </div>
                 </div>
 

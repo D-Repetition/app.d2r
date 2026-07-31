@@ -1,4 +1,4 @@
-import { valuesData } from '@/constants/homeSectionsData';
+import { valuesData } from '@/constants/sectionsData';
 import Image from 'next/image';
 import React from 'react'
 
@@ -29,18 +29,18 @@ const OurValues = () => {
                                         <Image src={iconImg} className="h-14 w-auto object-contain" alt={vd.title} />
                                     </div>
 
-                                <div className="flex h-full flex-col items-start justify-start gap-3">
-                                    <div className="max-w-[70%] max-lg:text-[18px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
-                                        {vd.title}
-                                    </div>
+                                    <div className="flex h-full flex-col items-start justify-start gap-3">
+                                        <div className="max-w-[70%] max-lg:text-[18px] lg:text-[1.7vw] leading-[2vw] text-board-black/90">
+                                            {vd.title}
+                                        </div>
 
-                                    <div className="lg:text-[.9vw] text-board-black/40">
-                                        {vd.description}
+                                        <div className="lg:text-[.9vw] text-board-black/40">
+                                            {vd.description}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { whyFamilyChooseUsSectionData } from '@/constants/homeSectionsData';
+import { whyFamilyChooseUsSectionData } from '@/constants/sectionsData';
 import React from 'react'
 import Button from '../atomes/Button';
 import Image from 'next/image';

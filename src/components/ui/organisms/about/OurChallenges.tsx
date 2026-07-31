@@ -1,4 +1,4 @@
-import { supportCategoriesData } from '@/constants/homeSectionsData'
+import { supportCategoriesData } from '@/constants/sectionsData'
 import Image from 'next/image';
 import React from 'react'
 

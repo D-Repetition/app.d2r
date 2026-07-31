@@ -7,7 +7,7 @@ import OurMissionAndVision from "@/components/ui/organisms/about/OurMissionAndVi
 import OurTeam from "@/components/ui/organisms/about/OurTeam"
 import OurValues from "@/components/ui/organisms/about/OurValues"
 import CTA from "@/components/ui/organisms/CTA"
-import { aboutCtaSection } from "@/constants/homeSectionsData"
+import { aboutCtaSection } from "@/constants/sectionsData"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

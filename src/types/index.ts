@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 
 export interface Subject {
     title: string;
@@ -128,3 +129,23 @@ export interface ValueItem {
     backgroundColor: string;
     icon: StaticImageData | string;
 }
+
+export interface AuthWrapperI {
+    title: string;
+    subtitle: string;
+    illustration: StaticImageData;
+    children: ReactNode
+}
+
+interface AuthPageData {
+    title: string;
+    subtitle: string;
+    illustration: StaticImageData;
+}
+
+interface AuthPage {
+    id: string;
+    page_data: AuthPageData;
+}
+
+export type AuthPages = Record<string, AuthPage>;

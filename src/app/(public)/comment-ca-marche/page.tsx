@@ -4,7 +4,7 @@ import Hero from '@/components/ui/organisms/howItWork/Hero'
 import Method from '@/components/ui/organisms/howItWork/Method'
 import Steps from '@/components/ui/organisms/howItWork/Steps'
 import Tracking from '@/components/ui/organisms/howItWork/Tracking'
-import { howItWorkCtaSection } from '@/constants/homeSectionsData'
+import { howItWorkCtaSection } from '@/constants/sectionsData'
 import type { Metadata } from 'next'
 import React from 'react'
 

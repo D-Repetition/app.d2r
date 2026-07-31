@@ -32,9 +32,13 @@ const Discover = () => {
                     </div>
                 </Link>
             </div>
-            <div className="w-34 bg-poppy-red rounded-sm flex items-center justify-center p-1">
+            <div className="w-34 bg-sky-blue rounded-sm flex items-center justify-center p-1">
                 <Image src={Images.Discover} className='h-37.5 w-32.25 w-auto object-contain' alt="Illustration decouvrir D2Repetition" />
             </div>
+
+            {/* <div className="w-34 bg-poppy-red rounded-sm flex items-center justify-center p-1">
+                <Image src={Images.Discover} className='h-37.5 w-32.25 w-auto object-contain' alt="Illustration decouvrir D2Repetition" />
+            </div> */}
         </div>
     )
 }

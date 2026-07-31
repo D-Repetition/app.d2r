@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../../atomes/Button'
 import { Arrow } from '@/components/assets/icons'
-import { howItWorksData } from '@/constants/homeSectionsData'
+import { howItWorksData } from '@/constants/sectionsData'
 import HowItWorkStep from '../../molecules/HowItWorkStep'
 import Image from 'next/image'
 import { Images } from '@/constants/images'

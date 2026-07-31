@@ -4,7 +4,7 @@ import KPI from '@/components/ui/organisms/teachers/KPI'
 import OurTeachersValues from '@/components/ui/organisms/teachers/OurTeachersValues'
 import SelectionStep from '@/components/ui/organisms/teachers/SelectionStep'
 import TeacherListSection from '@/components/ui/organisms/teachers/TeacherListSection'
-import { teacherCtaSection } from '@/constants/homeSectionsData'
+import { teacherCtaSection } from '@/constants/sectionsData'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

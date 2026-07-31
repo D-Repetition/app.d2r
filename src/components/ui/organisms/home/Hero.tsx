@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="w-full grid grid-cols-1 max-lg:gap-8 lg:grid-cols-2 min-h-[75vh]">
                 <div className="flex flex-col items-start justify-center gap-4 max-lg:w-full">
                     <div className="flex flex-col items-start justify-center gap-4 lg:gap-8 lg:max-w-[35vw]">
-                        <div className="title max-lg:text-center">Votre enfant mérite un suivi sur mesure, pas une <i className="text-blue-navy">répétition</i> au hasard.</div>
+                        <div className="title max-lg:text-center">Offrez à votre enfant un accompagnement personnalisé vers la <i className="text-blue-navy">réussite scolaire.</i></div>
                         <div className="subtitle max-lg:text-center">Un seul outil pour suivre les cours, coordonner les professeurs et donner aux parents une visibilité totale sur le parcours de leur enfant.</div>
                         <div className="flex max-lg:flex-col items-center gap-2 text-board-black max-lg:w-full">
                             <Link href="/" className="max-lg:w-full">

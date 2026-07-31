@@ -75,7 +75,8 @@ const Topbar = () => {
                 <div className="flex items-center justify-start gap-10">
                     <Link href="/" className="">
                         <div className="flex items-center text-blue-navy">
-                            <Logo className="fill-board-black h-10!" />
+                            <Logo className="fill-blue-navy h-10!" />
+                            {/* <Logo className="fill-board-black h-10!" /> */}
                         </div>
                     </Link>
                     <div className="flex items-center text-blue-navy gap-4">
@@ -122,7 +123,8 @@ const Topbar = () => {
                     <div className="flex items-center justify-between gap-3">
                         <Link href="/" className="shrink-0">
                             <div className="flex items-center text-blue-navy">
-                                <Logo className="fill-board-black h-8 w-auto" />
+                                <Logo className="fill-blue-navy h-8 w-auto" />
+                                {/* <Logo className="fill-board-black h-8 w-auto" /> */}
                             </div>
                         </Link>
 

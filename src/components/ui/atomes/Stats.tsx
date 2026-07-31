@@ -9,11 +9,11 @@ interface Stat {
 interface StatItemProps extends Stat { }
 
 const stats: Stat[] = [
-    { value: "3+", label: "Année d'éxpérience", bgColor: "max-lg:bg-[#FFE8CC]" },
+    { value: "+3", label: "Année d'éxpérience", bgColor: "max-lg:bg-[#FFE8CC]" },
     { value: "458", label: "Élèves accompagnés", bgColor: "max-lg:bg-[#D6EFFF]" },
     { value: "35", label: "Enseignants actifs", bgColor: "max-lg:bg-[#E4F8E0]" },
     { value: "97%", label: "Satisfaction des familles", bgColor: "max-lg:bg-[#FDE2E4]" },
-    { value: "10+", label: "Matières enseignées", bgColor: "max-lg:bg-[#F0E4FF]" },
+    { value: "+10", label: "Matières enseignées", bgColor: "max-lg:bg-[#F0E4FF]" },
     { value: "4", label: "Langues proposées", bgColor: "max-lg:bg-[#FFF6C9]" },
 ];
 

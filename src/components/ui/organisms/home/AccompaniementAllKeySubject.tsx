@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Button from '../../atomes/Button'
 import { UserFace } from '@/components/assets/icons'
-import { subjectSectionData } from '@/constants/homeSectionsData'
+import { subjectSectionData } from '@/constants/sectionsData'
 import { HomeSubject } from '../../molecules/Subject'
 import Image from 'next/image'
 
