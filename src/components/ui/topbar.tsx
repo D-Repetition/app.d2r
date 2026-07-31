@@ -124,8 +124,8 @@ const Topbar = () => {
                             </Link>
                             
                             <div className="">
-                                <div className="text-[12px] text-board-black/60 :b-1">Découvrir</div>
-                                <div className="pl-3 flex flex-col items-start text-blue-navy gap-4">
+                                <div className="text-[12px] text-board-black/60 mb-2">Découvrir</div>
+                                <div className="pl-6 flex flex-col items-start text-blue-navy gap-4">
                                     <Link href="/qui-sommes-nous" className="">
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             Qui sommes-nous
@@ -154,8 +154,8 @@ const Topbar = () => {
                                 </div>
                             </div>
                             <div className="">
-                                <div className="text-[12px] text-board-black/60 :b-1">Ressources</div>
-                                <div className="pl-3 flex flex-col items-start text-blue-navy gap-4">
+                                <div className="text-[12px] text-board-black/60 mb-2">Ressources</div>
+                                <div className="pl-6 flex flex-col items-start text-blue-navy gap-4">
                                     <Link href="/foire-aux-questions" className="">
                                         <div className="flex items-center text-board-black max-xl:text-[14px] text-nowrap">
                                             FAQ
