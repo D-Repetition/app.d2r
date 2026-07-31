@@ -14,7 +14,7 @@ const Hero = () => {
                 <div className="flex flex-col items-center justify-start gap-8 w-full">
                     <div className="title text-center lg:max-w-[60%]">Des enseignants sélectionnés pour accompagner chaque réussite</div>
                     <div className="text-center subtitle font-normal! lg:max-w-[40%]">Tous nos enseignants sont rigoureusement sélectionnés pour leurs compétences, leur pédagogie et leur engagement afin d'offrir un accompagnement de qualité à chaque élève.</div>
-                    <div className="max-lg:flex max-lg:flex-col items-center gap-2 text-board-black max-lg:w-[400px] lg:grid lg:grid-cols-2">
+                    <div className="max-lg:flex max-lg:flex-col items-center gap-2 text-board-black max-lg:w-full max-lg:max-w-[400px] lg:grid lg:grid-cols-2">
                         <Link href="/" className="w-full">
                             <Button className="bg-blue-navy text-white w-full">Inscrire mon enfant </Button>
                         </Link>

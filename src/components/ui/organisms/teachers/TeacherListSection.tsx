@@ -22,7 +22,7 @@ const TeacherListSection = () => {
                   <Round isActive={true} />
               </div>
 
-              <div className="w-full grid grid-cols-3 gap-6">
+              <div className="w-full grid max-lg:grid-cols-1 lg:grid-cols-3 gap-6">
                   {[...teachers].map((teacher, index) => (
                       <TeacherCard
                           className='w-full!'

@@ -39,7 +39,7 @@ const SearchField = ({
         <div className={['relative max-lg:w-[250px] lg:w-[32vw] shrink-0 max-lg:h-12 lg:h-[6vh] border border-2 rounded-full border-board-black', className].join(" ")}>
             <input
                 type="text"
-                className='w-full h-full border-none outline-none px-5'
+                className='w-full h-full border-none outline-none px-5 max-lg:text-[14px]'
                 placeholder={placeholder}
                 value={currentValue}
                 onChange={handleChange}

@@ -5,7 +5,7 @@ import React from 'react'
 
 const SelectionStep = () => {
     return (
-        <section className="w-full max-w-[90%] min-h-[50vh] mx-auto flex flex-col items-center pt-24 lg:pt-36 pb-12 lg:pb-[12vh] justify-center gap-12 lg:gap-[75px]">
+        <section className="w-full max-w-[90%] min-h-[50vh] mx-auto flex flex-col items-center pt-24 lg:pt-36 pb-12 lg:pb-[12vh] justify-center gap-12 lg:gap-[75px] bg-red-500">
             <div className="title text-center max-lg:max-w-full lg:max-w-[50%]">Une sélection rigoureuse avant chaque accompagnement</div>
 
             <div className="w-full grid max-lg:grid-cols-1 lg:grid-cols-4">
