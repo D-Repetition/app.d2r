@@ -1,7 +1,26 @@
 "use client";
-
-import { useEffect } from "react";
+import Footer from "@/components/ui/footer";
+import Topbar from "@/components/ui/topbar";
 import Link from "next/link";
+import { Inter, DM_Serif_Display } from "next/font/google";
+import "./globals.css";
+import Image from "next/image";
+import { Images } from "@/constants/images";
+import Button from "@/components/ui/atomes/Button";
+import { useEffect } from "react";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const dmSerifDisplay = DM_Serif_Display({
+  variable: "--font-dm-serif",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 export default function ErrorPage({
   error,
@@ -11,35 +30,28 @@ export default function ErrorPage({
   reset: () => void;
 }) {
   useEffect(() => {
-    // Log the error to an error reporting service
     console.error(error);
   }, [error]);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-white px-6 py-24 text-center sm:py-32 lg:px-8">
-      <div className="relative flex flex-col items-center max-w-md">
-        <h1 className="text-9xl font-bold tracking-tight text-poppy-red/10 select-none font-serif">500</h1>
-        <div className="absolute top-[4.5rem]">
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-board-black sm:text-5xl font-serif">Une erreur est survenue</h2>
-        </div>
-        <p className="mt-12 text-base leading-7 text-board-black/60">
-          Nous rencontrons un problème technique. Veuillez réessayer ou contacter le support si le problème persiste.
-        </p>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
-          <button
-            onClick={() => reset()}
-            className="rounded-lg bg-blue-navy px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-navy/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-navy transition duration-150"
-          >
-            Réessayer
-          </button>
-          <Link
-            href="/"
-            className="text-sm font-semibold text-board-black hover:text-board-black/80"
-          >
-            Retourner à l'accueil
-          </Link>
-        </div>
-      </div>
-    </div>
+    <html>
+      <body className={`${inter.variable} ${dmSerifDisplay.variable} min-h-screen w-full font-sans`}>
+        <Topbar />
+        <main className="min-h-screen w-full relative">
+          <div className="h-[4%] w-full absolute z-1 bottom-0 left-0 right-0 bg-board-black rounded-[54px_54px_0px_0px]"></div>
+          <section className="w-full min-h-screen mx-auto flex flex-col items-center justify-center gap-6 lg:gap-[75px] relative">
+            <div className="w-full max-lg:max-w-[90%] max-lg:mx-auto flex flex-col items-center justify-start">
+              <Image src={Images.Errors} className="max-lg:h-60 lg:h-[40vh] w-auto object-contain" alt="Illustration familles et accompagnement scolaire" />
+              <div className="flex flex-col items-center justify-start max-lg:gap-4 lg:gap-8 w-full">
+                <div className="title text-center lg:max-w-[60%]">Oups... Quelque chose s'est mal passé !</div>
+                <div className="text-center subtitle font-normal! lg:max-w-[50%]">Une erreur interne est survenue. Nos équipes ont été informées et travaillent à rétablir le service dans les plus brefs délais.</div>
+                <Link href="/"><Button className='bg-blue-navy text-white max-lg:w-full'>Retour à l'accueil</Button></Link>
+              </div>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </body>
+    </html>
   );
 }

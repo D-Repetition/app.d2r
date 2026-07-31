@@ -96,6 +96,8 @@ import Pedagogie from "../../public/images/team/pedagogie.png";
 import Supervision from "../../public/images/team/supervision.png";
 import Admin from "../../public/images/team/admin.png";
 import D2 from "../../public/images/team/d2.png";
+import NF from "../../public/images/404/not-found.png";
+import Errors from "../../public/images/404/errors.png";
 
 export const Images = {
     Discover,
@@ -196,4 +198,6 @@ export const Images = {
     Supervision,
     Admin,
     D2,
+    NF,
+    Errors
 } as const;
