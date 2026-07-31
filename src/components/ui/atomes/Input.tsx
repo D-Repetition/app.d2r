@@ -15,12 +15,13 @@ export type InputType =
 
 interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, "type"> {
     label?: string;
+    placeholder?: string;
     error?: string;
     type?: InputType;
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-    ({ label, error, type = "text", className = "", id, ...props }, ref) => {
+    ({ label, placeholder, error, type = "text", className = "", id, ...props }, ref) => {
         const [showPassword, setShowPassword] = useState(false);
         const inputId = id ?? props.name;
 
@@ -32,7 +33,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 {label && (
                     <label
                         htmlFor={inputId}
-                        className="font-inter text-sm font-medium text-board-black"
+                        className="font-inter text-sm font-medium text-board-black px-5"
                     >
                         {label}
                     </label>
@@ -44,17 +45,20 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                         id={inputId}
                         type={resolvedType}
                         aria-invalid={!!error}
+                        placeholder={placeholder}
                         aria-describedby={error ? `${inputId}-error` : undefined}
                         className={`
-                            h-10 w-full rounded-full border bg-transparent px-5
+                            lg:h-14 max-lg:h-10 w-full rounded-full px-5
                             font-inter text-sm text-board-black
-                            placeholder:text-board-black/40
+                            placeholder:text-board-black/60
                             transition-colors duration-150
                             focus:outline-none focus:ring-2 focus:ring-offset-0
+                            border-2
+                            bg-board-black/5
                             disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-board-black/40
                             ${error
                                 ? "border-red-500 focus:ring-red-500/30"
-                                : "border-slate-300 focus:border-slate-400 focus:ring-slate-400/20"
+                                : "border-board-black focus:border-blue-navy focus:ring-blue-navy/20"
                             }
                             ${isPassword ? "pr-10" : ""}
                             ${className}

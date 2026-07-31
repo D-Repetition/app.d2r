@@ -1029,6 +1029,36 @@ const subjectsData: SubjectItself[] = [
         tags: ["HighSchool"],
     },
 ];
+const howItWorks = [
+    {
+        image: Images.HowItWorkOne,
+        alt: "Etape 1 inscription",
+        step: "Inscription",
+        title: "Déposez votre demande",
+        description: "Remplissez le formulaire d'inscription avec les informations de votre enfant et les matières souhaitées. Notre équipe prend contact avec vous sous 48 heures.",
+    },
+    {
+        image: Images.HowItWorkTwo,
+        alt: "Etape 2 analyse des besoins",
+        step: "Analyse des besoins",
+        title: "Nous étudions le profil de votre enfant",
+        description: "Nous analysons son niveau, ses objectifs et ses difficultés afin de proposer un accompagnement adapté et sélectionner le professeur le plus qualifié.",
+    },
+    {
+        image: Images.HowItWorkThree,
+        alt: "Etape 3 affectation du professeur",
+        step: "Affectation du professeur",
+        title: "Nous sélectionnons le meilleur enseignant",
+        description: "Un professeur est choisi selon ses compétences, son expérience et sa pédagogie. Vous recevez ensuite toutes les informations concernant son affectation.",
+    },
+    {
+        image: Images.HowItWorkFour,
+        alt: "Etape 4 suivi pedagogique",
+        step: "Suivi pédagogique",
+        title: "Un accompagnement continu",
+        description: "Après chaque séance, un compte rendu est disponible et les parents peuvent suivre les progrès, les objectifs et l'évolution de leur enfant.",
+    },
+];
 
 export {
     whyFamilyChooseUsSectionData,
@@ -1052,5 +1082,7 @@ export {
     slidesData,
     supportCategoriesData,
     valuesData,
-    subjectsData
+    subjectsData,
+
+    howItWorks,
 }
