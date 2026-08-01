@@ -1,10 +1,11 @@
+import ParentRegistration from '@/components/ui/organisms/auth/ParentRegistration'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <ParentRegistration />
+    </>
   )
 }
 
