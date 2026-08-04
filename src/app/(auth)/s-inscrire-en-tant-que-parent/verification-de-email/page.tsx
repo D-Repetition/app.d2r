@@ -1,10 +1,11 @@
+import ParentVerificationAccount from '@/components/ui/organisms/auth/ParentVerificationAccount'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <ParentVerificationAccount />
+    </>
   )
 }
 

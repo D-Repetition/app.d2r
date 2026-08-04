@@ -92,7 +92,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
                     </select>
 
                     <div className="pointer-events-none absolute inset-y-0 right-5 flex items-center text-board-black/60">
-                        <ChevronDown />
+                        <ChevronDown className="fill-board-black" />
                     </div>
                 </div>
 
