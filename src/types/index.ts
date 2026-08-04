@@ -134,7 +134,8 @@ export interface AuthWrapperI {
     title: string;
     subtitle: string;
     illustration: StaticImageData;
-    children: ReactNode
+    children: ReactNode;
+    start?: boolean;
 }
 
 interface AuthPageData {
