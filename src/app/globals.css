@@ -20,6 +20,7 @@
   --color-poppy-orange: #E6A48E;
   --color-poppy-gold: #DABC5C;
   --color-poppy-purple: #704D8B;
+  --color-poppy-green: #005D28;
   --color-marigold-amber: #D98723;
   --color-shade-cyan: #4F8A9A;
   --color-olive-green: #918F17;
@@ -292,4 +293,38 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
     display: none;
+}
+
+
+.scrollbar {
+  overflow: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(10, 7, 0, 0.1) transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-slate-300);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color .2s ease;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-400);
+  background-clip: content-box;
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
 }

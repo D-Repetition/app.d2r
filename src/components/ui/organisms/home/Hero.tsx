@@ -15,10 +15,10 @@ const Hero = () => {
                         <div className="title max-lg:text-center">Offrez à votre enfant un accompagnement personnalisé vers la <i className="text-blue-navy">réussite scolaire.</i></div>
                         <div className="subtitle max-lg:text-center">Un seul outil pour suivre les cours, coordonner les professeurs et donner aux parents une visibilité totale sur le parcours de leur enfant.</div>
                         <div className="flex max-lg:flex-col items-center gap-2 text-board-black max-lg:w-full">
-                            <Link href="/" className="max-lg:w-full">
+                            <Link href="/se-connecter" className="max-lg:w-full">
                                 <Button className="bg-blue-navy text-white max-lg:w-full">Commencer maintenant</Button>
                             </Link>
-                            <Link href="/" className="max-lg:w-full">
+                            <Link href="/devenir-enseignant/etape-1" className="max-lg:w-full">
                                 <Button className="bg-blue-navy/5 text-blue-navy border-2 max-lg:w-full">
                                     <UserFace className="fill-blue-navy opacity-100" />
                                     <div className="">Devenir un professeur</div>
