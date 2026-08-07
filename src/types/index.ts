@@ -21,6 +21,7 @@ type SubjectTags =
     | [SubjectTag, SubjectTag, SubjectTag];
 
 export interface SubjectItself extends Subject {
+    image?: string;
     tags: SubjectTags;
 }
 

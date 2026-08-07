@@ -1,7 +1,7 @@
 import { StudentDetails } from "@/types"
 
 interface TabDataI {
-    student: StudentDetails
+  student: StudentDetails
 }
 
 const CoursesTab = ({ student }: TabDataI) => {
@@ -15,7 +15,12 @@ const CoursesTab = ({ student }: TabDataI) => {
           <div className="h-15 rounded-[12px] bg-board-black/5 flex items-center justify-start px-4 py-2"><span className="font-medium text-board-black/80">{student.courses.statistics.disputed}</span>&nbsp;<span className="text-board-black/60">Séances contestée</span></div>
           <div className="h-15 rounded-[12px] bg-olive-green flex items-center justify-start px-4 py-2"><span className="font-medium text-board-black/80">{student.courses.statistics.plannedThisMonth}</span>&nbsp;<span className="text-board-black/60">Séances prévus ce mois</span></div>
         </div>
+      </div>
+      <div className="w-full flex flex-col gap-7">
+        <div className="w-full flex items-center justify-between">
+          <div className="text-[24px] leading-[24px]">Liste des séances</div>
         </div>
+      </div>
     </div>
   )
 }

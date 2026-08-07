@@ -58,12 +58,18 @@ export const metadata: Metadata = {
 const PublicLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <html>
-      <body className={`${inter.variable} ${dmSerifDisplay.variable} min-h-screen w-full font-sans`}>
+      <body className={`${inter.variable} ${dmSerifDisplay.variable} min-h-screen w-full font-sans relative`}>
         <Topbar />
         <main className="min-h-screen w-full">
           {children}
         </main>
         <Footer />
+        <a href="https://wa.me/+22872333842?text=j'aimerais en savoir plus sur d²Répétition" className="animate-ping fixed bottom-4 lg:bottom-12 right-4 lg:right-12 h-12 lg:h-16 w-12 lg:w-16 rounded-full shadow-2xl flex items-center justify-center bg-[#2CBA42]">
+          <img src="/images/whatsapp.png" className="h-8 w-8 shrink-0" alt="" />
+        </a>
+        <a href="https://wa.me/+22872333842?text=j'aimerais en savoir plus sur d²Répétition" className="cursor-pointer fixed bottom-4 lg:bottom-12 right-4 lg:right-12 h-12 lg:h-16 w-12 lg:w-16 rounded-full shadow-2xl flex items-center justify-center bg-[#2CBA42]">
+          <img src="/images/whatsapp.png" className="h-8 w-8 shrink-0" alt="" />
+        </a>
       </body>
     </html>
   )

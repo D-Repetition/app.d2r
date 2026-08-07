@@ -83,7 +83,7 @@ const KidDetails = ({ kidid }: KidDetailID) => {
                                         Depuis le {student.overview.activeSince}
                                     </p>
 
-                                    <h3 className={["text-[20px] leading-[24px] flex shrink-0 my-1 w-fit"].join(" ")}>
+                                    <h3 className={["text-[24px] leading-[24px] flex shrink-0 mb-2 w-fit"].join(" ")}>
                                         {student.overview.fullname}
                                     </h3>
 
