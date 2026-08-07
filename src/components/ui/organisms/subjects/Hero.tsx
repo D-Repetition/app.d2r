@@ -18,12 +18,12 @@ const Hero = () => {
                     <div className="text-center subtitle font-normal!">Des cours personnalisés pour aider chaque élève à progresser et atteindre ses objectifs.</div>
                 </div>
 
-                <div className="max-w-125 w-full flex items-center justify-center gap-2">
+                <div className="max-lg:w-full lg:max-w-125 w-full flex items-center justify-center gap-2">
                     <SearchField placeholder="Rechercher une matière" />
                     <Round isActive={true} />
                 </div>
 
-                <div className="w-full max-lg:max-w-[90%] lg:max-w-[85%] grid max-lg:grid-cols-1 lg:grid-cols-3 max-lg:gap-6 lg:gap-12">
+                <div className="w-full lg:max-w-[85%] grid max-lg:grid-cols-1 lg:grid-cols-3 max-lg:gap-6 lg:gap-12">
                     {
                         subjectsData.map((sd, index) => {
                             return (
