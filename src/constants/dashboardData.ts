@@ -305,8 +305,12 @@ export const studentDetails: StudentDetails[] = [
             assignedTeacher: {
                 id: "t-0-1",
                 fullname: "M. Kossi ABALO",
-                avatar: "/images/teachers/1.jpg",
+                avatar: "/images/teachers/teacher-1.png",
                 experience: 3,
+                teacherLevels: [
+                    "Collège",
+                    "Lycée"
+                ],
                 teaches: [
                     "Maths",
                     "Physique",

@@ -220,6 +220,7 @@ export interface AssignedTeacher extends TeacherSummary {
     teaches: string[];
     assignedSince: string;
     objectives: string;
+    teacherLevels?: string[];
 }
 
 export interface CurrentSubject {
@@ -248,6 +249,7 @@ export interface Overview {
     birthDate: string;
 
     level: string;
+    
     schoolType: string;
     school: string;
 
