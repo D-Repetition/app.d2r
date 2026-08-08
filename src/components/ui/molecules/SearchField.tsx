@@ -50,7 +50,7 @@ const SearchField = ({
                 onClick={handleSearch}
                 className='max-lg:h-9 max-lg:w-9 lg:h-[4.5vh] lg:w-[4.5vh] -translate-y-1/2 rounded-full flex items-center justify-center bg-board-black absolute right-1.5 top-1/2'
             >
-                <Search className="fill-white opacity-100" />
+                <Search className="fill-white opacity-100 lg:h-5 lg:w-5" />
             </button>
         </div>
     )
