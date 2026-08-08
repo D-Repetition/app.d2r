@@ -56,20 +56,21 @@ const CoursSessionModal = (props: CourseSession) => {
             </div>
 
             {
-                props.summary.length > 0 && <div className="flex items-start justify-start gap-2">
-                    <Doc className='fill-board-black' />
-                    <span className="text-board-black/80">
-                        <span className="text-board-black">Compte rendu résumé:</span>
-                        <br />{props.summary}
-                        <div className="w-full flex items-start justify-end mt-1">
-                            <Download className='cursor-pointer fill-board-black' />
-                        </div>
-                    </span>
-                </div>
+                props.summary.length > 0 && <>
+                    <div className="flex items-start justify-start gap-2">
+                        <Doc className='fill-board-black' />
+                        <span className="text-board-black/80">
+                            <span className="text-board-black">Compte rendu résumé:</span>
+                            <br />{props.summary}
+                            <div className="w-full flex items-start justify-end mt-1">
+                                <Download className='cursor-pointer fill-board-black' />
+                            </div>
+                        </span>
+                    </div>
+                    <div className="w-full flex items-center justify-end">
+                        <Button className='bg-board-black text-white'>Compte rendu complet</Button>
+                    </div></>
             }
-            <div className="w-full flex items-center justify-end">
-                <Button className='bg-board-black text-white'>Compte rendu complet</Button>
-            </div>
         </div >
     )
 }
