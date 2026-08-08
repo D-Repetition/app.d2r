@@ -1,3 +1,6 @@
+import Round from "@/components/ui/atomes/Round"
+import CourseSessionCard from "@/components/ui/molecules/dashboard/CourseSessionCard"
+import SearchField from "@/components/ui/molecules/SearchField"
 import { StudentDetails } from "@/types"
 
 interface TabDataI {
@@ -19,6 +22,19 @@ const CoursesTab = ({ student }: TabDataI) => {
       <div className="w-full flex flex-col gap-7">
         <div className="w-full flex items-center justify-between">
           <div className="text-[24px] leading-[24px]">Liste des séances</div>
+          <div className="lg:flex lg:items-center lg:justify-center gap-2 max-lg:grid max-lg:grid-cols-[1fr_44px]">
+            <SearchField placeholder="Rechercher une séance" className="lg:w-[20vw]! border-none bg-board-black/10" />
+            <Round isActive={true} className="" />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-[36px] p-2 bg-board-black/5 gap-3">
+          {
+            student.courses.sessions.map((se, i) => {
+              return (
+                <CourseSessionCard {...se} />
+              );
+            })
+          }
         </div>
       </div>
     </div>

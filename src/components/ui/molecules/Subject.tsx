@@ -40,7 +40,7 @@ const HomeSubject = (props: HomeSubjectI) => {
 const Subject = (props: SubjectItselfI) => {
     return (
         <div {...props} className={['p-8 rounded-lg flex flex-col items-start justify-start gap-2', props.className, props.bg_color].join(" ")}>
-            <div className="rounded w-full max-lg:h-[200px] lg:h-[250px] overflow-hidden bg-board-black/5">
+            <div className="rounded w-full max-lg:h-[200px] lg:h-[250px] overflow-hidden bg-board-black/5 mb-2">
                 {
                     props.image && (<img src={props.image} className="w-full h-full object-cover object-center" alt="Subject images" />)
                 }

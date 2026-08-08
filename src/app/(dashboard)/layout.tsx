@@ -3,6 +3,7 @@ import { Inter, DM_Serif_Display } from "next/font/google";
 import "../globals.css";
 import Sidebar from "@/components/ui/organisms/dashboard/Sidebar";
 import DashboardTopbar from "@/components/ui/organisms/dashboard/DashboardTopbar";
+import Modals from "@/components/ui/organisms/Modals";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -63,6 +64,7 @@ const DashboardLayout = ({ children }: Readonly<{ children: React.ReactNode }>) 
                     <Sidebar />
                     {children}
                 </main>
+                <Modals />
             </body>
         </html>
     )

@@ -18,9 +18,9 @@ const Hero = () => {
                     <div className="text-center subtitle font-normal!">Des cours personnalisés pour aider chaque élève à progresser et atteindre ses objectifs.</div>
                 </div>
 
-                <div className="max-lg:w-full lg:max-w-125 w-full flex items-center justify-center gap-2">
-                    <SearchField placeholder="Rechercher une matière" />
-                    <Round isActive={true} />
+                <div className="max-lg:w-full lg:max-w-125 w-full lg:flex lg:items-center lg:justify-center gap-2 grid grid-cols-[1fr_44px]">
+                    <SearchField placeholder="Rechercher une matière" className="max-lg:w-full!" />
+                    <Round isActive={true} className="shrink-0!" />
                 </div>
 
                 <div className="w-full lg:max-w-[85%] grid max-lg:grid-cols-1 lg:grid-cols-3 max-lg:gap-6 lg:gap-12">
