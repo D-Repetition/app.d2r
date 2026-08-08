@@ -1,9 +1,16 @@
+"use client";
+
 import { CourseSession } from '@/types'
-import { ComponentProps } from 'react'
+import { ComponentProps, useState } from 'react'
 import Button from '../../atomes/Button'
 import { Book, Eye, Location, MoreVertical, Status } from '@/components/assets/icons'
+import { useModalesStore } from '@/stores/modals.store'
+import CoursSessionModal from './modals/CoursSessionModal'
 
 const CourseSessionCard = (props: CourseSession & ComponentProps<'div'>) => {
+
+  const openModal = useModalesStore((state) => state.onOpen)
+
   return (
     <div {...props} className={["p-6 border-[0.5px] border-board-black/5 flex flex-col items-start justify-start gap-4 rounded-[32px] bg-white"].join(" ")}>
       <div className="w-full flex flex-col items-start justify-start gap-5">
@@ -13,7 +20,7 @@ const CourseSessionCard = (props: CourseSession & ComponentProps<'div'>) => {
               <div className="px-1 bg-board-black/10 rounded text-[14px]">#{props.number}</div>
               <div className="flex items-center justify-start gap-1 text-[14px]"><Status className={[props.status === 'disputed' ? 'fill-marigold-amber' : props.status === 'cancelled' ? 'fill-poppy-red' : props.status === 'done' ? 'fill-emerald-green' : props.status === 'planned' ? 'fill-sky-blue' : 'fill-board-black'].join(" ")} /> <div className="">{ props.status === 'disputed' ? 'Contesté' : props.status === 'cancelled' ? 'Annulée' : props.status === 'done' ? 'Réalisé' : props.status === 'planned' ? 'Programmée' : 'En attente de validation' }</div></div>
             </div>
-            <MoreVertical className='fill-board-black' />
+            <MoreVertical className='fill-board-black cursor-pointer' />
           </div>
           <div className="flex flex-col gap-1 w-full">
             <div className="flex items-center justify-start gap-2">
@@ -40,7 +47,7 @@ const CourseSessionCard = (props: CourseSession & ComponentProps<'div'>) => {
           </div>
         </div>
       </div>
-      <Button className="h-5! w-8! border border-board-black flex items-center justify-center"><Eye className='fill-board-black shrink-0' /></Button>
+      <Button onClick={() => openModal(<CoursSessionModal {...props} />)} className="h-5! w-8! border border-board-black flex items-center justify-center"><Eye className='fill-board-black shrink-0' /></Button>
     </div>
   )
 }
